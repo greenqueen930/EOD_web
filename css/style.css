@@ -32,7 +32,7 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
  /* Page title*/
 #page-title { clear: both; padding: 80px 0; background-color: #f8f9fa; position: relative; /* page header left*/ /* page header right*/ }
 #page-title .page-title { text-align: center; padding: 0; }
-#page-title .page-title > h1 { font-family: "Poppins", sans-serif; font-size: 2.5rem; line-height: 1.2; font-weight: 400; margin-bottom: 1rem; }
+#page-title .page-title > h1 { font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic'; font-size: 2.5rem; line-height: 1.2; font-weight: 400; margin-bottom: 1rem; }
 #page-title .page-title > span { font-weight: 400; font-size: 14px; }
 #page-title .breadcrumb { text-align: center; margin-bottom: 0; padding: 0; }
 #page-title.page-title-left .page-title { float: left; text-align: left; clear: both; }
@@ -772,7 +772,7 @@ body:not(.breakpoint-xs):not(.breakpoint-sm):not(.breakpoint-md) .page-menu nav 
   .page-menu.inverted nav > ul > li a { color: #ffffff; }
   .page-menu.inverted nav > ul > li ul { background-color: #181818; }
   .page-menu.page-menu-active nav { display: block; } }
-.sidebar-menu { font-family: "Poppins", sans-serif; }
+.sidebar-menu { font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic';; }
 .sidebar-menu label { display: block; text-transform: uppercase; font-size: 14px; font-weight: 700; letter-spacing: .5px; }
 .sidebar-menu label ~ label { margin-top: 30px; }
 .sidebar-menu li { padding: 0; display: block; font-size: 14px; }
@@ -794,9 +794,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 html { font-size: 88%; }
 
 @media all and (max-width: 768px) { html { font-size: 81.25%; } }
-body { font-size: 1em; line-height: 1.65714286em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "Poppins", sans-serif; color: #484848; }
+body { font-size: 1em; line-height: 1.65714286em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic';; color: #484848; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Poppins", sans-serif; color: #1f1f1f; margin: 0; letter-spacing: 0.5px; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic';,'Microsoft JhengHei', 'Apple LiGothic';; color: #1f1f1f; margin: 0; letter-spacing: 0.5px; }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small { font-weight: 100; }
 
 h1, .h1 { font-size: 3.14285714em; line-height: 1.31818182em; }
@@ -825,7 +825,7 @@ h6:not(:last-child), .h6:not(:last-child) { margin-bottom: 6px; }
   .lead { font-size: 1.35714286em; line-height: 1.68421053em; } }
 .display-4 { font-weight: 400; }
 
-p { font-size: 1rem; font-style: normal; font-weight: 400; text-transform: none; line-height: 1.7; letter-spacing: 0; color: #777777; font-family: "Poppins", sans-serif; }
+p { font-size: 1rem; font-style: normal; font-weight: 400; text-transform: none; line-height: 1.7; letter-spacing: 0; color: #777777; font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic';; }
 
 ul.bullets { list-style: inside; }
 
@@ -2002,11 +2002,11 @@ a:not(.btn):not(.badge):not(.btn):not([href]):not([tabindex]) { color: #484848; 
 /*  Footer */
 /* --------FOOTER
 -----------------------------------------------------------------*/
-#footer { display: block; position: relative; background-color: #2EABDE; font-size: 14px; line-height: 32px; font-weight: 400; font-family: "Poppins", sans-serif; }
+#footer { display: block; position: relative; background-color: #2EABDE; font-size: 14px; line-height: 32px; font-weight: 400; font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic';; }
 #footer a:not(.btn) { color: #484848; }
 #footer span{width:50%;text-align: center;}
 #footer span p{color: #fff;}
-#footer p { font-family: "Poppins", sans-serif; }
+#footer p { font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic';; }
 #footer a:not(.btn) { font-weight: 400; }
 #footer .footer-content { 
   position: relative;
@@ -2023,7 +2023,7 @@ a:not(.btn):not(.badge):not(.btn):not([href]):not([tabindex]) { color: #484848; 
 }
 }
 #footer .widget .widget-title, #footer .widget h4 { font-size: 14px; letter-spacing: 1px; font-weight: 600; }
-#footer .widget .widget-title ul li a, #footer .widget h4 ul li a { font-family: "Poppins", sans-serif; font-size: 15px; line-height: 32px; color: #999; }
+#footer .widget .widget-title ul li a, #footer .widget h4 ul li a { font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic';; font-size: 15px; line-height: 32px; color: #999; }
 #footer .copyright-content { min-height: 80px; padding: 30px 0; background-color: #2EABDE; font-size: 13px; }
 #footer .logo { margin-bottom: 54px; margin-top: 12px; max-width: 80px; }
 #footer .footer-logo { border-right: 1px solid #333; margin-bottom: 20px; margin-right: 18px; padding-right: 16px; }
@@ -2452,7 +2452,7 @@ iframe { width: 100%; }
 
 .fc-view, .fc-view > table { z-index: 0 !important; }
 
-.fc-toolbar .fc-button { font-size: 12px !important; padding: 4px 14px; height: 34px; font-family: "Poppins", sans-serif; background-color: #ffffff !important; border-color: #ebebeb !important; color: #4c5667 !important; text-shadow: none !important; background-image: unset !important; -webkit-box-shadow: unset !important; box-shadow: unset !important; }
+.fc-toolbar .fc-button { font-size: 12px !important; padding: 4px 14px; height: 34px; font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic';; background-color: #ffffff !important; border-color: #ebebeb !important; color: #4c5667 !important; text-shadow: none !important; background-image: unset !important; -webkit-box-shadow: unset !important; box-shadow: unset !important; }
 .fc-toolbar .fc-button:hover, .fc-toolbar .fc-button:focus, .fc-toolbar .fc-button:active, .fc-toolbar .fc-button.active { border-color: #ebedf2 !important; background-color: #f4f5f8 !important; color: #4c5667 !important; }
 
 .fc-day-header { padding-top: 10px !important; padding-bottom: 10px !important; }

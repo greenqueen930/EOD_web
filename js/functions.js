@@ -1258,7 +1258,7 @@ var INSPIRO = {},
                     var $elem = $(this),
                         elemImageSrc = $elem.attr("data-bg-parallax"),
                         elemImageVelocity = $elem.attr("data-velocity") || "-.140";
-                    $elem.prepend('<div class="parallax-container" data-lazy-background="' + elemImageSrc + '"  data-velocity="' + elemImageVelocity + '" style="background: url(' + elemImageSrc + ')"></div>');
+                    $elem.prepend('<div class="parallax-container" data-lazy-background="' + elemImageSrc + '"  data-velocity="' + elemImageVelocity + '" style="background: url(' + elemImageSrc + '); backgroud-size:cover;"></div>');
                     $(".parallax-container").lazy({
                         attribute: "data-lazy-background",
                         afterLoad: function (element) {

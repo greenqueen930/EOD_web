@@ -12,11 +12,25 @@
   .about-EOD .about-EOD-item{
     padding-left: 40px;
   }
-  .service-item{
-    width: 100%;
+  .about-EOD .about-EOD-item h2,.about-EOD-item .about-EOD-btn{
+    text-align: center;
   }
+  .about-EOD-item .about-EOD-btn .btn{
+    margin: 0 15px;
+  }
+  /* .service-item a{
+  } */
   .service-item p{
+    font-size: .85rem;
+    word-break: break-all;
+    padding-left: 0;
+    padding-right: 0;
     text-align: justify;
+  }
+  .service-item h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
   }
   .service-item a{
     color: brown;
@@ -27,6 +41,21 @@
   }
   .timeline-item-image .grid-item .grid-image{
     border-radius: 5px;
+  }
+  .timeline .content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .team-member .team-image{
+    overflow: hidden;
+  }
+  .team-member .team-image img{
+    width: 100%;
+    height: auto;
+    transition: all .5s ease-in-out;
+  }
+  .team-member .team-image img:hover{
+    transform: scale(1.2) translate(10px,15px);
   }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
@@ -63,4 +92,10 @@
     .tl-right {
     left: 0%;
     }
+}
+
+@media (max-width: 480px){
+  .about-EOD-item .about-EOD-btn .btn{
+    margin: 0 0;
+  }
 }

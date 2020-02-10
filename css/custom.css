@@ -57,9 +57,9 @@
   .team-member .team-image img:hover{
     transform: scale(1.2) translate(10px,15px);
   }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+/* @media screen and (min-width: 992px) and (max-width: 1200px) {
 
-}
+} */
 
 @media (max-width: 991px) {
     .about-EOD .about-EOD-item{

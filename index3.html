@@ -20,15 +20,15 @@
     <div class="body-inner">
 
         <!-- Header -->
-        <header id="header" data-transparent="true" data-fullwidth="true">
+        <header id="header" data-transparent="true" class="dark submenu-light">
             <div class="header-inner">
                 <div class="container">
                     <!--Logo-->
                     <div id="logo">
                         <a href="index.html">
-                            <span class="logo-default"><img src="images/index/header_logo.png" alt=""
-                                    style="height: 65px;"></span>
-                            <!-- <span class="logo-dark">POLO</span> -->
+                            <span class="logo-default">POLO</span>
+                            <span class="logo-dark">POLO</span>
+                            <img src="images/index/header_logo.png" class="logo-fixed">
                         </a>
                     </div>
                     <!--End: Logo-->
@@ -39,28 +39,77 @@
                             <input class="form-control" name="q" type="search" placeholder="Type & Search..." />
                             <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
                         </form>
-                    </div> <!-- end: search -->
+                    </div>
+                    <!-- end: search -->
                     <!--Header Extras-->
-                    <!-- <div class="header-extras">
+                    <div class="header-extras">
                         <ul>
-                            <li> <a id="btn-search" href="#"> <i class="icon-search"></i></a> </li>
+                            <li>
+                                <a id="btn-search" href="#"> <i class="icon-search"></i></a>
+                            </li>
                         </ul>
-                    </div> -->
+                    </div>
                     <!--end: Header Extras-->
                     <!--Navigation Resposnive Trigger-->
-                    <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                    <div id="mainMenu-trigger">
+                        <a class="lines-button x"><span class="lines"></span></a>
+                    </div>
                     <!--end: Navigation Resposnive Trigger-->
                     <!--Navigation-->
                     <div id="mainMenu">
                         <div class="container">
                             <nav>
                                 <ul>
-                                    <li><a href="index.html">首頁</a></li>
-                                    <li class="dropdown"><a href="#">關於恆洋</a>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="dropdown"><a href="#">Layout</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-submenu"><a href="#">Topbar</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="header-topbar.html">Light</a></li>
+                                                    <li><a href="header-topbar-dark.html">Dark</a></li>
+                                                    <li><a href="header-topbar-transparent.html">Transparent</a></li>
+                                                    <li><a href="header-topbar-colored.html">Colored</a></li>
+                                                    <li><a href="header-topbar-fullwidth.html">Fullwidth</a></li>
+                                                </ul>
                                             </li>
                                             <li class="dropdown-submenu"><a href="#">Header</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="header.html">Light</a></li>
+                                                    <li><a href="header-dark.html">Dark</a></li>
+                                                    <li><a href="header-transparent.html">Transparent</a></li>
+                                                    <li><a href="header-fullwidth.html">Fullwidth</a></li>
+                                                    <li class="dropdown-submenu"><a href="#">Modern</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="header-modern.html">Light</a></li>
+                                                            <li><a href="header-modern-dark.html">Dark</a></li>
+                                                            <li><a href="header-modern-transparent.html">Transparent</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="header-mini.html">Mini</a></li>
+                                                    <li><a href="header-alternative.html">Alternative</a></li>
+                                                    <li><a href="header-always-fixed.html">Always Fixed</a></li>
+                                                    <li><a href="header-disable-fixed.html">Disable Fixed</a></li>
+                                                    <li><a href="header-responsive-fixed.html">Responsive Fixed</a></li>
+                                                    <li class="dropdown-submenu"><a href="#">Logo</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="header-logo.html">Left</a></li>
+                                                            <li><a href="header-logo-right.html">Right</a></li>
+                                                            <li><a href="header-logo-center.html">Center</a></li>
+                                                            <li><a href="header-logo-fixed-header.html">Header Fixed
+                                                                    Logo</a></li>
+                                                            <li><a href="header-logo-responsive.html">Header Responsive
+                                                                    Logo</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu"><a href="#">Menu Positions</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="header-menu-left.html">Left</a></li>
+                                                            <li><a href="header-menu-right.html">Right</a></li>
+                                                            <li><a href="header-menu-center.html">Center</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li class="dropdown-submenu"><a href="#">Main Menu<span
                                                         class="badge badge-danger">NEW</span></a>
@@ -68,11 +117,102 @@
                                                     <li><a href="menu.html">Default</a></li>
                                                     <li><a href="menu-lowercase.html">Lowercase</a></li>
                                                     <li><a href="menu-split.html">Split Menu</a></li>
+                                                    <li><a href="menu-sub-title.html">Sub Title Menu</a></li>
+                                                    <li><a href="menu-overlay.html">Overlay Menu</a></li>
+                                                    <li><a href="menu-creative.html">Creative Menu</a></li>
+                                                    <li><a href="menu-lines.html">Lines Menu</a></li>
+                                                    <li class="dropdown-submenu"><a href="#">Outline</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="menu-outline.html">Default</a></li>
+                                                            <li><a href="menu-outline-dark.html">Dark</a></li>
+                                                            <li><a href="menu-outline-light.html">Light</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu"><a href="#">Rounded</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="menu-rounded.html">Default</a></li>
+                                                            <li><a href="menu-rounded-dark.html">Dark</a></li>
+                                                            <li><a href="menu-rounded-light.html">Light</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu"><a href="#">Positions</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="menu-left.html">Left Aligned</a></li>
+                                                            <li><a href="menu-center.html">Center Aligned</a></li>
+                                                            <li><a href="menu-right.html">Right Aligned</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="menu-dots.html">Dots Menu</a></li>
+                                                    <li><a href="menu-one-page.html">One Page Menu</a></li>
+                                                    <li><a href="menu-hover-background.html">Hover Background</a></li>
+                                                    <li><a href="menu-button.html">Button Version</a></li>
+                                                    <li><a href="menu-social-icons.html">Social Icons Version</a></li>
+                                                    <li><a href="menu-onclick.html">OnClick Open</a></li>
+                                                    <li><a href="menu-rounded-dropdown.html">Rounded Dropdown</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="#">Page Title</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="page-title.html">Default</a></li>
+                                                    <li><a href="page-title-image.html">Image background</a></li>
+                                                    <li><a href="page-title-video.html">Video background</a></li>
+                                                    <li><a href="page-title-pattern.html">Pattern background</a></li>
+                                                    <li><a href="page-title-background-color.html">Colored
+                                                            background</a></li>
+                                                    <li><a href="page-title-parallax.html">Parallax</a></li>
+                                                    <li><a href="page-title-animated.html">Animated</a></li>
+                                                    <li><a href="page-title-right.html">Right Aligned</a></li>
+                                                    <li><a href="page-title-left.html">Left Aligned</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="#">Page Menu<span
+                                                        class="badge badge-danger">NEW</span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="page-menu.html">Default</a></li>
+                                                    <li><a href="page-menu-rounded.html">Rounded</a></li>
+                                                    <li><a href="page-menu-outline.html">Outline</a></li>
+                                                    <li><a href="page-menu-lines.html">Lines</a></li>
+                                                    <li><a href="page-menu-solid.html">Solid</a></li>
+                                                    <li><a href="page-menu-light.html">Light</a></li>
+                                                    <li><a href="page-menu-dark.html">Dark</a></li>
+                                                    <li><a href="page-menu-creative.html">Creative</a></li>
+                                                    <li><a href="page-menu.html">Dropdown</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="#">Sidebars</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="sidebar-sticky.html">Sticky version</a></li>
+                                                    <li><a href="sidebar.html">Left aligned</a></li>
+                                                    <li><a href="sidebar-right.html">Right aligned</a></li>
+                                                    <li><a href="sidebar-both.html">Both Sidebars</a></li>
+                                                    <li><a href="sidebar-modern.html">Modern</a></li>
+                                                    <li><a href="sidebar-modern-right.html">Modern Right</a></li>
+                                                    <li><a href="sidebar-modern-both.html">Modern Both Sidebars</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="#">Footers</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="footer.html#footer">Default</a></li>
+                                                    <li><a href="footer-dark.html#footer">Dark</a></li>
+                                                    <li><a href="footer-1.html#footer">Footer 1</a></li>
+                                                    <li><a href="footer-2.html#footer">Footer 2</a></li>
+                                                    <li><a href="footer-3.html#footer">Footer 3</a></li>
+                                                    <li><a href="footer-4.html#footer">Footer 4</a></li>
+                                                    <li><a href="footer-5.html#footer">Footer 5</a></li>
+                                                    <li><a href="footer-6.html#footer">Footer 6</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="#">Options</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="layout-boxed.html">Boxed</a></li>
+                                                    <li><a href="layout-modern.html">Modern</a></li>
+                                                    <li><a href="layout-frame.html">Frame</a></li>
+                                                    <li><a href="layout-wide.html">Wide (default)</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">服務項目</a>
+                                    <li class="dropdown"><a href="#">Features</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-submenu"><a href="#">Sliders</a>
                                                 <ul class="dropdown-menu">
@@ -132,7 +272,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown mega-menu-item"><a href="#">客戶案例</a>
+                                    <li class="dropdown mega-menu-item"><a href="#">Elements</a>
                                         <ul class="dropdown-menu">
                                             <li class="mega-menu-content">
                                                 <div class="row">
@@ -282,7 +422,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">最新消息</a>
+                                    <li class="dropdown"><a href="#">Pages</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-submenu"><span class="dropdown-menu-title-only">About
                                                     us</span>
@@ -361,7 +501,295 @@
                                             <li><a href="page-faq.html">FAQ</a></li>
                                         </ul>
                                     </li>
-                                    <li></li>
+                                    <li class="dropdown mega-menu-item"><a href="#">Portfolio</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content">
+                                                <div class="row">
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Grids</li>
+                                                            <li><a href="portfolio-2.html">Two Columns</a></li>
+                                                            <li><a href="portfolio-3.html">Three Columns</a></li>
+                                                            <li><a href="portfolio-4.html">Four Columns</a></li>
+                                                            <li><a href="portfolio-5.html">Five Columns</a></li>
+                                                            <li><a href="portfolio-6.html">Six Columns</a></li>
+                                                            <li><a href="portfolio-sidebar.html">Sidebar version</a>
+                                                            </li>
+                                                            <li><a href="portfolio-wide-3.html">Wide version</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Masonry</li>
+                                                            <li><a href="portfolio-masonry-2.html">Two Columns</a></li>
+                                                            <li><a href="portfolio-masonry-3.html">Three Columns<span
+                                                                        class="badge badge-danger">HOT</span></a></li>
+                                                            <li><a href="portfolio-masonry-4.html">Four Columns</a></li>
+                                                            <li><a href="portfolio-masonry-5.html">Five Columns</a></li>
+                                                            <li><a href="portfolio-masonry-6.html">Six Columns</a></li>
+                                                            <li><a href="portfolio-masonry-sidebar.html">Sidebar
+                                                                    version</a></li>
+                                                            <li><a href="portfolio-masonry-wide-3.html">Wide version</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Styles</li>
+                                                            <li><a href="portfolio-filter-styles.html">Filter Styles</a>
+                                                            </li>
+                                                            <li><a href="portfolio-load-more.html">Load more</a></li>
+                                                            <li><a href="portfolio-load-more-sidebar.html">Load more -
+                                                                    Sidebar</a></li>
+                                                            <li><a href="portfolio-infinite-scroll.html">Infinity
+                                                                    Scroll</a></li>
+                                                            <li><a href="portfolio-ajax.html">Portfolio Ajax</a></li>
+                                                            <li><a href="portfolio-gallery-modal.html">Gallery Modal</a>
+                                                            </li>
+                                                            <li><a href="portfolio-video-modal.html">Video Modal</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Layouts</li>
+                                                            <li><a href="portfolio-sidebar-left.html">Left Sidebar</a>
+                                                            </li>
+                                                            <li><a href="portfolio-sidebar-right.html">Right Sidebar</a>
+                                                            </li>
+                                                            <li><a href="portfolio-sidebar-both.html">Both Sidebars</a>
+                                                            </li>
+                                                            <li><a href="portfolio-slider-3.html">Slider Default</a>
+                                                            </li>
+                                                            <li><a href="portfolio-no-page-title.html">No Page Title</a>
+                                                            </li>
+                                                            <li><a href="portfolio-no-page-title-sidebar.html">No Page
+                                                                    Title - Sidebar</a></li>
+                                                            <li><a href="portfolio-hover-styles.html">Hover Styles</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Single Project</li>
+                                                            <li><a href="portfolio-page-grid-gallery.html">Grid
+                                                                    Gallery</a></li>
+                                                            <li><a href="portfolio-page-particles.html">Particles Wide
+                                                                    Project</a></li>
+                                                            <li><a href="portfolio-page-floating-sidebar.html">Floating
+                                                                    Sidebar</a></li>
+                                                            <li><a href="portfolio-page-slider.html">Slider version</a>
+                                                            </li>
+                                                            <li><a href="portfolio-page-background-image.html">Fullscreen
+                                                                    image</a></li>
+                                                            <li><a href="portfolio-page-background-video.html">Fullscreen
+                                                                    Video</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-12 no-padding">
+                                                        <div class="d-none d-lg-block m-t-40 m-b-10">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-lg-9 m-t-10">
+                                                                        <div class="text-center center">
+                                                                            <div class="heading-creative">
+                                                                                <strong>20+</strong> Amazing Hover
+                                                                                Styles</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3"><a
+                                                                            href="portfolio-hover-styles.html"
+                                                                            class="btn m-l-20 btn-light btn-shadow btn-light-hover btn-light-hover">View
+                                                                            All Hover Styles</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="d-block d-lg-none">
+                                                            <li><a class="mega-menu-title"
+                                                                    href="portfolio-hover-styles.html">20+ Amazing Hover
+                                                                    Styles</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown mega-menu-item"><a href="#">Blog</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content">
+                                                <div class="row">
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Masonry</li>
+                                                            <li><a href="blog-masonry-2.html">Two Columns</a></li>
+                                                            <li><a href="blog-masonry-3.html">Three Columns<span
+                                                                        class="badge badge-danger">HOT</span></a></li>
+                                                            <li><a href="blog-masonry-4.html">Four Columns</a></li>
+                                                            <li><a href="blog-masonry-sidebar.html">Sidebar version</a>
+                                                            </li>
+                                                            <li><a href="blog-masonry-no-page-title.html">No page
+                                                                    title</a></li>
+                                                            <li><a href="blog-masonry-wide.html">Wide version</a></li>
+                                                            <li><a href="blog-masonry-load-more.html">Load More</a></li>
+                                                            <li><a href="blog-masonry-infinite-scroll.html">Infinite
+                                                                    Scroll</a></li>
+                                                            <li><a href="blog-masonry-filter.html">Filter Categories</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Grids Layout</li>
+                                                            <li><a href="blog-1.html">One Column</a></li>
+                                                            <li><a href="blog-2.html">Two Columns</a></li>
+                                                            <li><a href="blog-3.html">Three Columns</a></li>
+                                                            <li><a href="blog-4.html">Four Columns</a></li>
+                                                            <li><a href="blog-no-page-title.html">No page title</a></li>
+                                                            <li><a href="blog-wide.html">Wide version</a></li>
+                                                            <li><a href="blog-load-more.html">Load More</a></li>
+                                                            <li><a href="blog-infinite-scroll.html">Infinite Scroll</a>
+                                                            </li>
+                                                            <li><a href="blog-filter.html">Filter Categories</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Left Image</li>
+                                                            <li><a href="blog-left-image-sidebar-right.html">Right
+                                                                    Sidebar</a></li>
+                                                            <li><a href="blog-left-image-sidebar-left.html">Left
+                                                                    Sidebar</a></li>
+                                                            <li><a href="blog-left-image-sidebar-both.html">Both
+                                                                    Sidebars</a></li>
+                                                            <li><a href="blog-left-image-no-sidebar.html">No Sidebar</a>
+                                                            </li>
+                                                            <li><a href="blog-left-image-no-page-title.html">No page
+                                                                    title</a></li>
+                                                            <li><a href="blog-left-image-load-more.html">Load More</a>
+                                                            </li>
+                                                            <li><a href="blog-left-image-infinite-scroll.html">Infinite
+                                                                    Scroll</a></li>
+                                                            <li><a href="blog-left-image-author-info.html">Author
+                                                                    Info</a></li>
+                                                            <li><a href="blog-left-image-filter.html">Filter
+                                                                    Categories</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Layouts</li>
+                                                            <li><a href="blog-sidebar-left.html">Left Sidebar</a></li>
+                                                            <li><a href="blog-sidebar-right.html">Right Sidebar</a></li>
+                                                            <li><a href="blog-sidebar-both.html">Both Sidebars</a></li>
+                                                            <li><a href="blog-fullwidth.html">Fullwidth</a></li>
+                                                            <li class="mega-menu-title">Post Item Styles</li>
+                                                            <li><a href="blog-style-shadow.html">Shadow</a></li>
+                                                            <li><a href="blog-style-textual.html">Textual</a></li>
+                                                            <li><a href="blog-style-grey-bg.html">Grey Background</a>
+                                                            </li>
+                                                            <li><a href="blog-style-author-info.html">Author Info</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Single Post</li>
+                                                            <li><a href="blog-single.html">Default</a></li>
+                                                            <li><a href="blog-single-slider.html">Slider</a></li>
+                                                            <li><a href="blog-single-video.html">Video</a></li>
+                                                            <li><a href="blog-single-audio.html">Audio</a></li>
+                                                            <li><a href="blog-single-creative.html">Creative</a></li>
+                                                            <li class="mega-menu-title">Comments<span
+                                                                    class="badge badge-danger">NEW</span></li>
+                                                            <li><a href="blog-comments.html#comments">Default
+                                                                    Comments</a></li>
+                                                            <li><a href="blog-comments-disqus.html#comments">Disqus
+                                                                    Comments</a></li>
+                                                            <li><a href="blog-comments-facebook.html#comments">Facebook
+                                                                    Comments</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown mega-menu-item"><a href="#">Shop</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="mega-menu-content">
+                                                <div class="row">
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Columns</li>
+                                                            <li><a href="shop-columns-2.html">Two Columns</a></li>
+                                                            <li><a href="shop-columns-3.html">Three Columns</a></li>
+                                                            <li><a href="shop-columns-4.html">Four Columns</a></li>
+                                                            <li><a href="shop-columns-5.html">Five Columns</a></li>
+                                                            <li><a href="shop-columns-6.html">Six Columns</a></li>
+                                                            <li><a href="shop-sidebar-sticky.html">Sidebar Sticky</a>
+                                                            </li>
+                                                            <li><a href="shop-wide.html">Wide version</a></li>
+                                                            <li><a href="shop-no-page-title.html">No page title</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Layouts</li>
+                                                            <li><a href="shop-sidebar-left.html">Left Sidebar</a></li>
+                                                            <li><a href="shop-sidebar-right.html">Right Sidebar</a></li>
+                                                            <li><a href="shop-sidebar-both.html">Both Sidebars</a></li>
+                                                            <li><a href="shop-fullwidth.html">Fullwidth (Wide)</a></li>
+                                                            <li class="mega-menu-title">Loading Styles</li>
+                                                            <li><a href="shop-load-more.html">Load more</a><a
+                                                                    href="shop-load-more-sidebar.html">Load Sidebar</a>
+                                                            </li>
+                                                            <li><a href="shop-infinite-scroll.html">Infinity Scroll</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Order process</li>
+                                                            <li><a class="animsition-link" href="shop-cart.html">Shoping
+                                                                    Cart</a></li>
+                                                            <li><a class="animsition-link"
+                                                                    href="shop-cart-empty.html">Shoping Cart - Empty</a>
+                                                            </li>
+                                                            <li><a class="animsition-link"
+                                                                    href="shop-checkout.html">Checkout</a></li>
+                                                            <li><a class="animsition-link"
+                                                                    href="shop-checkout-completed.html">Checkout
+                                                                    Completed</a></li>
+                                                            <li><a href="shop-wishlist.html">Wishlist</a></li>
+                                                            <li><a href="shop-wishlist-empty.html">Wishlist Empty</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5">
+                                                        <ul>
+                                                            <li class="mega-menu-title">Single Product</li>
+                                                            <li><a href="shop-single-product.html">Fullwidth</a></li>
+                                                            <li><a href="shop-single-product-sidebar-left.html">Left
+                                                                    Sidebar</a></li>
+                                                            <li><a href="shop-single-product-sidebar-right.html">Right
+                                                                    Sidebar</a></li>
+                                                            <li><a href="shop-single-product-sidebar-both.html">Both
+                                                                    Sidebars</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-2-5 p-l-0">
+                                                        <h4 class="text-theme">BIG SALE<small>Up to</small></h4>
+                                                        <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
+                                                        <p class="m-b-0">The most happiest time of the day!. Morbi
+                                                            sagittis, sem quis ipsum dolor sit amet lacinia faucibus.
+                                                        </p><a class="btn btn-shadow btn-rounded btn-block m-t-10">SHOP
+                                                            NOW!</a><small class="t300">
+                                                            <p class="text-center m-0"><em>* Limited time Offer</em></p>
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -600,19 +1028,20 @@
 
 
                             <div class="tp-caption Dining-Social tp-resizeme" id="slide-3015-layer-11"
-                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['29','29','29','29']"
-                            data-width="50" data-height="50" data-whitespace="normal" data-type="button"
-                            data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""},{"event":"mouseenter","action":"startlayer","layer":"slide-3015-layer-14","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-3015-layer-14","delay":""}]'
-                            data-basealign="slide" data-responsive_offset="on"
-                            data-frames='[{"from":"y:50px;rZ:60deg;opacity:0;","speed":1500,"to":"o:1;","delay":4250,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"400","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:360;z:0;","style":"c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
-                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-                            style="z-index: 15; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; white-space: normal;text-transform:left;cursor:pointer;">
-                            <div class="rs-looped rs-slideloop" data-easing="Power1.easeInOut" data-speed="1"
-                            data-xs="0" data-xe="0" data-ys="10" data-ye="0"><i style="font-size:30px;"
-                                class="fa fa-arrow-down"></i></div></div>
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                data-y="['bottom','bottom','bottom','bottom']" data-voffset="['29','29','29','29']"
+                                data-width="50" data-height="50" data-whitespace="normal" data-type="button"
+                                data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""},{"event":"mouseenter","action":"startlayer","layer":"slide-3015-layer-14","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-3015-layer-14","delay":""}]'
+                                data-basealign="slide" data-responsive_offset="on"
+                                data-frames='[{"from":"y:50px;rZ:60deg;opacity:0;","speed":1500,"to":"o:1;","delay":4250,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"400","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:360;z:0;","style":"c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:1px 1px 1px 1px;"}]'
+                                data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+                                style="z-index: 15; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; white-space: normal;text-transform:left;cursor:pointer;">
+                                <div class="rs-looped rs-slideloop" data-easing="Power1.easeInOut" data-speed="1"
+                                    data-xs="0" data-xe="0" data-ys="10" data-ye="0"><i style="font-size:30px;"
+                                        class="fa fa-arrow-down"></i></div>
+                            </div>
 
                         </li>
                     </ul>
@@ -622,7 +1051,20 @@
             <!-- END REVOLUTION SLIDER -->
         </div>
         <!-- END REVOLUTION SLIDER -->
-
+        <!-- Particle stars -->
+        <section style="background-color:#1b1d42;">
+            <div id="particles-stars" class="particles"></div>
+            <div class="container">
+                <div class="heading-text text-light text-center">
+                    <h5 class="text-uppercase">I love</h5>
+                    <h2 class="font-weight-800"><span>Stars</span></h2>
+                    <p>Polo is jam packed with tons of features that will give you the power to create the web as you
+                        always wanted.</p>
+                    <a href="#" class="btn btn-rounded">Read More</a>
+                </div>
+            </div>
+        </section>
+        <!-- end: Particle stars -->
         <!-- ABOUT -->
         <section class="page-content p-t-150 background-image">
             <div class="container">
@@ -900,7 +1342,8 @@
         <!-- end: Links -->
 
         <!-- PORTFOLIO -->
-        <section class="page-content p-t-150 p-b-150" data-bg-parallax="images/index/1920x1280.png" data-paddingbottom="50">
+        <section class="page-content p-t-150 p-b-150" data-bg-parallax="images/index/1920x1280.png"
+            data-paddingbottom="50">
             <div class="container">
                 <div data-animate-delay="100" data-animate="fadeInUp">
                     <div class="heading-text heading-section text-center">
@@ -994,7 +1437,8 @@
                             <!-- Post item-->
                             <div class="post-item border">
                                 <div class="post-item-wrap">
-                                    <div class="portfolio-item large-width  img-zoom ct-photography ct-media ct-branding ct-Media">
+                                    <div
+                                        class="portfolio-item large-width  img-zoom ct-photography ct-media ct-branding ct-Media">
                                         <div class="portfolio-item-wrap">
                                             <div class="portfolio-image">
                                                 <a href="#"><img src="images/news/News01.png" alt=""></a>
@@ -1012,7 +1456,8 @@
                                         <span class="post-meta-comments">
                                             <a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
                                         </span>
-                                        <span><a href="#" class="item-link">Read More <i class="fa fa-arrow-right"></i></a></span>
+                                        <span><a href="#" class="item-link">Read More <i
+                                                    class="fa fa-arrow-right"></i></a></span>
                                     </div>
                                 </div>
                             </div>
@@ -1021,7 +1466,8 @@
                             <!-- Post item-->
                             <div class="post-item border">
                                 <div class="post-item-wrap">
-                                    <div class="portfolio-item large-width  img-zoom ct-photography ct-media ct-branding ct-Media">
+                                    <div
+                                        class="portfolio-item large-width  img-zoom ct-photography ct-media ct-branding ct-Media">
                                         <div class="portfolio-item-wrap">
                                             <div class="portfolio-image">
                                                 <a href="#"><img src="images/news/News02.png" alt=""></a>
@@ -1276,6 +1722,9 @@
             }
         }); /*ready*/
     </script>
+
+    <!--Particles stars-->
+    <script type="text/javascript" src="plugins/particles/particles-stars.js"></script>
 
 
 </body>

@@ -135,7 +135,7 @@
 					onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
 
 					touch:{
-						touchenabled:"off",						// Enable Swipe Function : on/off
+						touchenabled:"on",						// Enable Swipe Function : on/off
 						touchOnDesktop:"off",					// Enable Tuoch on Desktop Systems also
 						swipe_treshold : 75,					// The number of pixels that the user must move their finger by before it is considered a swipe.
 						swipe_min_touches : 1,					// Min Finger (touch) used for swipe							

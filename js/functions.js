@@ -1297,7 +1297,7 @@ var INSPIRO = {},
                 var elem = $(this);
                 elem.options = {
                     style: elem.attr('data-style') || 1,
-                    color: elem.attr('data-color') || '#ffffff',
+                    color: elem.attr('data-color') || '#FFFFFF',
                     opacity: elem.attr('data-opacity') || '1',
                     zIndex: elem.attr('data-zIndex') || '0',
                     height: elem.attr('data-height') || 210,

@@ -57,6 +57,10 @@
   .team-member .team-image img:hover{
     transform: scale(1.2) translate(10px,15px);
   }
+
+  .text-center h1 {color:#004496}
+  .text-center span {color:#2EABDE}
+
 /* @media screen and (min-width: 992px) and (max-width: 1200px) {
 
 } */

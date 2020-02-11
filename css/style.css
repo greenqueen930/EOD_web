@@ -3974,8 +3974,8 @@ span.highlight { padding: 0 5px; }
 
 /* --------Team Members
 -----------------------------------------------------------------*/
-.team-members .team-member { background-color: #ffffff; text-align: center; position: relative; overflow: hidden; margin-bottom: 30px; border-radius: 4px; }
-.team-members .team-member .team-image { margin-bottom: 20px; }
+.team-members .team-member { background-color: #ffffff; text-align: center; position: relative; overflow: hidden; margin-bottom: 30px; border-radius: 35px; }
+.team-members .team-member .team-image { margin-bottom: 20px; border-radius: 35px; }
 .team-members .team-member .team-image > img { width: 100%; border-radius: 5px 5px 0 0; }
 .team-members .team-member .team-desc { padding-bottom: 20px; padding-left: 10px; padding-right: 10px; }
 .team-members .team-member .team-desc > h3 { font-size: 16px; line-height: 22px; margin-bottom: 0; }
@@ -3987,7 +3987,7 @@ span.highlight { padding: 0 5px; }
 .team-members.team-members-card .team-member .team-image > img { border-radius: 0; }
 .team-members.team-members-card .team-member .team-desc { background-color: #fdfdfd; border-radius: 0px 0px 4px 4px; padding: 10px; }
 .team-members.team-members-shadow .team-member { border: 1px solid #eeeeee; -webkit-box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.03); box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.03); }
-.team-members.team-members-shadow .team-member .team-image > img { border-radius: 0; }
+.team-members.team-members-shadow .team-member .team-image > img { border-radius: 35px; }
 .team-members.team-members-shadow .team-member .team-desc { padding: 20px; }
 .team-members.team-members-transparent .team-member { background-color: transparent; }
 .team-members.team-members-transparent .team-member .team-desc > h3 { color: #ffffff; }

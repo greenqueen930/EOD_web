@@ -6,6 +6,9 @@
  <link href="css/custom.css" rel="stylesheet">
 
 */
+
+
+/* ------- index ------- */
   .about-EOD p{
     text-align: justify;
   }
@@ -57,9 +60,84 @@
   .team-member .team-image img:hover{
     transform: scale(1.2) translate(10px,15px);
   }
-
+  .text-center{
+    -webkit-animation-name: pencilAnimation;
+    animation-name: pencilAnimation;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
   .text-center h1 {color:#004496}
   .text-center span {color:#2EABDE}
+
+  .contact-EOD-btn{
+    position: absolute;
+    right: 10%;
+  }
+  .contact-EOD-btn button{
+    width: 125px;
+    height: 125px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #004496;
+    border: solid 5px #0076C6;
+    border-radius: 62.5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .3);
+    transition: all .3s ease-in-out;
+  }
+  .contact-EOD-btn button:hover{
+    background-color: #0076C6;
+    border: solid 5px #0076C6;
+    transform: translateY(-9px);
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, .1);
+  }
+  .contact-EOD-btn button:active{
+    color: #fff;
+    background-color: #FFA901;
+    border: solid 5px #FFA901;
+    transform: translateY(0px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+  }
+
+  /* Animations */
+
+  .call-to-action.with-button-arrow .call-to-action-btn .arrow {
+    position: absolute;
+  }
+  .arrow {
+    background: transparent url(../img/arrows.png) no-repeat 0 0;
+    width: 47px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+  }
+  .arrow.hlb {
+    background-position: -209px -101px;
+    width: 120px;
+    height: 47px;
+  }
+  
+.appear-animation {
+	opacity: 0;
+}
+
+.appear-animation-visible {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
 
 /* @media screen and (min-width: 992px) and (max-width: 1200px) {
 

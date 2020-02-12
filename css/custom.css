@@ -9,6 +9,9 @@
 
 
 /* ------- index ------- */
+#logo .logo-dark img{
+  height: 80px;
+}
   .about-EOD p{
     text-align: justify;
   }
@@ -41,6 +44,10 @@
   }
   .service-item a:hover{
     color: blue;
+  }
+  .service-EOD-btn{
+    display: block;
+    text-align: center;
   }
   .timeline-item-image .grid-item .grid-image{
     border-radius: 5px;
@@ -104,7 +111,22 @@
     transform: translateY(0px);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
   }
-
+  .copyright-content .copyright-text > p {
+    color: #fff;
+    font-size: .8rem;
+    letter-spacing: 1px;
+  }
+  .footer-content span > p > i{
+    color:#FFA901;
+    padding-right:10px ;
+    animation: footer-icon 1s infinite linear;
+  }
+ @keyframes footer-icon {
+  0%{ transform: translateX(-5px);}
+  60%{ transform: translateX(5px);}
+  100%{ transform: translateX(-5px); }
+ }
+ 
   /* Animations */
 
   .call-to-action.with-button-arrow .call-to-action-btn .arrow {
@@ -130,54 +152,53 @@
 .appear-animation-visible {
 	opacity: 1;
 }
+.skroll-img img{
+  position: absolute;
+}
+.skroll-img-r img{
+  top: -110px; 
+  right: -150px;
+}
+.skroll-img-l img{
+  top: -160px; 
+  left: -350px;
+}
 
 
-
-
-
-
-
-
-
-/* @media screen and (min-width: 992px) and (max-width: 1200px) {
-
+/* @media screen and (min-width: 768px) and (max-width: 1440px) {
+  .service-EOD-layout{
+    margin-bottom: 150px;
+  }
 } */
+@media (max-width: 1440px) {
+  .skroll-img-r img{
+    width: 350px;
+    right: 200px;
+  }
+  .skroll-img-l img{
+    width: 800px;
+    top: -100px; 
+    left: -250px;
+  }
+  .text-box > a > h3 {font-size: 1.2rem;}
+}
 
 @media (max-width: 991px) {
     .about-EOD .about-EOD-item{
       padding: 0 15px;
     }
+    .text-box h3{ font-size: 1.2rem;}
+    .skroll-img img {width: 50%;}
 }
 @media (max-width: 768px){
-    /* Place the timelime to the left */
-    .timeline::after {
-    left: 31px;
-    }
-    /* Full-width containers */
-    .tl {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    }
-    /* Make sure that all arrows are pointing leftwards */
-    .tl::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-    }
-    /* Make sure all circles are at the same spot */
-    .tl-left::after, .tl-right::after {
-    left: 15px;
-    }
-    /* Make all right containers behave like the left ones */
-    .tl-right {
-    left: 0%;
-    }
+    .text-box.hover-effect {
+      padding: 0px 15px;
+  }
 }
 
 @media (max-width: 480px){
   .about-EOD-item .about-EOD-btn .btn{
     margin: 0 0;
   }
+  .skroll-img img {display: none;opacity: 0;visibility: hidden;}
 }

@@ -358,7 +358,7 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
 #mainMenu nav > ul > li.hover-active > a, #mainMenu nav > ul > li.hover-active > span, #mainMenu nav > ul > li.current > a, #mainMenu nav > ul > li.current > span, #mainMenu nav > ul > li:hover > a, #mainMenu nav > ul > li:hover > span, #mainMenu nav > ul > li:focus > a, #mainMenu nav > ul > li:focus > span { color: #004496; }
 #mainMenu nav > ul > li.dropdown:before { content: "\e930"; -webkit-transform: rotate(90deg); transform: rotate(90deg); font-family: "inspiro-icons"; opacity: 0.6; position: absolute; right: 16px; color: #FDDC39; font-size: 16px; display: none; }
 #mainMenu nav > ul > li .dropdown-menu { text-align: left; background-position: right bottom; background-repeat: no-repeat; min-width: 230px; top: auto; background-color: #ffffff; border: 0; color: #000000; border-style: solid; border-color: #eeeeee; border-width: 1px !important; left: auto; margin: 0; margin-top: -6px; border-radius: 35px; -webkit-box-shadow: 0 33px 32px rgba(0, 0, 0, 0.1); box-shadow: 0 33px 32px rgba(0, 0, 0, 0.1); padding: 10px; display: none; position: absolute; }
-#mainMenu nav > ul > li .dropdown-menu > li > a, #mainMenu nav > ul > li .dropdown-menu > li > span, #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a { font-size: 12px; line-height: 14px; font-weight: 500; font-style: normal; color: #fff; font-family: "Poppins", sans-serif; padding: 12px 20px 12px 18px; display: block; -webkit-transition: .3s ease; transition: .3s ease; }
+#mainMenu nav > ul > li .dropdown-menu > li > a, #mainMenu nav > ul > li .dropdown-menu > li > span, #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a { font-size: .85rem;font-weight: 600 ;line-height: 1rem; font-weight: 500; font-style: normal; color: #0076C6; font-family: "Poppins", sans-serif,'Microsoft JhengHei', 'Apple LiGothic'; padding: 12px 20px 12px 18px; display: block; -webkit-transition: .3s ease; transition: .3s ease; }
 #mainMenu nav > ul > li .dropdown-menu > li > a:focus, #mainMenu nav > ul > li .dropdown-menu > li > a:hover, #mainMenu nav > ul > li .dropdown-menu > li > a:active, #mainMenu nav > ul > li .dropdown-menu > li > span:focus, #mainMenu nav > ul > li .dropdown-menu > li > span:hover, #mainMenu nav > ul > li .dropdown-menu > li > span:active, #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a:focus, #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a:hover, #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a:active { background-color: transparent; color: #004496; cursor: pointer; }
 #mainMenu nav > ul > li .dropdown-menu > li > a > i, #mainMenu nav > ul > li .dropdown-menu > li > span > i, #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a > i { margin-left: -4px; margin-right: 6px; min-width: 14px; }
 #mainMenu nav > ul > li .dropdown-menu > li.current > a, #mainMenu nav > ul > li .dropdown-menu > li.current > span, #mainMenu nav > ul > li .dropdown-menu > li:hover > a, #mainMenu nav > ul > li .dropdown-menu > li:hover > span, #mainMenu nav > ul > li .dropdown-menu > li:focus > a, #mainMenu nav > ul > li .dropdown-menu > li:focus > span, #mainMenu nav > ul > li .dropdown-menu > li:active > a, #mainMenu nav > ul > li .dropdown-menu > li:active > span, #mainMenu nav > ul > li .dropdown-menu > li.hover-active > a, #mainMenu nav > ul > li .dropdown-menu > li.hover-active > span { color: #004496; }
@@ -538,7 +538,7 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   #mainMenu:not(.menu-overlay) nav { line-height: 40px; float: none; width: 100%; padding-bottom: 20px; -webkit-transition: .7s ease; transition: .7s ease; opacity: 0; -webkit-transform: translateY(-18px); transform: translateY(-18px); }
   #mainMenu:not(.menu-overlay) nav > ul { float: none; width: 100%; }
   #mainMenu:not(.menu-overlay) nav > ul > li { padding: 0; margin: 0; clear: both; float: none; display: block; border: 0; }
-  #mainMenu:not(.menu-overlay) nav > ul > li > a { display: block; padding: 12px 0; font-size: 14px; border: 0; border-radius: 0; color: #98CFED;}
+  #mainMenu:not(.menu-overlay) nav > ul > li > a { display: block; padding: 12px 0; font-size: 14px; border: 0; border-radius: 0; color: #fff;}
   #mainMenu:not(.menu-overlay) nav > ul > li > a:after { display: none; }
   #mainMenu:not(.menu-overlay) nav > ul > li > a .menu-sub-title { display: none !important; }
   #mainMenu:not(.menu-overlay) nav > ul > li.dropdown:before { right: 14px; display: block; }
@@ -565,7 +565,7 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   #mainMenu:not(.menu-overlay).menu-hover-background nav > ul > li.current > a, #mainMenu:not(.menu-overlay).menu-hover-background nav > ul > li:hover > a, #mainMenu:not(.menu-overlay).menu-hover-background nav > ul > li:focus > a { color: unset !important; }
   #mainMenu:not(.menu-overlay).menu-left nav { margin-left: 0; }
   .mainMenu-open #header #mainMenu { width: calc(100% + 14px); display: block; opacity: 1; overflow-y: scroll; }
-  .mainMenu-open #header .header-inner, .mainMenu-open #header #header-wrap { -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); background-color: #0076C6 !important; }
+  .mainMenu-open #header .header-inner, .mainMenu-open #header #header-wrap { -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); background-color: #2FACDF !important; }
   .mainMenu-open.dark .header-inner, .mainMenu-open.dark #header-wrap, .mainMenu-open #header:not(.submenu-light).dark .header-inner, .mainMenu-open #header:not(.submenu-light).dark #header-wrap { background-color: #181818 !important; }
   .mainMenu-open #dotsMenu { z-index: -1; }
   #dotsMenu { right: 20px; }
@@ -575,11 +575,11 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
   }
   
   .mainMenu-open #header #mainMenu::-webkit-scrollbar-track {
-    background-color: #0076C6;
+    background-color: #2FACDF;
   }
   
   .mainMenu-open #header #mainMenu::-webkit-scrollbar-thumb {
-    background-color: #0076C6;
+    background-color: #2FACDF;
   }
 @media (max-width: 991px) { .mainMenu-open #header #logo [class*="logo-"] { display: none; }
   .mainMenu-open #header #logo .logo-default { display: block; } }

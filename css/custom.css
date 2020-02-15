@@ -12,6 +12,9 @@
 #logo .logo-dark img{
   height: 80px;
 }
+.top-EOD-btn .top-EOD-btn-text span{
+  color: #004496;
+}
   .about-EOD p{
     text-align: justify;
   }
@@ -78,10 +81,10 @@
     animation-fill-mode: forwards;
   }
   .text-center h1 {color:#004496}
-  .text-center span {color:#2EABDE}
+  /* .text-center span {color:#2EABDE} */
 
   .contact-EOD-btn{
-    position: absolute;
+    position: relative;
     right: 10%;
   }
   .contact-EOD-btn button{
@@ -134,7 +137,7 @@
     position: fixed;
     cursor: pointer;
     bottom: 50%;
-    right: 0px;
+    right: -25px;
     width: 50px;
     height: 50px;
     font-size: .5rem;
@@ -142,41 +145,48 @@
     line-height: 1rem;
     letter-spacing: 2px;
     background-color: #004496;
-    border: solid 3px #004496;
+    /* border: solid 3px #004496; */
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    transition: all .3s ease-in-out;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    transition: all .5s ease-in-out;
     z-index: 999;
+    animation: tool-move 3s infinite;
+    }
+  @keyframes tool-move{
+    0% {right: -25px;}
+    45% { right: -15px; }
+    100% {right: -25px;}
   }
+
   #tool.open{
-    height: 250px;
-    background-color: transparent;
+    height: 195px;
+    right: 0px;
+    /* background-color: transparent; */
     border: none;
     bottom: 35%;
+    animation: none;
   }
   .tool-close{
     position: relative;
     width: 25px;
     top: 12px;
     background: none;
-    border: solid 1px #000;
+    /* border: solid 1px #000; */
     margin-bottom: 25px;
   }
-  .tool-close::before{
-    content: '';
-    position: absolute;
-    top: -7px;
-    right: 0;
-    width: 25px;
-    border: solid 1px #000;
+  
+  .tool-close p {
+    position: relative;
+    font-size: .85rem;
+    left: 7px;
+    bottom: -7px;
+    color: #FFA901;
+    margin-bottom: 0;
   }
-  .tool-close::after{
-    content: '';
-    position: absolute;
-    top: 7px;
-    right: 0;
-    width: 25px;
-    border: solid 1px #000;
+
+  .tool-close a:hover p{
+    color: #004496;
   }
   .tool-close::before.open{
     transform: rotate(45deg);
@@ -189,24 +199,42 @@
     display: inline-block;
   }
   .tool-btn .tool-social{
-    width: 50px;
-    height: 50px;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    right: -9px;
     border-radius: 25px;
-    background-color: #FFA901;
-    margin: 7px 0;
-  }
-  .tool-btn .tool-social i{
-    font-size: 1.5rem;
-    padding: 13px;
-    color: #fff;
+    border-radius: 25px;
+    margin: 4px 0;
+    transition: all .3s ease-in-out;
   }
   
-  /* .appear .tool-btn{
-    right: 125px;
+  .tool-btn .tool-social:hover{
+    width: 35px;
+    height: 35px;
+    background-color: #FFA901;
+    /* margin: 7px 0; */
   }
-  .tool-btn i{
-  } */
+  .tool-btn .tool-social i{
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+  }
+  .tool-btn .tool-social.tool-fb i{
+    font-size: 1.2rem;
+    padding: 8px 10px 10px 11px;
+    color: #fff;
+  }
+  .title-font{
+    width: 100%;
+  }
+  .title-font img{
+    width: 280px;
+  }
 
+  .scrolldown-animation {
+    top: 95%;
+  }
 
   /* ----------- Animations ----------- */
 
@@ -247,10 +275,15 @@
   top: -330px; 
   left: -270px;
 }
-.skroll-img-news-l img{
-  top: -400px; 
-  left: -140px; 
-  transform: scale(.5);
+.skroll-img-news-hand img{
+  top: -480px; 
+  left: -35px; 
+  transform: scale(.4) rotate(40deg);
+}
+.skroll-img-news-note img{
+  top: -450px; 
+  left: 50px; 
+  transform: scale(.4) rotate(-20deg);
 }
 
 /* ----------- media ----------- */
@@ -268,7 +301,7 @@
   }
   .skroll-img-about-l img{
     width: 800px;
-    top: -100px; 
+    top: -220px; 
     left: -250px;
   }
   .text-box h3{
@@ -288,24 +321,41 @@
 
     .skroll-img-customs-r img{
       width: 350px;
-      right: 230px;
-      top: -125px;
+    right: 160px;
+    top: -95px;
     }
     .skroll-img-about-l img{
-      width: 800px;
-      top: -100px; 
-      left: -250px;
+      width: 600px;
+      top: -165px; 
+      left: -200px;
     }
+    .skroll-img-news-l img {
+      top: -440px;
+      left: -90px;
+      transform: scale(.3);
+  }
     .about-EOD .about-EOD-item{
       padding: 0 15px;
     }
     .text-box h3{ font-size: 1.2rem;}
     /* .skroll-img img {width: 50%;} */
+    .portfolio-item .portfolio-description{
+      padding: 0;
+    }
+    .portfolio-item .portfolio-description h3 {
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    .portfolio-item .portfolio-description span {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
 }
 
 @media (max-width: 768px){
   .skroll-img-customs-r img,
-  .skroll-img-about-l img{
+  .skroll-img-about-l img,
+  .skroll-img-news-l img{
     display: none;
   }
   .text-box.hover-effect {
@@ -314,11 +364,27 @@
   .team-members .team-member .team-desc > a {
     font-size: 1rem;
   }
+  .text-center span {
+    display: block;
+    margin: 0 25px;
+  }
+  .portfolio-item .portfolio-description h3 {
+    line-height: 1.5rem;
+  }
+  .portfolio-item .portfolio-description span {
+    font-size: .95rem;
+    line-height: 1rem;
+  }
+  .contact-EOD-btn {
+    position: relative;
+}
+  
 }
 
-@media (max-width: 480px){
+@media (max-width: 500px){
   .about-EOD-item .about-EOD-btn .btn{
     margin: 0 0;
   }
   .skroll-img img {display: none;opacity: 0;visibility: hidden;}
+  
 }

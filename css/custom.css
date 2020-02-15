@@ -11,6 +11,12 @@
 /* ----------- index ----------- */
 #logo .logo-dark img{
   height: 80px;
+  animation: logo-w 10s infinite;
+}
+@keyframes logo-w {
+  0%{transform: scale(.7);}
+  50%{transform: scale(1);}
+  100%{transform: scale(.7);}
 }
 .top-EOD-btn .top-EOD-btn-text span{
   color: #004496;

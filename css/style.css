@@ -2245,18 +2245,18 @@ body.breakpoint-sm .col-3 .flickr-widget img .widget-instagram img { width: 16.6
 
 /* --------Scroll top
 -----------------------------------------------------------------*/
-#scrollTop { z-index: -1; opacity: 0; position: fixed; right: 26px; bottom: 0; cursor: pointer; height: 40px; width: 40px; 
+#scrollTop { z-index: -1; opacity: 0; position: fixed; right: 12px; bottom: 0; cursor: pointer; height: 40px; width: 40px; 
   background-image: url('../images/index/top-4.png'); 
   background-repeat: no-repeat; 
   background-position: center; 
   filter: drop-shadow(-2px 5px 2px rgba(0,0,0,0.5));
-  transform-origin:center right;
+  transform-origin:center center;
   transition: all .3s ease;
   }
 #scrollTop:hover { 
   background-image: url('../images/index/top-2.png');
   filter: drop-shadow(2px 5px 2px rgba(0,0,0,0.5));
-  transform: rotate(27deg) translate(15px);
+  transform: rotate(27deg);
 }
 #scrollTop:active { 
   background-image: url('../images/index/top-3.png');
@@ -2849,7 +2849,7 @@ button.btn.btn-dark, .btn:not(.close):not(.mfp-close).btn-dark, a.btn:not([href]
 button.btn.btn-dark:hover, button.btn.btn-dark:focus, button.btn.btn-dark:active, button.btn.btn-dark.active, .btn:not(.close):not(.mfp-close).btn-dark:hover, .btn:not(.close):not(.mfp-close).btn-dark:focus, .btn:not(.close):not(.mfp-close).btn-dark:active, .btn:not(.close):not(.mfp-close).btn-dark.active, a.btn:not([href]):not([tabindex]).btn-dark:hover, a.btn:not([href]):not([tabindex]).btn-dark:focus, a.btn:not([href]):not([tabindex]).btn-dark:active, a.btn:not([href]):not([tabindex]).btn-dark.active { background-color: #333333; border-color: #333333; color: #ffffff; }
 button.btn.btn-dark.btn-outline, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline { background-color: transparent; color: #000000; border-color: #000000; }
 button.btn.btn-dark.btn-outline:hover, button.btn.btn-dark.btn-outline:focus, button.btn.btn-dark.btn-outline:active, button.btn.btn-dark.btn-outline.active, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline:focus, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline:active, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline.active, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline:hover, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline:focus, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline:active, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline.active { background-color: #000000; border-color: #000000; color: #ffffff; }
-.btn:not(.close):not(.mfp-close).btn-dark.btn-outline{width:150px; height:40px; font-size: .95rem; font-weight: 600; font-family: 'Raleway', sans-serif, 'Microsoft JhengHei', 'Apple LiGothic'; border-radius:20px; background-color: #2EABDE; border-color: #2EABDE; color: #FFFFFF;}
+.btn:not(.close):not(.mfp-close).btn-dark.btn-outline{width:150px; height:40px; font-size: .95rem; font-weight: 500; font-family: 'Raleway', sans-serif, 'Microsoft JhengHei', 'Apple LiGothic'; border-radius:20px; background-color: #2EABDE; border-color: #2EABDE; color: #FFFFFF;}
 .btn:not(.close):not(.mfp-close).btn-dark.btn-outline:hover{background-color: #004496; border-color: #004496; color: #FDDC39;}
 button.btn.btn-red, .btn:not(.close):not(.mfp-close).btn-red, a.btn:not([href]):not([tabindex]).btn-red { background-color: #CA0027; border-color: #CA0027; }
 button.btn.btn-red:hover, button.btn.btn-red:focus, button.btn.btn-red:not(:disabled):not(.disabled):active, button.btn.btn-red:not(:disabled):not(.disabled).active, .btn:not(.close):not(.mfp-close).btn-red:hover, .btn:not(.close):not(.mfp-close).btn-red:focus, .btn:not(.close):not(.mfp-close).btn-red:not(:disabled):not(.disabled):active, .btn:not(.close):not(.mfp-close).btn-red:not(:disabled):not(.disabled).active, a.btn:not([href]):not([tabindex]).btn-red:hover, a.btn:not([href]):not([tabindex]).btn-red:focus, a.btn:not([href]):not([tabindex]).btn-red:not(:disabled):not(.disabled):active, a.btn:not([href]):not([tabindex]).btn-red:not(:disabled):not(.disabled).active { background-color: #97001d; border-color: #97001d; color: #ffffff; }
@@ -3879,9 +3879,9 @@ div.icon-box:before { display: none !important; }
 /* ---- flickity-button ---- */
 .flickity-button { background: #fff; width: 40px; height: 40px; line-height: 40px; margin: -23px 0 0; display: block; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-align: center; -webkit-transition: all .2s ease 0s; transition: all .2s ease 0s; color: #9896a6; text-align: center; z-index: 200; border: 0; -webkit-box-sizing: initial; box-sizing: initial; opacity: 0; border-radius: 50%; -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1); box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1); }
 .flickity-button:before { color: #1f1f1f; }
-.flickity-button:hover { background-color: #004496; }
+/* .flickity-button:hover { background-color: #004496; } */
 .flickity-button:hover:before { color: #ffffff; }
-.flickity-button.next:before, .flickity-button.previous:before { font-size: 25px; font-family: inspiro-icons !important; }
+.flickity-button.next:before, .flickity-button.previous:before { font-size: 2rem; font-family: inspiro-icons !important; }
 .flickity-button.next { right: 0px; }
 .flickity-button.next:before { margin-left: 4px; content: "\e930"; }
 .flickity-button.next.disabled { opacity: 0; }
@@ -4932,7 +4932,7 @@ body[data-bg-image] { background-attachment: fixed; background-position: top cen
 .shape-divider { position: absolute; display: block; width: 100%; z-index: 0; bottom: 0; top: auto; left: 0; }
 .shape-divider svg { width: 100%; height: auto; display: block; }
 .shape-divider[data-position="bottom"] { bottom: 0; top: auto; }
-.shape-divider[data-position="top"] { bottom: auto; top: 0; }
+.shape-divider[data-position="top"] { bottom: auto; top: -1px; }
 .shape-divider[data-flip-horizontal="true"] { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
 .shape-divider[data-flip-vertical="true"] { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); }
 .shape-divider[data-flip-horizontal="true"][data-flip-vertical="true"] { -webkit-transform: rotateY(180deg) rotateX(180deg); transform: rotateY(180deg) rotateX(180deg); }

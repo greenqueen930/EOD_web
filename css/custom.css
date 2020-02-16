@@ -359,6 +359,11 @@
 }
 
 @media (max-width: 768px){
+  
+  .slide-captions .top-EOD-btn span {
+    padding-top: 2px;
+    font-size: .85rem;
+  }
   .skroll-img-customs-r img,
   .skroll-img-about-l img,
   .skroll-img-news-l img{
@@ -394,15 +399,11 @@
   .skroll-img img {display: none;opacity: 0;visibility: hidden;}
   .scrolldown-animation {
     top: 85%;
-}
-.slide-captions .top-EOD-btn span {
-  padding-top: 2px;
-  font-size: .85rem;
-}
-.heading-text p { font-size: 1rem;}
-.lead {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
+  }
+  .heading-text p { font-size: 1rem;}
+  .lead {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
   
 }

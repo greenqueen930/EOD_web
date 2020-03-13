@@ -9,18 +9,29 @@
 
 
 /* ----------- index ----------- */
-#logo .logo-dark img{
-  height: 65px;
-  /* animation: logo-w 10s infinite; */
-}
-/* @keyframes logo-w {
-  0%{transform: scale(.7);}
-  50%{transform: scale(1);}
-  100%{transform: scale(.7);}
-} */
-.top-EOD-btn .top-EOD-btn-text span{
-  color: #004496;
-}
+  #logo .logo-dark img{
+    position: absolute;
+    height: 65px;
+    top: 10px;
+    /* animation: logo-w 10s infinite; */
+  }
+  /* @keyframes logo-w {
+    0%{transform: scale(.7);}
+    50%{transform: scale(1);}
+    100%{transform: scale(.7);}
+  } */
+  #section2 .heading-text{
+    margin-bottom: 135px;
+  }
+  #section2 .heading-text h5{
+    margin-top: 20px;
+  }
+  /* #section2 .heading-text .about-EOD-btn{
+    z-index: 1000;
+  } */
+  .top-EOD-btn .top-EOD-btn-text span{
+    color: #004496;
+  }
   .about-EOD p{
     text-align: justify;
   }
@@ -33,8 +44,6 @@
   .about-EOD-item .about-EOD-btn .btn{
     margin: 0 15px;
   }
-  /* .service-item a{
-  } */
   .service-item p{
     font-size: .85rem;
     word-break: break-all;
@@ -47,13 +56,6 @@
     font-weight: 700;
     margin-bottom: 0;
   }
-  /* .service-item a{
-    color: brown;
-    transition: all .3s ease-in-out;
-  }
-  .service-item a:hover{
-    color: blue;
-  } */
   .service-EOD-btn{
     display: block;
     text-align: center;
@@ -110,14 +112,12 @@
   .contact-EOD-btn button:hover{
     background-color: #0076C6;
     border: solid 5px #0076C6;
-    /* transform: translateY(-9px); */
     box-shadow: 0px 10px 5px rgba(0, 0, 0, .1);
   }
   .contact-EOD-btn button:active{
     color: #fff;
     background-color: #FFA901;
     border: solid 5px #FFA901;
-    /* transform: translateY(0px); */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
   }
 
@@ -168,7 +168,6 @@
   #tool.open{
     height: 195px;
     right: 0px;
-    /* background-color: transparent; */
     border: none;
     bottom: 35%;
     animation: none;
@@ -178,7 +177,6 @@
     width: 25px;
     top: 12px;
     background: none;
-    /* border: solid 1px #000; */
     margin-bottom: 25px;
   }
   
@@ -219,7 +217,6 @@
     width: 35px;
     height: 35px;
     background-color: #FFA901;
-    /* margin: 7px 0; */
   }
   .tool-btn .tool-social i{
     font-size: 1rem;
@@ -268,7 +265,7 @@
 	opacity: 1;
 }
 
-/* ----------- skroll ----------- */
+/* ----------- skroll / parallax ----------- */
 .block{
   position: relative;
   overflow: hidden;
@@ -277,11 +274,12 @@
 .img-parallax {
   z-index: -1;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 160px;
+  transform: translate(-50%,0%);
   pointer-events: none
 }
-.news-hand.img-parallax{
+/* .news-hand.img-parallax{
   z-index: -1;
   position: absolute;
   top: 0;
@@ -293,7 +291,7 @@
   top: 0px; 
   left: 0px; 
   transform: rotate(-20deg);
-}
+} */
 /* 
 .skroll-img img{
   position: relative;
@@ -329,7 +327,7 @@
   .img-parallax {
     left: 50px;
   }
-  .skroll-img-customs-r img{
+  /* .skroll-img-customs-r img{
     width: 350px;
     right: 230px;
     top: -125px;
@@ -338,7 +336,7 @@
     width: 800px;
     top: -220px; 
     left: -250px;
-  }
+  } */
   .text-box h3{
     font-size: 1.2rem;
     font-weight: 700;
@@ -353,25 +351,29 @@
 }
 
 @media (max-width: 991px) {
+      .slide-captions .top-EOD-btn span {
+        padding-top: 5px;
+        font-size: .95rem;
+    }
     .img-parallax {
       width: 80%;
       left: 20px;
     }
-    .skroll-img-customs-r img{
+    /* .skroll-img-customs-r img{
       width: 350px;
     right: 160px;
     top: -95px;
-    }
-    .skroll-img-about-l img{
-      width: 600px;
-      top: -165px; 
-      left: -200px;
     }
     .skroll-img-news-l img {
       top: -440px;
       left: -90px;
       transform: scale(.3);
   }
+  .skroll-img-about-l img{
+    width: 600px;
+    top: -165px; 
+    left: -200px;
+  } */
     .about-EOD .about-EOD-item{
       padding: 0 15px;
     }
@@ -396,16 +398,16 @@
   }
   .slide-captions .top-EOD-btn span {
     padding-top: 2px;
-    font-size: .85rem;
+    font-size: .9rem;
   }
   .heading-text h1{
     margin-bottom: 20px;
   }
-  .skroll-img-customs-r img,
+  /* .skroll-img-customs-r img,
   .skroll-img-about-l img,
   .skroll-img-news-l img{
     display: none;
-  }
+  } */
   .text-box.hover-effect {
     padding: 0px 15px;
   }
@@ -425,11 +427,15 @@
   }
   .contact-EOD-btn {
     position: relative;
+    right: 5%;
 }
   
 }
 
 @media (max-width: 500px){
+  #header #logo {
+    left: -60px;
+}
   .about-EOD-item .about-EOD-btn .btn{
     margin: 0 0;
   }

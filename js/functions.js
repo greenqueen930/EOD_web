@@ -1554,8 +1554,8 @@ var INSPIRO = {},
                     var elem = $(this);
                     //Plugin Options
                     elem.options = {
-                        latitude: elem.data('data-latitude') || "-37.817240",
-                        longitude: elem.attr('data-longitude') || "144.955820",
+                        latitude: elem.data('data-latitude') || "24.173153",
+                        longitude: elem.attr('data-longitude') || "120.677125",
                         info: elem.attr('data-info'),
                         maptype: elem.attr('data-type') || "ROADMAP",
                         zoom: elem.attr('data-zoom') || 14,

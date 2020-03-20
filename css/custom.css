@@ -67,6 +67,9 @@
     font-size: 1.5rem;
     font-weight: 700;
   }
+  .team-member p{
+    text-align: justify;
+  }
   .team-member .team-image{
     overflow: hidden;
   }
@@ -77,6 +80,11 @@
   }
   .team-member .team-image img:hover{
     transform: scale(1.2) translate(10px,15px);
+  }
+  .team-member-title h1{
+    color: #004496;
+    font-size: 2.2rem;
+    font-weight: bold;
   }
   .text-center{
     -webkit-animation-name: pencilAnimation;

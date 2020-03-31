@@ -26,9 +26,6 @@
   #section2 .heading-text h5{
     margin-top: 20px;
   }
-  /* #section2 .heading-text .about-EOD-btn{
-    z-index: 1000;
-  } */
   .top-EOD-btn .top-EOD-btn-text span{
     color: #004496;
   }
@@ -74,12 +71,14 @@
     overflow: hidden;
   }
   .team-member .team-image img{
-    width: 100%;
     height: auto;
-    transition: all .5s ease-in-out;
+    transform: translateY(0);
+    transition: all 2s ease-in-out;
   }
   .team-member .team-image img:hover{
-    transform: scale(1.2) translate(10px,15px);
+    transform: translateY(-100%);
+    bottom: 0;
+    cursor: grab;
   }
   .team-member-title h1{
     color: #004496;
@@ -97,8 +96,6 @@
     animation-fill-mode: forwards;
   }
   .text-center h1 {color:#004496}
-  /* .text-center span {color:#2EABDE} */
-
   .contact-EOD-btn{
     position: relative;
     right: 10%;
@@ -128,12 +125,6 @@
     border: solid 5px #FFA901;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
   }
-  /* address{
-    background-color: #FFA901;
-    height: 75px;
-    margin: auto;
-    border-radius: 25px;
-  } */
   address > a{
     color:rgb(72,72,72);
   }

@@ -1093,10 +1093,54 @@ a:not(.btn):not(.badge):not(.btn):not([href]):not([tabindex]) { color: #484848; 
 .portfolio-item.reveal-effect:hover .portfolio-description, .portfolio-item.reveal-effect:hover .grid-description, .grid-item.reveal-effect:hover .portfolio-description, .grid-item.reveal-effect:hover .grid-description { opacity: 1; -webkit-transform: translate3d(0, -33%, 0); transform: translate3d(0, -33%, 0); }
 .portfolio-item.img-rotate .portfolio-image img, .portfolio-item.img-rotate .grid-image img, .grid-item.img-rotate .portfolio-image img, .grid-item.img-rotate .grid-image img { -webkit-transform: rotate(0deg) scale(1); transform: rotate(0deg) scale(1); -webkit-transition: -webkit-transform 0.7s ease 0s; transition: -webkit-transform 0.7s ease 0s; transition: transform 0.7s ease 0s; transition: transform 0.7s ease 0s, -webkit-transform 0.7s ease 0s; }
 .portfolio-item.img-rotate:hover .portfolio-image img, .portfolio-item.img-rotate:hover .grid-image img, .grid-item.img-rotate:hover .portfolio-image img, .grid-item.img-rotate:hover .grid-image img { -webkit-transform: rotate(-9deg) scale(1.2); transform: rotate(-9deg) scale(1.2); }
-.portfolio-item.img-zoom .portfolio-image img, .portfolio-item.img-zoom .grid-image img, .grid-item.img-zoom .portfolio-image img, .grid-item.img-zoom .grid-image img { -webkit-transform: scale(1); transform: scale(1); }
-.portfolio-item.img-zoom:hover .portfolio-image img, .portfolio-item.img-zoom:hover .grid-image img, .grid-item.img-zoom:hover .portfolio-image img, .grid-item.img-zoom:hover .grid-image img { -webkit-transform: scale(1.1); transform: scale(1.1); }
-.portfolio-item.overlay-light .portfolio-image:after, .portfolio-item.overlay-light .portfolio-slider .flickity-viewport:after, .portfolio-item.overlay-light .grid-image:after, .portfolio-item.overlay-light .grid-slider .flickity-viewport:after, .grid-item.overlay-light .portfolio-image:after, .grid-item.overlay-light .portfolio-slider .flickity-viewport:after, .grid-item.overlay-light .grid-image:after, .grid-item.overlay-light .grid-slider .flickity-viewport:after { background-color: #ffffff; }
-.portfolio-item.overlay-light .portfolio-description h3, .portfolio-item.overlay-light .grid-description h3, .grid-item.overlay-light .portfolio-description h3, .grid-item.overlay-light .grid-description h3 { color: #000000; }
+
+
+.portfolio-item.img-zoom .grid-image img,
+ .grid-item.img-zoom .portfolio-image img,
+ .grid-item.img-zoom .grid-image img { -webkit-transform: scale(1); transform: scale(1); }
+ .portfolio-item.img-zoom:hover .grid-image img,
+ .grid-item.img-zoom:hover .portfolio-image img,
+ .grid-item.img-zoom:hover .grid-image img { -webkit-transform: scale(1.1); transform: scale(1.1); }
+ .portfolio-item.img-zoom .portfolio-image img{
+    position: absolute;
+    bottom: 100%;
+    transform-origin: center bottom;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+.portfolio-item.img-zoom:hover .portfolio-image img{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    bottom: 0;
+    transition: all 6s linear;
+    -webkit-transition: all 8s linear;
+    -moz-transition: all 8s linear;
+    -ms-transition: all 8s linear;
+    -o-transition: all 8s linear;
+    cursor: grab;
+}
+
+.portfolio-item.overlay-light .portfolio-image:after,
+ .portfolio-item.overlay-light .portfolio-slider .flickity-viewport:after,
+ .portfolio-item.overlay-light .grid-image:after,
+ .portfolio-item.overlay-light .grid-slider .flickity-viewport:after,
+ .grid-item.overlay-light .portfolio-image:after,
+ .grid-item.overlay-light .portfolio-slider .flickity-viewport:after,
+ .grid-item.overlay-light .grid-image:after,
+ .grid-item.overlay-light .grid-slider .flickity-viewport:after { background-color: #ffffff; }
+.portfolio-item.overlay-light .portfolio-description h3,
+ .portfolio-item.overlay-light .grid-description h3, .grid-item.overlay-light .portfolio-description h3, .grid-item.overlay-light .grid-description h3 { color: #000000; }
 .portfolio-item.overlay-light .portfolio-description p, .portfolio-item.overlay-light .portfolio-description span, .portfolio-item.overlay-light .grid-description p, .portfolio-item.overlay-light .grid-description span, .grid-item.overlay-light .portfolio-description p, .grid-item.overlay-light .portfolio-description span, .grid-item.overlay-light .grid-description p, .grid-item.overlay-light .grid-description span { color: #434343; }
 .portfolio-item.overlay-light:hover .portfolio-image:after, .portfolio-item.overlay-light:hover .portfolio-slider .flickity-viewport:after, .portfolio-item.overlay-light:hover .grid-image:after, .portfolio-item.overlay-light:hover .grid-slider .flickity-viewport:after, .grid-item.overlay-light:hover .portfolio-image:after, .grid-item.overlay-light:hover .portfolio-slider .flickity-viewport:after, .grid-item.overlay-light:hover .grid-image:after, .grid-item.overlay-light:hover .grid-slider .flickity-viewport:after { opacity: 0.9; }
 .portfolio-item.overlay-grey .portfolio-image:after, .portfolio-item.overlay-grey .portfolio-slider .flickity-viewport:after, .portfolio-item.overlay-grey .grid-image:after, .portfolio-item.overlay-grey .grid-slider .flickity-viewport:after, .grid-item.overlay-grey .portfolio-image:after, .grid-item.overlay-grey .portfolio-slider .flickity-viewport:after, .grid-item.overlay-grey .grid-image:after, .grid-item.overlay-grey .grid-slider .flickity-viewport:after { background-color: #F7F9FB; }
@@ -1117,7 +1161,7 @@ a:not(.btn):not(.badge):not(.btn):not([href]):not([tabindex]) { color: #484848; 
 .portfolio-item.overlay-border:hover .portfolio-description, .grid-item.overlay-border:hover .portfolio-description { border-width: 10px; -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
 .portfolio-item.open-cursor .portfolio-wrap > a, .portfolio-item.open-cursor .grid-wrap > a, .grid-item.open-cursor .portfolio-wrap > a, .grid-item.open-cursor .grid-wrap > a { cursor: crosshair; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 5; }
 .portfolio-item.no-overlay .portfolio-slider .flickity-viewport:after, .portfolio-item.no-overlay .grid-slider .flickity-viewport:after, .grid-item.no-overlay .portfolio-slider .flickity-viewport:after, .grid-item.no-overlay .grid-slider .flickity-viewport:after { display: none; }
-.portfolio-item.no-overlay .portfolio-image, .portfolio-item.no-overlay .grid-image, .grid-item.no-overlay .portfolio-image, .grid-item.no-overlay .grid-image { position: relative; overflow: hidden; }
+.portfolio-item.no-overlay .portfolio-image, .portfolio-item.no-overlay .grid-image, .grid-item.no-overlay .portfolio-image, .grid-item.no-overlay .grid-image { position: relative; overflow: hidden; height: 235px; border-radius: 35px; }
 .portfolio-item.no-overlay .portfolio-image:after, .portfolio-item.no-overlay .grid-image:after, .grid-item.no-overlay .portfolio-image:after, .grid-item.no-overlay .grid-image:after { display: none; }
 .portfolio-item.no-overlay .portfolio-description, .portfolio-item.no-overlay .grid-description, .grid-item.no-overlay .portfolio-description, .grid-item.no-overlay .grid-description { opacity: 1; padding: 6px; position: relative; -webkit-transform: translateY(-10px); transform: translateY(-10px); visibility: inherit; width: 100%; }
 .portfolio-item.no-overlay .portfolio-description h3, .portfolio-item.no-overlay .grid-description h3, .grid-item.no-overlay .portfolio-description h3, .grid-item.no-overlay .grid-description h3 { color: #484848; font-size: 16px; font-style: normal; font-weight: 700; letter-spacing: 1px; line-height: 18px; margin-bottom: 4px; text-transform: uppercase; }
@@ -1145,7 +1189,7 @@ a:not(.btn):not(.badge):not(.btn):not([href]):not([tabindex]) { color: #484848; 
 .portfolio-item.shadow, .grid-item.shadow { -webkit-box-shadow: none !important; box-shadow: none !important; }
 .portfolio-item.shadow .portfolio-item-wrap, .portfolio-item.shadow .grid-item-wrap, .grid-item.shadow .portfolio-item-wrap, .grid-item.shadow .grid-item-wrap { -webkit-box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.6); box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.6); }
 .portfolio-item.outline .portfolio-item-wrap, .portfolio-item.outline .grid-item-wrap, .grid-item.outline .portfolio-item-wrap, .grid-item.outline .grid-item-wrap { border: 1px solid #ebebeb; padding: 1px; }
-.portfolio-item.light-bg .portfolio-item-wrap, .portfolio-item.light-bg .grid-item-wrap, .grid-item.light-bg .portfolio-item-wrap, .grid-item.light-bg .grid-item-wrap { background-color: #fff; border: 1px solid #f3f3f3; }
+.portfolio-item.light-bg .portfolio-item-wrap, .portfolio-item.light-bg .grid-item-wrap, .grid-item.light-bg .portfolio-item-wrap, .grid-item.light-bg .grid-item-wrap { background-color: #fff; border: 1px solid #f3f3f3; border-radius: 35px;}
 .portfolio-item.light-bg .portfolio-item-wrap .portfoio-description, .portfolio-item.light-bg .grid-item-wrap .portfoio-description, .grid-item.light-bg .portfolio-item-wrap .portfoio-description, .grid-item.light-bg .grid-item-wrap .portfoio-description { margin-bottom: 20px; }
 .portfolio-item.grey-bg .portfolio-item-wrap, .portfolio-item.grey-bg .grid-item-wrap, .grid-item.grey-bg .portfolio-item-wrap, .grid-item.grey-bg .grid-item-wrap { background-color: #f3f3f3; }
 .portfolio-item.grey-bg .portfolio-item-wrap .portfoio-description, .portfolio-item.grey-bg .grid-item-wrap .portfoio-description, .grid-item.grey-bg .portfolio-item-wrap .portfoio-description, .grid-item.grey-bg .grid-item-wrap .portfoio-description { margin-bottom: 20px; }
@@ -4130,7 +4174,7 @@ span.highlight { padding: 0 5px; }
 /* --------Team Members
 -----------------------------------------------------------------*/
 .team-members .team-member { background-color: #ffffff; text-align: center; position: relative; overflow: hidden; margin-bottom: 30px; border-radius: 35px; }
-.team-members .team-member .team-image { margin-bottom: 20px; border-radius: 35px; height: 235px;}
+.team-members .team-member .team-image { margin-bottom: 20px; border-radius: 35px;}
 .team-members .team-member .team-image > img { width: 100%; border-radius: 5px 5px 0 0; }
 .team-members .team-member .team-desc { padding-bottom: 20px; padding-left: 10px; padding-right: 10px; }
 .team-members .team-member .team-desc > h3 { font-size: 16px; line-height: 22px; margin-bottom: 0; }

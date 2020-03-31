@@ -71,14 +71,13 @@
     overflow: hidden;
   }
   .team-member .team-image img{
+    width: 100%;
     height: auto;
-    transform: translateY(0);
-    transition: all 2s ease-in-out;
+    transform: scale(1);
+    transition: all .5s ease-in-out;
   }
   .team-member .team-image img:hover{
-    transform: translateY(-100%);
-    bottom: 0;
-    cursor: grab;
+    transform: scale(1.2) rotate(-5deg);
   }
   .team-member-title h1{
     color: #004496;

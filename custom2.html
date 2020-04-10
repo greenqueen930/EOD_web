@@ -23,38 +23,19 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto%3A900%2C700%2C400" rel="stylesheet" property="stylesheet"
         type="text/css" media="all" />
 
-
-    <link rel="stylesheet" type="text/css" href="../../revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" type="text/css" href="../../revolution/fonts/font-awesome/css/font-awesome.css">
-
-    <!-- REVOLUTION STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="../../revolution/css/settings.css">
-    <!-- REVOLUTION LAYERS STYLES -->
-
-
-
-    <!-- REVOLUTION NAVIGATION STYLES -->
-    <link rel="stylesheet" type="text/css" href="../../revolution/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/fonts/font-awesome/css/font-awesome.css">
 
     <!-- FONT AND STYLE FOR BASIC DOCUMENTS, NO NEED FOR FURTHER USAGE IN YOUR PROJECTS-->
     <!-- <link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet"
         type="text/css" media="all" /> -->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/noneed.css">
-    <!-- REVOLUTION JS FILES -->
-    <script type="text/javascript" src="../../revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="../../revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="../../assets/css/noneed.css"> -->
 
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-    <script type="text/javascript" src="../../revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="../../revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="../../revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript"
-        src="../../revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="../../revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="../../revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="../../revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="../../revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="../../revolution/js/extensions/revolution.extension.video.min.js"></script>
+       <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+       <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/settings.css" media="screen" />
+       <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/layers.css">
+       <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/navigation.css">
+
 </head>
 
 <body>
@@ -116,17 +97,17 @@
                             <nav>
                                 <ul>
                                     <li><a href="about.html">關於我們</a></li>
-                                    <li class="dropdown"><a href="javascript:;">服務項目</a>
+                                    <li class="dropdown"><a href="service-1.html">服務項目</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown"><a href="service-1.html">形象網站設計</a></li>
-                                            <li class="dropdown"><a href="service-2.html">電商平台建置</a></li>
-                                            <li class="dropdown"><a href="service-3.html">網路行銷策劃</a></li>
-                                            <li class="dropdown"><a href="service-4.html">主題網站客製</a></li>
-                                            <li class="dropdown"><a href="service-5.html">系統設計開發</a></li>
-                                            <li class="dropdown"><a href="service-6.html">品牌設計規劃</a></li>
+                                            <li class="dropdown"><a href="#">電商平台建置</a></li>
+                                            <li class="dropdown"><a href="#">網路行銷策劃</a></li>
+                                            <li class="dropdown"><a href="#">主題網站客製</a></li>
+                                            <li class="dropdown"><a href="#">系統設計開發</a></li>
+                                            <li class="dropdown"><a href="#">品牌設計規劃</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="custom.html">客戶案例</a></li>
+                                    <li><a href="custom.html">客戶案例</a></li>
                                     <li class="dropdown"><a href="news.html">最新消息</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown"><a href="news.html">好文報報</a></li>
@@ -159,16 +140,26 @@
             <div class="shape-divider" data-style="1" data-height="220"></div>
 
         </section>
+        <div class="container">
+            <!-- Page title -->
+            <div class="page-title">
+                <div class="breadcrumb float-left">
+                    <ul>
+                        <li><a href="#">首頁</a> </li>
+                        <li><a href="custom.html">客戶案例</a> </li>
+                        <li class="active"><a href="custom2.html">新三亞預拌混凝土廠</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end: Page title -->
+        </div>
 
         <!-- Custom -->
-        <section id="section" class="p-t-100 p-b-100 block" style="margin-bottom: 100px;">
-
-            <div class="row">
-                <article class="col-lg-9">
-                    
+        <section id="section" class="block">
+                <div class="custom-main-img">
                     <div id="rev_slider_1171_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
                         data-alias="magazine-posts189" data-source="gallery"
-                        style="max-width:1170px; margin:0px auto;background-color:transparent;padding:0px;margin-top:95px;margin-bottom:0px;">
+                        style="max-width:1170px; margin:0px auto;background-color:transparent;">
 
                         <div id="rev_slider_1171_1" class=" fullwidthabanner" style="display:none;"
                             data-version="5.4.1">
@@ -191,21 +182,23 @@
                                     <!-- LAYER NR. 1 -->
                                     <div class="tp-caption tp-resizeme rs-parallaxlevel-10" id="slide-3228-layer-1"
                                         data-x="['center','center','center','center']"
-                                        data-hoffset="['0','-230','-230','0']"
+                                        data-hoffset="['0','0','0','0']"
                                         data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
                                         data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
                                         data-responsive_offset="on"
                                         data-frames='[{"from":"y:top;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:bottom;opacity:0;","ease":"Power3.easeInOut"}]'
-                                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                        data-textAlign="['left','left','left','left']"
+                                        data-margintop="[200,0,0,0]" data-marginbottom="[0,0,0,0]"
+                                        data-paddingtop="[0,0,0,0]"
                                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                                         data-paddingleft="[0,0,0,0]" style="z-index: 6;border-width:0px; border: #f2f2f2 solid 1px;"><img
                                             src="../../images/custom/nsy.png" alt=""
-                                            data-ww="['1280px','461px','461px','538px']"
-                                            data-hh="['800px','600px','600px','700px']" width="600" height="480"
+                                            data-ww="['1280px','1000px','800px','400px']"
+                                            data-hh="['800px','625px','480px','300px']" width="600" height="480"
                                             data-lazyload="../../images/custom/nsy.png" data-no-retina> </div>
 
                                     <!-- LAYER Intro -->
-                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-12"
+                                    <!-- <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-12"
                                         id="slide-3228-layer-11" data-x="['center','center','center','center']"
                                         data-hoffset="['450','231','231','698']"
                                         data-y="['middle','middle','middle','middle']"
@@ -218,10 +211,10 @@
                                         data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                                         data-paddingleft="[0,0,0,0]"
                                         style="z-index: 7;background-color:#007bff;border-color:rgba(0, 0, 0, 0);border-width:0px; border-radius: 35px;">
-                                    </div>
+                                    </div> -->
 
                                     <!-- LAYER LOGO -->
-                                    <div class="tp-caption   tp-resizeme rs-parallaxlevel-11" id="slide-3228-layer-3"
+                                    <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-11" id="slide-3228-layer-3"
                                         data-x="['center','center','center','center']"
                                         data-hoffset="['450','231','231','0']"
                                         data-y="['middle','middle','middle','middle']"
@@ -233,10 +226,10 @@
                                         data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                         style="z-index: 10; min-width: 615px; max-width: 615px; white-space: nowrap; font-size: 13px; line-height: 13px; font-weight: 900; color: rgba(255, 255, 255, 1.00);font-family:Roboto;border-width:0px;letter-spacing:3px;">
-                                        <img src="images/custom/NST-logo-w.png" alt=""></div>
+                                        <img src="images/custom/NST-logo-w.png" alt=""></div> -->
 
                                     <!-- LAYER TXT -->
-                                    <div class="tp-caption tp-resizeme rs-parallaxlevel-11" id="slide-3228-layer-4"
+                                    <!-- <div class="tp-caption tp-resizeme rs-parallaxlevel-11" id="slide-3228-layer-4"
                                         data-x="['center','center','center','center']"
                                         data-hoffset="['450','231','231','0']"
                                         data-y="['middle','middle','middle','middle']"
@@ -250,7 +243,7 @@
                                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                         style="z-index: 11; min-width: 615px; max-width: 615px; white-space: nowrap; font-size: 30px; line-height: 50px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;border-width:0px;letter-spacing:7px;">
                                         新三亞預拌混凝土廠<br />
-                                        1992 - NOW<br /></div>
+                                        1992 - NOW<br /></div> -->
                                 </li>
 
                             </ul>
@@ -267,7 +260,7 @@
                             } else {
                                 revapi1171 = tpj("#rev_slider_1171_1").show().revolution({
                                     sliderType: "standard",
-                                    jsFileLocation: "revolution/js/",
+                                    jsFileLocation: "slider-revolution/js/",
                                     sliderLayout: "auto",
                                     dottedOverlay: "none",
                                     delay: 9000,
@@ -345,11 +338,8 @@
                             }
                         });	/*ready*/
                     </script>
-
-
-                </article>
-
-                <div class="custom-intro col-lg-3 text-center">
+                </div>
+                <div class="custom-intro text-center">
                     <h3 class="text-uppercase text-center">新三亞預拌混凝土廠</h3>
                    
                     <div class="custom-intro-txt">
@@ -365,15 +355,7 @@
                                 provident beatae optio saepe doloribus soluta ipsam quibusdam aut, nesciunt minus
                                 quis nam minima, temporibus fugiat! Illum quam illo quidem!
                             </p>
-                            
                         </span>
-                        <!-- <div class="custom-EOD-btn" data-animate-delay="600" data-animate="bounceIn">
-                            <a href="https://nsy.eod.com.tw" class="btn btn-outline btn-dark">
-                                <span>
-                                    <i class="fas fa-link"></i> 瀏覽網站
-                                </span>
-                            </a>
-                        </div> -->
                     </div>
 
                     <div class="team-member pb-2" data-animate-delay="100" data-animate="flipInY">
@@ -408,7 +390,6 @@
                                             <i class="fa fa-instagram"></i>
                                             <span>Instagram</span>
                                         </a>
-                                        <!-- <a class="btn btn-light modal-close" href="#"></a> -->
                                     </div>
                                 <!--end: Modal -->
                                 
@@ -421,15 +402,14 @@
                     </div>
                     
                 </div>
-
-            </div>
-
         </section>
         <!-- Custom -->
 
         <!-- Footer -->
         <footer id="footer">
-            <div class="shape-divider" data-style="12" data-position="top" data-flip-vertical="true"></div>
+
+            <div class="shape-divider" data-style="12" data-position="top" data-flip-vertical="true" data-height="120"></div>
+
             <div class="footer-content">
                 <div class="container">
                     <div class="footer-content-img col-md-12">
@@ -438,8 +418,7 @@
                             <p
                                 style="font-size: 1.2rem; font-style: italic; font-weight: 700; padding-bottom: 7px; padding-right: 10px;">
                                 <i class="footer-icon fa fa-arrow-circle-right"></i>老大的話</p>
-                            <p>東風夜放花千樹。更吹落、星如雨。寶馬雕車香滿路。鳳簫聲動，玉壺光轉，一夜魚龍舞。蛾兒雪柳黃金縷。笑語盈盈暗香去。眾里尋他千百度。驀然回首，那人卻在，燈火闌珊處。
-                            </p>
+                            <p>東風夜放花千樹。更吹落、星如雨。寶馬雕車香滿路。鳳簫聲動，玉壺光轉，一夜魚龍舞。蛾兒雪柳黃金縷。笑語盈盈暗香去。眾里尋他千百度。驀然回首，那人卻在，燈火闌珊處。</p>
                         </span>
                     </div>
                 </div>
@@ -450,8 +429,7 @@
                         <div class="col-lg-12">
                             <div class="copyright-text text-center">
                                 <p>版權所有 &copy; 2020
-                                    <a href="http://www.inspiro-media.com" target="_blank">EOD_Digita
-                                        恆洋數位有限公司</a> </p>
+                                    <a href="http://www.inspiro-media.com" target="_blank">EOD_Digita 恆洋數位有限公司</a> </p>
                             </div>
                         </div>
                     </div>
@@ -482,7 +460,6 @@
             </a>
     </div>
 
-
     <!--Plugins-->
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
@@ -490,10 +467,6 @@
     <script src="js/functions.js"></script>
 
     <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/settings.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/navigation.css">
-
     <script type="text/javascript" src="plugins/slider-revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="plugins/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
 
@@ -515,9 +488,8 @@
         src="plugins/slider-revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript"
         src="plugins/slider-revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var tpj = jQuery;
-
         var revapi490;
         tpj(document).ready(function () {
             if (tpj("#rev_slider_490_1").revolution == undefined) {
@@ -525,7 +497,7 @@
             } else {
                 revapi490 = tpj("#rev_slider_490_1").show().revolution({
                     sliderType: "hero",
-                    jsFileLocation: "revolution/js/",
+                    jsFileLocation: "slider-revolution/js/",
                     sliderLayout: "fullwidth",
                     dottedOverlay: "none",
                     delay: 5000,
@@ -559,11 +531,8 @@
                 });
             }
         });	/*ready*/
-    </script>
+    </script> -->
     <script>
-        // I know that the code could be better.
-        // If you have some tips or improvement, please let me know.
-
         $('.img-parallax').each(function () {
             var img = $(this);
             var imgParent = $(this).parent();
@@ -573,18 +542,11 @@
                 var winY = $(this).scrollTop();
                 var winH = $(this).height();
                 var parentH = imgParent.innerHeight();
-
-
-                // The next pixel to show on screen      
                 var winBottom = winY + winH;
 
-                // If block is shown on screen
                 if (winBottom > imgY && winY < imgY + parentH) {
-                    // Number of pixels shown after block appear
                     var imgBottom = ((winBottom - imgY) * speed);
-                    // Max number of pixels until block disappear
                     var imgTop = winH + parentH;
-                    // Porcentage between start showing until disappearing
                     var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 70));
                 }
                 img.css({
@@ -684,13 +646,8 @@
             $(".tool-btn a").toggleClass("open");
 
         });
-
-        //Get the button
         var tools = document.getElementById("tool");
-
-        // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () { scrollFunction() };
-
         function scrollFunction() {
             if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
                 tools.style.display = "block";

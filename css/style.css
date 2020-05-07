@@ -419,18 +419,15 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
 /* --------HEADER: Responsive
 -----------------------------------------------------------------*/
 @media (max-width: 992px) { #header .header-inner, #header #header-wrap { height: auto; }
-  #header #logo { position: absolute !important; width: 80%; text-align: center; margin: 0 !important; float: none; height: 100px; left: 10%; right: 0; padding: 0 !important; }
   #header #logo { 
-    position: absolute !important;
-    width: 100%;
-    text-align: center;
-    margin: auto !important;
-    left: -50px;
-    right: 0;
-    top: 0;
-    padding: 0 !important;
-    bottom: 0; 
-  }
+    position: absolute !important; 
+    width: 100%; 
+    text-align: center; 
+    margin: 0 !important; 
+    float: none; 
+    height: 100px; 
+    left: -34px;
+    padding: 0 !important; }
   #header #logo > a { display: inline-block; }
   #header #logo .logo-responsive { display: block; }
   #header #logo .logo-responsive-dark { display: block; }
@@ -2507,7 +2504,7 @@ body.breakpoint-xs .page-error-404 { font-size: 140px; line-height: 0.8; margin-
 
 /* --------Scrolldown icon animation
 -----------------------------------------------------------------*/
-.scrolldown-animation { -webkit-animation: 1s ease-in-out 0s normal none infinite running scrolldown-keyframes; animation: 1s ease-in-out 0s normal none infinite running scrolldown-keyframes; bottom: 40px; height: 40px; left: 50%; margin-left: -20px; position: absolute; width: 45px; z-index: 60; }
+.scrolldown-animation { -webkit-animation: 1s ease-in-out 0s normal none infinite running scrolldown-keyframes; animation: 1s ease-in-out 0s normal none infinite running scrolldown-keyframes; bottom: 40px; height: 40px; left: 50%; margin-left: -22px; position: absolute; width: 45px; text-align: center; z-index: 60; }
 
 @-webkit-keyframes scrolldown-keyframes { 0%,
     100% { -webkit-transform: translateY(-8px); transform: translateY(-8px); }
@@ -3140,7 +3137,11 @@ button.btn.disabled, .btn:not(.close):not(.mfp-close).disabled, a.btn:not([href]
 .heading-text h2 { font-size: 60px; margin-bottom: 30px; letter-spacing: -.7px; line-height: 66px; }
 .heading-text h3 { font-size: 60px; margin-bottom: 30px; letter-spacing: -.7px; line-height: 66px; }
 .heading-text h4 { font-size: 34px; margin-bottom: 30px; letter-spacing: -.7px; line-height: 40px; }
-.heading-text p { font-size: 18px; margin-bottom: 30px;}
+.heading-text p {     
+  font-size: 1rem;
+  margin-bottom: 30px;
+  letter-spacing: .05rem;
+}
 .heading-text.heading-gradient h2 > * { -webkit-text-fill-color: transparent !important; -webkit-background-clip: text !important; background: radial-gradient(circle at left top, #4b72ff 9%, #004496 48%, #6442ff 91%); }
 .heading-text.heading-section > h2 { position: relative; font-size: 48px; line-height: 56px; margin-bottom: 60px; }
 .heading-text.heading-section > h2:before { content: ""; position: absolute; height: 2px; width: 100px; background-color: #004496; bottom: -30px; left: 0; right: 0; }
@@ -4003,7 +4004,7 @@ div.icon-box:before { display: none !important; }
   100%{transform: translateY(5px) rotate(15deg);}
 }
 .text-box.hover-effect p { opacity: 0; }
-.text-box.hover-effect:hover i { margin: 35px 0 6px 0; 
+.text-box.hover-effect:hover i { margin: 35px 0 16px 0; 
   animation: service-icon none;
 }
 .text-box.hover-effect:hover p { opacity: 1; }
@@ -5020,13 +5021,101 @@ body.breakpoint-xs .box-fancy [class*="col-"] { padding: 10% !important; }
 
 body[data-bg-image] { background-attachment: fixed; background-position: top center; }
 
-.shape-divider { position: absolute; display: block; width: 100%; z-index: 0; bottom: 0; top: auto; left: 0; }
-.shape-divider svg { width: 100%; height: auto; display: block; }
+.shape-divider { position: absolute; display: block; width: 100%; z-index: 0; bottom: 0; top: auto; left: 0;}
+.shape-divider svg { width: 100%; height: auto; display: block;}
+
+/* .shape-divider svg { width: 100%; height: auto; display: block;  animation: wave 10s infinite linear; }
+@keyframes wave{
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+} */
 .shape-divider[data-position="bottom"] { bottom: 0; top: auto; }
 .shape-divider[data-position="top"] { bottom: auto; top: -1px; }
 .shape-divider[data-flip-horizontal="true"] { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
 .shape-divider[data-flip-vertical="true"] { -webkit-transform: rotateX(180deg); transform: rotateX(180deg); }
 .shape-divider[data-flip-horizontal="true"][data-flip-vertical="true"] { -webkit-transform: rotateY(180deg) rotateX(180deg); transform: rotateY(180deg) rotateX(180deg); }
+
+
+/* Wave animation */
+@keyframes move_wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  /* background-image: linear-gradient(to top, #86377b 20%, #27273c 80%); */
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+.bgBottom {
+  z-index: 5;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+animation: move-wave 3s;
+ -webkit-animation: move-wave 3s;
+ -webkit-animation-delay: 1s;
+ animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+/* Wave animation end */
+
+
 
 /* .shape-divider + .bg-overlay { z-index: -2;} */
 .wizard { opacity: 0; position: relative; width: 100%; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-transition: opacity .3s linear; transition: opacity .3s linear; -webkit-transition-delay: .2s; transition-delay: .2s; }

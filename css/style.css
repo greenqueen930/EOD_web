@@ -744,9 +744,9 @@ section { padding: 80px 0; position: relative; width: 100%; overflow: hidden; z-
 }
 }
 #search .search-form .form-control:focus { background-color: transparent; }
-/* #search .search-form .form-control:-webkit-input-placeholder { color: #cecece; }
+#search .search-form .form-control:-webkit-input-placeholder { color: #cecece; }
 #search .search-form .form-control:-moz-placeholder { color: #cecece; }
-#search .search-form .form-control:-ms-input-placeholder { color: #cecece; } */
+#search .search-form .form-control:-ms-input-placeholder { color: #cecece; }
 #search .btn-search-close { font-size: 2em; position: absolute; top: 20px; right: 30px; display: none; padding: 12px; line-height: 12px; background-color: #004496; border: 0; cursor: pointer; border-radius: 50%; color: #ffffff; opacity: 0; -webkit-transform: scale3d(0.8, 0.8, 1); transform: scale3d(0.8, 0.8, 1); -webkit-transition: opacity 0.5s, -webkit-transform 0.5s; transition: opacity 0.5s, -webkit-transform 0.5s; transition: opacity 0.5s, transform 0.5s; transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s; }
 #search .btn-search-close:hover{color:#FDDC39;}
 #search .search-suggestion-wrapper { display: none; }

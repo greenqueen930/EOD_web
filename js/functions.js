@@ -2050,7 +2050,7 @@ var INSPIRO = {},
             if ($modal.length > 0) {
                 $modal.each(function () {
                     var elem = $(this),
-                        elemDelay = elem.attr("data-delay") || 3000,
+                        elemDelay = elem.attr("data-delay") || none,
                         elemCookieExpire = elem.attr("data-cookie-expire") || 365,
                         elemCookieName = elem.attr("data-cookie-name") || "cookieModalName2020_3",
                         elemCookieEnabled = elem.data("cookie-enabled") == true ? true : false,

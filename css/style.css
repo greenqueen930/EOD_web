@@ -5,7 +5,7 @@
 **														              **
 **         POLO Html5 Template		   								  **
 **         Author: INSPIRO MEDIA								      **
-**		   URL: http://www.inspiro-media.com						  **
+**		   URL: #						  **
 **	       													          **
 ************************************************************************/
 /*  Content & Layout */
@@ -4716,7 +4716,7 @@ a.list-group-item.active:hover, a.list-group-item.active.active { color: #ffffff
 .post-navigation .post-prev:hover:before { -webkit-transform: translate3d(-5px, -50%, 0); transform: translate3d(-5px, -50%, 0); }
 .post-navigation .post-prev-title { padding-left: 40px; }
 .post-navigation .post-next-title { padding-right: 40px; }
-.post-navigation .post-all { font-size: 24px; left: auto; position: absolute; right: 60%; text-align: center; top: 32px; width: 12px; opacity: 0.7; }
+.post-navigation .post-all { font-size: 24px; left: auto; position: absolute; top: 32px; width: 12px; opacity: 0.7; }
 
 .single-post .post-navigation .post-prev { left: 0px; }
 .single-post .post-navigation .post-next { right: 0px; }

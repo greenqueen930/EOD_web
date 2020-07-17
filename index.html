@@ -15,6 +15,16 @@
     <link href="css/content.css" rel="stylesheet">
     <link href="css/custom.css?200317" rel="stylesheet">
     <link href="plugins/animate/animate.min.css" rel="stylesheet">
+
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/css/settings.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/css/layers.css">
+
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/css/navigation.css">
+
 </head>
 
 <body>
@@ -43,7 +53,7 @@
                                     data-animate="bounceIn">
 
                             </span>
-                            <img src="images/index/header_logo.png" class="logo-fixed">
+                            <img src="images/index/logo.png" class="logo-fixed">
                         </a>
                     </div>
                     <!--End: Logo-->
@@ -53,7 +63,7 @@
                         <form class="search-form" action="search-results-page.html" method="get">
                             <input class="form-control" name="q" type="search" placeholder=" 請輸入欲搜尋關鍵字..." />
                             <span class="text-muted"> - 輸入完畢可按「Enter」開始搜尋 或 「Esc」離開介面 - </span>
-                            <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+                            <a href="#"><i class="icon-search"></i></a>
                         </form>
                     </div>
                     <!-- end: search -->
@@ -69,31 +79,56 @@
                     <!--Navigation Resposnive Trigger-->
                     <div id="mainMenu-trigger">
                         <a class="lines-button x"><span class="lines"></span></a>
+                        <!-- <nav>
+                            <ul>
+                                <li><a href="about.html">關於我們</a></li>
+                                <li class="dropdown"><a href="service-1.html">123</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown"><a href="service-1.html">形象網站設計</a></li>
+                                        <li class="dropdown"><a href="service-2.html">優惠方案價格</a></li>
+                                        <li class="dropdown"><a href="service-3.html">網站設計建置</a></li>
+                                        <li class="dropdown"><a href="service-4.html">多媒體行銷設計</a></li>
+                                        <li class="dropdown"><a href="service-5.html">網路行銷策劃(SEO)</a></li>
+                                        <li class="dropdown"><a href="service-6.html">客製系統開發</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="custom.html">客戶案例</a></li>
+                                <li class="dropdown"><a href="news.html">最新消息</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown"><a href="news.html">好文報報</a></li>
+                                        <li class="dropdown"><a href="#">活動花絮</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="qna.html">常見問題</a></li>
+                                <li><a href="contact.html">聯繫我們</a></li>
+                            </ul>
+                        </nav> -->
                     </div>
                     <!--end: Navigation Resposnive Trigger-->
                     <!--Navigation-->
-                    <div id="mainMenu"> 
+                    <div id="mainMenu">
                         <div class="container">
                             <nav>
                                 <ul>
                                     <li><a href="about.html">關於我們</a></li>
-                                    <li class="dropdown"><a href="service-1.html">服務項目</a>
+                                    <li class="dropdown-list"><a href="service-1.html">服務項目</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown"><a href="service-1.html">形象網站設計</a></li>
-                                            <li class="dropdown"><a href="#">電商平台建置</a></li>
-                                            <li class="dropdown"><a href="#">網路行銷策劃</a></li>
-                                            <li class="dropdown"><a href="#">主題網站客製</a></li>
-                                            <li class="dropdown"><a href="#">系統設計開發</a></li>
-                                            <li class="dropdown"><a href="#">品牌設計規劃</a></li>
+                                            <li class="dropdown"><a href="service-2.html">優惠方案價格</a></li>
+                                            <li class="dropdown"><a href="service-3.html">網站設計建置</a></li>
+                                            <li class="dropdown"><a href="service-4.html">多媒體行銷設計</a></li>
+                                            <li class="dropdown"><a href="service-5.html">網路行銷策劃(SEO)</a></li>
+                                            <li class="dropdown"><a href="service-6.html">客製系統開發</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="custom.html">客戶案例</a></li>
-                                    <li class="dropdown"><a href="news.html">最新消息</a>
+                                    <li class="dropdown-list"><a href="news.html">最新消息</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown"><a href="news.html">好文報報</a></li>
                                             <li class="dropdown"><a href="#">活動花絮</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="qna.html">常見問題</a></li>
                                     <li><a href="contact.html">聯繫我們</a></li>
                                 </ul>
                             </nav>
@@ -106,110 +141,251 @@
         <!-- end: Header -->
 
         <!-- Slider -->
-        <div id="slider" class="inspiro-slider slider-fullscreen dots-creative" data-height-xs="360">
-            <!-- Slide 1 -->
+        <section id="slider">
+            <div id="rev_slider_467_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+                 data-alias="classic-carousel26" data-source="gallery"
+                 style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+                <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+                <div id="rev_slider_467_1" class="rev_slider fullwidthabanner" style="display:none;"
+                     data-version="5.4.1">
+        
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-1596" data-transition="zoomout" data-slotamount="default"
+                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut"
+                            data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0"
+                            data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
+                            data-saveperformance="off" data-title="" data-param1="" data-param2="" data-param3=""
+                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                            data-param10="" data-description="">
+                            <div class="waveWrapper waveAnimation">
+                                <div class="waveWrapperInner bgTop">
+                                    <div class="wave waveTop"
+                                         style="background-image: url('/images/wave/wave-bot.png');"></div>
+                                </div>
+                                <div class="waveWrapperInner bgMiddle">
+                                    <div class="wave waveMiddle"
+                                         style="background-image: url('/images/wave/wave-mid.png');"></div>
+                                </div>
+                                <div class="waveWrapperInner bgBottom">
+                                    <div class="wave waveBottom"
+                                         style="background-image: url('/images/wave/wave-top.png');"></div>
+                                </div>
+                                <div class="scrolldown-animation" id="scroll-down">
+                                    <a class="scroll-to" href="#section2">
+                                        <img src="images/scrolldown.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- MAIN IMAGE -->
+                            <img src="/images/1920x1280/1920x1280-5.jpg" alt="" data-bgposition="center center"
+                                 data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg"
+                                 data-no-retina>
+                            <img src="/images/600x800/600x800-1.png" alt="" data-bgposition="center center"
+                            data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg mobile"
+                            data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-1596-layer-1"
+                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                 data-fontsize="['62','62','62','45']" data-lineheight="['70','70','70','50']"
+                                 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                                 data-responsive_offset="on"
+                                 data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+                                 data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]"
+                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]"
+                                 data-paddingleft="[0,0,0,0]"
+                                 style="z-index: 5; white-space: nowrap; font-family: '微軟正黑體';">這是封面主標題</div>
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-1596-layer-4"
+                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                     data-y="['middle','middle','middle','middle']" data-voffset="['-52','-52','-55','-50']"
+                                     data-fontsize="['18','18','18','21']" data-width="none" data-height="none"
+                                     data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                     data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
+                                     style="z-index: 6; white-space: nowrap; font-family: '微軟正黑體';">這是封面副標題
+                                </div>
+                                <!-- LAYER NR. 3 -->
+                                <div class="tp-caption NotGeneric-Icon tp-resizeme" id="slide-1596-layer-8"
+                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                     data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']"
+                                     data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                                     data-responsive_offset="on"
+                                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                     data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
+                                     style="z-index: 7; white-space: nowrap; cursor:default;">
+                                    <i class="pe-7s-refresh"></i>
+                                </div>
+                                <!-- <a class="tp-caption btn btn-outline btn-dark" id="slide-1597-layer-1" href="#"
+                                   data-x="['left'','left','left','left']" data-hoffset="['650','-125','-125','-100']"
+                                   data-y="['top','top','bottom','bottom']" data-voffset="['550','375','135','100']"
+                                   data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                                   data-actions='[{"event":"click","action":"link","slide":"rs-1636","delay":""}]'
+                                   data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                                   data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":1250,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power3.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]'
+                                   data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]"
+                                   data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                                   data-paddingleft="[35,35,35,35]"
+                                   style="z-index: 47; white-space: nowrap;letter-spacing:1px;">
+                                    321
+                                </a>
+                                <a class="tp-caption top-EOD-btn-text btn btn-outline btn-dark" id="slide-1597-layer-2" href="#"
+                                   data-x="['left','left','left','left']" data-hoffset="['960','125','125','100']"
+                                   data-y="['top','top','bottom','bottom']" data-voffset="['550','375','135','100']"
+                                   data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                                   data-actions='[{"event":"click","action":"link","slide":"rs-1636","delay":""}]'
+                                   data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                                   data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":1250,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power3.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]'
+                                   data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]"
+                                   data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                                   data-paddingleft="[35,35,35,35]"
+                                   style="z-index: 47; white-space: nowrap;letter-spacing:1px; color: #004496; background-color: #FDDC39; border: solid 2px #FDDC39">123
+                                </a> -->
+                                <div class="tp-caption" id="slide-1597-layer-2" href="#"
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                data-y="['top','top','bottom','bottom']" data-voffset="['525','350','115','80']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                                data-actions='[{"event":"click","action":"link","slide":"rs-1636","delay":""}]'
+                                data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":1250,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power3.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]'
+                                data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]"
+                                data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                                data-paddingleft="[35,35,35,35]"
+                                style="z-index: 47; white-space: nowrap;letter-spacing:1px;">                    
+                                <div class=" top-EOD-btn-text" data-animate-delay="600" data-animate="bounceIn">
+                                    <a href="#" class="btn btn-outline btn-dark">
+                                        <span>了解更多</span>
+                                    </a>
+                                    <a href="#" class="btn btn-outline btn-dark">
+                                        <span>經營理念</span>
+                                    </a>
+                                </div>
+                             </div>
+                        </li>
 
-            <div class="slide kenburns" style="background-image:url('images/index/1920x1280.png')">
-                <div class="bg-overlay"></div>
-                <!-- <div class="shape-divider" data-style="6" data-height="220" data-color="#004496"></div> -->
-                <div class="waveWrapper waveAnimation">
-                    <div class="waveWrapperInner bgTop">
-                      <div class="wave waveTop" style="background-image: url('images/wave/wave-bot.png');"></div>
-                    </div>
-                    <div class="waveWrapperInner bgMiddle">
-                      <div class="wave waveMiddle" style="background-image: url('images/wave/wave-mid.png');"></div>
-                    </div>
-                    <div class="waveWrapperInner bgBottom">
-                      <div class="wave waveBottom" style="background-image: url('images/wave/wave-top.png');"></div>
-                    </div>
-                    <div class="scrolldown-animation" id="scroll-down" data-animate-delay="500">
-                        <a class="scroll-to" href="#section2"><img src="images/scrolldown.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="slide-captions text-center text-light">
-                        <!-- Captions -->
-                        <span class="strong">擁有堅強的資訊團隊
-                        </span>
-                        <h2 class="text-dark">隨時為您提供最佳服務品質</h2>
-                        <div class="top-EOD-btn">
-                            <a href="#" class="btn btn-outline btn-dark">
-                                <span>查看優惠</span>
-                            </a>
-                            <a href="contact.html" target="_blank_" class="top-EOD-btn-text btn btn-outline btn-dark"
-                                style="background-color: #FDDC39; border: solid 2px #FDDC39">
-                                <span>馬上諮詢</span>
-                            </a>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-1597" data-transition="zoomout" data-slotamount="default"
+                        data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut"
+                        data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0"
+                        data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
+                        data-saveperformance="off" data-title="" data-param1="" data-param2="" data-param3=""
+                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                        data-param10="" data-description="">
+                        <div class="waveWrapper waveAnimation">
+                            <div class="waveWrapperInner bgTop">
+                                <div class="wave waveTop"
+                                        style="background-image: url('/images/wave/wave-bot.png');"></div>
+                            </div>
+                            <div class="waveWrapperInner bgMiddle">
+                                <div class="wave waveMiddle"
+                                        style="background-image: url('/images/wave/wave-mid.png');"></div>
+                            </div>
+                            <div class="waveWrapperInner bgBottom">
+                                <div class="wave waveBottom"
+                                        style="background-image: url('/images/wave/wave-top.png');"></div>
+                            </div>
+                            <div class="scrolldown-animation" id="scroll-down">
+                                <a class="scroll-to" href="#section2">
+                                    <img src="images/scrolldown.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <!-- end: Captions -->
-                    </div>
-                   
+                        <!-- MAIN IMAGE -->
+                        <img src="/images/1920x1280/1920x1280-5.jpg" alt="" data-bgposition="center center"
+                                data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg"
+                                data-no-retina>
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-1596-layer-1"
+                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                data-fontsize="['62','62','62','45']" data-lineheight="['70','70','70','50']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                                data-responsive_offset="on"
+                                data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+                                data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]"
+                                data-paddingleft="[0,0,0,0]"
+                                style="z-index: 5; white-space: nowrap; font-family: '微軟正黑體';">這是封面主標題</div>
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-1596-layer-4"
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['-52','-52','-55','-50']"
+                                    data-fontsize="['18','18','18','21']" data-width="none" data-height="none"
+                                    data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    style="z-index: 6; white-space: nowrap; font-family: '微軟正黑體';">這是封面副標題
+                            </div>
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption NotGeneric-Icon tp-resizeme" id="slide-1596-layer-8"
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']"
+                                    data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                                    data-responsive_offset="on"
+                                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    style="z-index: 7; white-space: nowrap; cursor:default;">
+                                <i class="pe-7s-refresh"></i>
+                            </div>
+                            <div class="tp-caption" id="slide-1597-layer-2" href="#"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['top','top','bottom','bottom']" data-voffset="['525','350','115','80']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                            data-actions='[{"event":"click","action":"link","slide":"rs-1636","delay":""}]'
+                            data-basealign="slide" data-responsive_offset="on" data-responsive="off"
+                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":1250,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power3.easeOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]'
+                            data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]"
+                            data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                            data-paddingleft="[35,35,35,35]"
+                            style="z-index: 47; white-space: nowrap;letter-spacing:1px;">                    
+                            <div class=" top-EOD-btn-text" data-animate-delay="600" data-animate="bounceIn">
+                                <a href="#" class="btn btn-outline btn-dark">
+                                    <span>了解更多</span>
+                                </a>
+                                <a href="#" class="btn btn-outline btn-dark">
+                                    <span>經營理念</span>
+                                </a>
+                            </div>
+                         </div>
+                    </li>
+
+                    </ul>
+                    <div class="tp-bannertimer" style="height: 7px; background-color:transparent;"></div>
                 </div>
-            </div>
-
-            <!-- end: Slide 1 -->
-
-            <!-- Slide 2 -->
-
-            <div class="slide kenburns" style="background-image:url('images/index/main_banner.png')">
-                <div class="bg-overlay"></div>
-                <!-- <div class="shape-divider" data-style="6" data-height="220" data-color="#004496"></div> -->
-                <div class="waveWrapper waveAnimation">
-                    <div class="waveWrapperInner bgTop">
-                      <div class="wave waveTop" style="background-image: url('images/wave/wave-bot.png');"></div>
-                    </div>
-                    <div class="waveWrapperInner bgMiddle">
-                      <div class="wave waveMiddle" style="background-image: url('images/wave/wave-mid.png');"></div>
-                    </div>
-                    <div class="waveWrapperInner bgBottom">
-                      <div class="wave waveBottom" style="background-image: url('images/wave/wave-top.png');"></div>
-                    </div>
-                    <div class="scrolldown-animation" id="scroll-down" data-animate-delay="2500">
-                        <a class="scroll-to" href="#section2"><img src="images/scrolldown.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="slide-captions text-center text-light">
-                        <!-- Captions -->
-                        <span class="strong">依實際需求規劃預算 提供您最適合的方案</span>
-                        <h2 class="text-dark">網站建置 系統開發 平面設計</h2>
-                        <div class="top-EOD-btn">
-                            <a href="#" class="btn btn-outline btn-dark">
-                                <span>查看優惠</span>
-                            </a>
-                            <a href="#section2" class="top-EOD-btn-text btn btn-outline btn-dark"
-                                style="background-color: #FDDC39; border: solid 2px #FDDC39">
-                                <span>馬上諮詢</span>
-                            </a>
-                        </div>
-
-                        <!-- end: Captions -->
-                    </div>
-                    <!-- <div class="scrolldown-animation" id="scroll-down" data-animate-delay="2500">
-                        <a class="scroll-to" href="#section2"><img src="images/scrolldown.png" alt="">
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-
-            <!-- end: Slide 2 -->
-
-        </div>
+            </div><!-- END REVOLUTION SLIDER -->
+        
+        </section>
         <!--end: Slider -->
+
+
 
         <!-- ABOUT -->
         <section id="section2" class="block" style="background-color:#004496;">
-            <img class="img-parallax" data-speed="1" src="images/skroll/skroll-about.png" alt="">
+            <img class="img-parallax" data-speed=".75" src="" alt="">
             <div id="particles-stars" class="particles"></div>
             <div class="container">
-                <div class="heading-text text-light text-center">
-                    <h5 class="text-uppercase">EOD Digita</h5>
-                    <h2 class="font-weight-800" data-animate-delay="100" data-animate="zoomIn"><span>ABOUT US</span>
+                <div class="heading-text mb-0 text-light text-center">
+                    <div class="about-title-img">
+                        <img src="images/logo/EOD DIGITA.png" alt="">
+                    </div>
+                    <h2 class="font-weight-800" data-animate-delay="100" data-animate="zoomIn" style="margin-bottom: 10px;"><span class="about">ABOUT
+                            US</span>
                     </h2>
                     <p data-animate-delay="300" data-animate="fadeInUp">
-                        恆洋數位有限公司是一間專業網站設計建置及系統開發的服務商<br>可提供多元的服務方案，並依據客戶需求，提供客製化系統規劃、建置服務。</p>
+                        恆洋數位秉持與客戶一起成長的理念，您的需求和想法，將能透過我們的設計和規劃來實現，<br>
+                        有任何關於網路行銷、系統開發、網站建置、購物網站、品牌設計等相關需求，<br>
+                        我們都提供線上免費諮詢，或是專人當面討論，必能給您最中肯的建議進行評估！
                     <div class="about-EOD-btn" data-animate-delay="600" data-animate="bounceIn">
                         <a href="#" class="btn btn-outline btn-dark">
                             <span>了解更多</span>
@@ -223,87 +399,193 @@
             <div class="shape-divider" data-style="1" data-height="220"></div>
         </section>
 
-        <!-- SERVICE -->
-        <section id="section3" class="equalize m-t-50" data-equalize-item=".text-box">
-            <div class="container">
-                <div data-animate-delay="100" data-animate="zoomIn">
-                    <div class="heading-text heading-section text-center">
-                        <div class="title-font m-b-15" style="display: block;"></div>
-                        <span class="lead">恆洋數位有限公司是一間專業網站設計建置及系統開發的服務商
-                        </span>
-                    </div>
+        <section class="p-b-0 p-t-0">
+            <div id="rev_slider_1049_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+                data-alias="web-product-light-hero120" data-source="gallery"
+                style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+                <div id="rev_slider_1049_1" class="rev_slider fullwidthabanner" style="display:none;"
+                    data-version="5.4.1">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-index="rs-2934" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                            data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                            data-masterspeed="1500" data-rotate="0" data-saveperformance="off" data-title="Intro"
+                            data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                            data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <!-- <img src="plugins/assets/images/express_bglight.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina> -->
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-1" id="slide-2934-layer-1"
+                                data-x="['left','left','center','center']" data-hoffset="['-160','-350','70','60']"
+                                data-y="['middle','middle','middle','bottom']" data-voffset="['0','50','211','25']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                                data-responsive_offset="on"
+                                data-frames='[{"from":"x:left;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 5;border-width:0px;"><img
+                                    src="plugins/assets/images/mac (1).png" alt=""
+                                    data-ww="['1000px','1000px','500px','350px']"
+                                    data-hh="['600px','600px','300px','210px']" width="1000" height="600"
+                                    data-no-retina>
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-1" id="slide-2934-layer-2"
+                                data-x="['left','left','center','center']" data-hoffset="['28','-161','66','60']"
+                                data-y="['top','top','top','bottom']" data-voffset="['149','198','572','78']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                                data-responsive_offset="on"
+                                data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 6;border-width:0px;"><img
+                                    src="plugins/assets/images/200706 mac.png" alt=""
+                                    data-ww="['614px','614px','309px','211px']"
+                                    data-hh="['385px','385px','193px','135px']" width="612" height="385" data-no-retina>
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-3" id="slide-2934-layer-3"
+                                data-x="['left','left','center','center']" data-hoffset="['393','250','-110','-60']"
+                                data-y="['top','top','top','bottom']" data-voffset="['193','203','590','20']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                                data-responsive_offset="on"
+                                data-frames='[{"from":"x:left;","speed":1500,"to":"o:1;","delay":1250,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 7;border-width:0px;"><img
+                                    src="plugins/assets/images/ipad (2).png" alt=""
+                                    data-ww="['430px','430px','200px','170px']"
+                                    data-hh="['540px','540px','251px','213px']" width="430" height="540" data-no-retina>
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-3" id="slide-2934-layer-4"
+                                data-x="['left','left','left','center']" data-hoffset="['458','315','210','-61']"
+                                data-y="['top','top','top','bottom']" data-voffset="['250','260','618','40']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                                data-responsive_offset="on"
+                                data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 8;border-width:0px;"><img
+                                    src="plugins/assets/images/200706 ipad.png" alt=""
+                                    data-ww="['299px','299px','138px','120px']"
+                                    data-hh="['429px','429px','198px','170px']" width="299" height="429" data-no-retina>
+                            </div>
+
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-2934-layer-5"
+                                data-x="['left','left','left','left']" data-hoffset="['670','553','127','58']"
+                                data-y="['top','top','top','top']" data-voffset="['285','297','622','529']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                                data-responsive_offset="on"
+                                data-frames='[{"from":"x:right;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 9;border-width:0px;"><img
+                                    src="plugins/assets/images/phone (1).png" alt=""
+                                    data-ww="['260px','260px','130px','100px']"
+                                    data-hh="['450px','450px','225px','173px']" width="260" height="450" data-no-retina>
+                            </div>
+
+                            <!-- LAYER NR. 6 -->
+                            <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-2934-layer-6"
+                                data-x="['left','left','left','left']" data-hoffset="['718','601','151','76']"
+                                data-y="['top','top','top','top']" data-voffset="['325','339','643','545']"
+                                data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
+                                data-responsive_offset="on"
+                                data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2500,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]" style="z-index: 10;border-width:0px;"><img
+                                    src="plugins/assets/images/200706 phone.png" alt=""
+                                    data-ww="['170px','170px','85px','66px']"
+                                    data-hh="['370px','370px','185px','142px']" width="170" height="370" data-no-retina>
+                            </div>
+
+                            <!-- LAYER NR. 7 -->
+                            <div class="tp-caption WebProduct-Title tp-resizeme font-family" id="slide-2934-layer-7"
+                                data-x="['right','right','center','center']" data-hoffset="['80','80','0','0']"
+                                data-y="['middle','middle','top','top']" data-voffset="['-35','-25','100','50']"
+                                data-fontsize="['50','50','30','30']" data-color="[#004496]"
+                                data-lineheight="['90','60','50','50']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                data-frames='[{"from":"x:-50px;opacity:0;","speed":1500,"to":"o:1;","delay":1750,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+                                data-textAlign="['right','right','center','center']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[0,0,0,0]"
+                                style="z-index: 11; white-space: nowrap; font-weight: 600;">
+                                恆洋能為您服務<br />
+                                <div class="text-center index-service">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <p><span>WEBSITE</span>網站設計建置</p>
+                                        </li>
+                                        <li>
+                                            <p><span>DESIGN</span>多媒體行銷設計</p>
+                                        </li>
+                                        <li>
+                                            <p><span>SEO</span>網路行銷策劃</p>
+                                        </li>
+                                        <li>
+                                            <p><span>DEVELOP</span>客製系統開發</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- LAYER NR. 8 -->
+                            <div class="tp-caption" id="slide-2934-layer-8" data-x="['right','right','center','center']"
+                                data-hoffset="['50','25','0','0']" data-y="['middle','middle','top','top']"
+                                data-voffset="['188','208','435','385']" data-width="none" data-height="none"
+                                data-whitespace="nowrap" data-responsive_offset="on" data-responsive="off"
+                                data-frames='[{"from":"x:-50px;opacity:0;","speed":2500,"to":"o:1;","delay":2000,"ease":"Power2.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;"}]'
+                                data-textAlign="['left','left','center','center']" data-paddingtop="[0,0,0,0]"
+                                data-paddingright="[40,40,40,40]" data-paddingbottom="[0,0,0,0]"
+                                data-paddingleft="[40,40,40,40]" style="z-index: 14;"> <a href="service-3.html"
+                                    class="btn btn-outline btn-dark">
+                                    <span>看更多</span>
+                                </a>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <!-- LAYER NR. 11 -->
+
+                    <!-- <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div> -->
+                    <!-- <div class="row">
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <div data-animate-delay="100" data-animate="zoomIn">
+                                <div class="heading-text heading-section text-center">
+                                    <h1 class="text-medium">恆洋為您服務</h1>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <ul class="list-unstyled">
+                                    <li><p>網站設計建置</p></li>
+                                    <li><p>DESIGN多媒體行銷設計</p></li>
+                                    <li><p>SEO網路行銷策劃</p></li>
+                                    <li><p>DEVELOP客製系統開發</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
                 </div>
-            </div>
-            <div class="row col-no-margin">
-                <!--Box 1-->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animate-delay="800" data-animate="zoomIn">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="fa fa-edit"></i>
-                            <h3>形象網站設計</h3>
-                            <p>可依據客戶需求，提供客製化系統規劃、建置服務</p>
-                        </a>
-                    </div>
-                </div>
-                <!--End: Box 1-->
-                <!--Box 2-->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animate-delay="1000" data-animate="zoomIn">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="fas fa-coins"></i>
-                            <h3>電商平台建置</h3>
-                            <p>可依據客戶需求，提供客製化系統規劃、建置服務</p>
-                        </a>
-                    </div>
-                </div>
-                <!--End: Box 2-->
-                <!--Box 3-->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animate-delay="1200" data-animate="zoomIn">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="far fa-clipboard"></i>
-                            <h3>網路行銷策劃</h3>
-                            <p>可依據客戶需求，提供客製化系統規劃、建置服務</p>
-                        </a>
-                    </div>
-                </div>
-                <!--End: Box 3-->
-                <!--Box 4-->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animate-delay="1400" data-animate="zoomIn">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="fas fa-laptop"></i>
-                            <h3>主題網站客製</h3>
-                            <p>可依據客戶需求，提供客製化系統規劃、建置服務</p>
-                        </a>
-                    </div>
-                </div>
-                <!--End: Box 4-->
-                <!--Box 5-->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animate-delay="1600" data-animate="zoomIn">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="fas fa-cubes"></i>
-                            <h3>系統設計開發</h3>
-                            <p>可依據客戶需求，提供客製化系統規劃、建置服務</p>
-                        </a>
-                    </div>
-                </div>
-                <!--End: Box 5-->
-                <!--Box 6-->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" data-animate-delay="1800" data-animate="zoomIn">
-                    <div class="text-box hover-effect text-dark">
-                        <a href="#"> <i class="fas fa-magic"></i>
-                            <h3>品牌設計規劃</h3>
-                            <p>可依據客戶需求，提供客製化系統規劃、建置服務</p>
-                        </a>
-                    </div>
-                </div>
-                <!--End: Box 6-->
-            </div>
-            <div class="service-EOD-btn m-t-25" data-animate-delay="2200" data-animate="bounceIn">
-                <a href="#" class="btn btn-outline btn-dark">
-                    <span>看更多</span>
-                </a>
+
             </div>
 
         </section>
-        <!-- end: SERVICE -->
+
+
+        <!-- END REVOLUTION SLIDER -->
+
 
         <!-- CUSTOMS -->
         <section id="section4" class="page-content p-t-200 p-b-200 customs-margin-top"
@@ -311,14 +593,13 @@
             <div class="shape-divider" data-style="6" data-height="220" data-position="top" data-flip-vertical="true">
             </div>
             <div class="container">
-                <div data-animate-delay="100" data-animate="fadeInLeft">
+                <div data-animate-delay="100" data-animate="zoomIn">
                     <div class="heading-text heading-section text-center">
                         <h1 class="text-medium" style="color: #fff;">客戶案例</h1>
-                        <span class="lead" style="color: #FDDC39;">恆洋數位有限公司是一間專業網站設計建置及系統開發的服務商</span>
                     </div>
                 </div>
-                <div class="carousel team-members team-members-shadow" data-items="3">
-                    <div class="team-member" data-animate-delay="100" data-animate="flipInY">
+                <div class="carousel team-members team-members-shadow" data-dots="false" data-items="3">
+                    <div class="team-member" data-animate-delay="500" data-animate="fadeInUp">
                         <div class="team-image">
                             <img src="images/clients/c-nsy.png">
                         </div>
@@ -326,39 +607,21 @@
                             <a href="#">
                                 <h3>新三亞預拌混凝土廠</h3>
                             </a>
-                            <!-- <span>客戶產業分類 / 樣板分類名稱</span> -->
                             <p>客戶產業 / 樣板名稱</p>
-                            <div class="align-center">
-                                <a class="btn btn-xs btn-slide btn-light" href="#">
-                                    <i class="icon icon-image"></i>
-                                    <span>主頁展示</span></a>
-                                <a class="btn btn-xs btn-slide btn-light" href="#">
-                                    <i class="icon icon-link"></i>
-                                    <span>詳細內容</span></a>
-                            </div>
                         </div>
                     </div>
-                    <div class="team-member" data-animate-delay="300" data-animate="flipInY">
+                    <div class="team-member" data-animate-delay="500" data-animate="fadeInUp">
                         <div class="team-image">
-                            <img src="images/clients/c-jg-printing.png">
+                            <img src="images/custom/jgpt.png">
                         </div>
                         <div class="team-desc">
                             <a href="#">
                                 <h3>鉅冠印刷</h3>
                             </a>
-                            <!-- <span>客戶產業分類 / 樣板分類名稱</span> -->
                             <p>客戶產業 / 樣板名稱</p>
-                            <div class="align-center">
-                                <a class="btn btn-xs btn-slide btn-light" href="#">
-                                    <i class="icon icon-image"></i>
-                                    <span>主頁展示</span></a>
-                                <a class="btn btn-xs btn-slide btn-light" href="#">
-                                    <i class="icon icon-link"></i>
-                                    <span>詳細內容</span></a>
-                            </div>
                         </div>
                     </div>
-                    <div class="team-member" data-animate-delay="500" data-animate="flipInY">
+                    <div class="team-member" data-animate-delay="500" data-animate="fadeInUp">
                         <div class="team-image">
                             <img src="images/clients/c-ys-air.png">
                         </div>
@@ -366,16 +629,7 @@
                             <a href="#">
                                 <h3>固安震避震器-怡馨橡膠</h3>
                             </a>
-                            <!-- <span>客戶產業分類 / 樣板分類名稱</span> -->
                             <p>客戶產業 / 樣板名稱</p>
-                            <div class="align-center">
-                                <a class="btn btn-xs btn-slide btn-light left-light" href="#">
-                                    <i class="icon icon-image"></i>
-                                    <span>主頁展示</span></a>
-                                <a class="btn btn-xs btn-slide btn-light right-light" href="#">
-                                    <i class="icon icon-link"></i>
-                                    <span>詳細內容</span></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -388,17 +642,15 @@
         <section id="section5" class="p-t-100 p-b-50 block">
             <div class="container">
 
-                <div data-animate-delay="100" data-animate="fadeInRight">
-                    <div class="heading-text heading-section text-center">
-                        <h1 class="text-medium">最新消息</h1>
-                        <span class="lead">恆洋數位有限公司是一間專業網站設計建置及系統開發的服務商</span>
-                    </div>
+                <div class="heading-text heading-section text-center">
+                    <h1 class="text-medium" data-animate-delay="100" data-animate="zoomIn">最新消息</h1>
+                    <p class="lead" data-animate-delay="300" data-animate="fadeInUp">恆洋數位有限公司是一間專業網站設計建置及系統開發的服務商</p>
                 </div>
 
                 <div id="blog" class="grid-layout post-2-columns sm-b-30" data-item="post-item">
 
                     <!-- Post item-->
-                    <div class="post-item border">
+                    <div class="post-item border" data-animate-delay="500" data-animate="zoomIn">
                         <div class="post-item-wrap">
                             <div
                                 class="portfolio-item large-width img-zoom ct-photography ct-media ct-branding ct-Media">
@@ -419,7 +671,7 @@
                     <!-- end: Post item-->
 
                     <!-- Post item-->
-                    <div class="post-item border">
+                    <div class="post-item border" data-animate-delay="500" data-animate="zoomIn">
                         <div class="post-item-wrap">
                             <div
                                 class="portfolio-item large-width img-zoom ct-photography ct-media ct-branding ct-Media">
@@ -467,28 +719,87 @@
         <!-- Footer -->
         <footer id="footer">
 
-            <div class="shape-divider" data-style="12" data-position="top" data-flip-vertical="true" data-height="120"></div>
-
+            <div class="shape-divider" data-style="12" data-position="top" data-flip-vertical="true" data-height="120">
+            </div>
             <div class="footer-content">
                 <div class="container">
-                    <div class="footer-content-img col-md-12">
-                        <img src="images/index/EOD-w.png" alt="">
-                        <span>
-                            <p
-                                style="font-size: 1.2rem; font-style: italic; font-weight: 700; padding-bottom: 7px; padding-right: 10px;">
-                                <i class="footer-icon fa fa-arrow-circle-right"></i>老大的話</p>
-                            <p>東風夜放花千樹。更吹落、星如雨。寶馬雕車香滿路。鳳簫聲動，玉壺光轉，一夜魚龍舞。蛾兒雪柳黃金縷。笑語盈盈暗香去。眾里尋他千百度。驀然回首，那人卻在，燈火闌珊處。</p>
-                        </span>
+                    <div class="row slogan">
+                        <div class="col-lg-2">
+                            <img class="footer-img" src="images/index/EOD-w.png" alt="" data-animate-delay="500" data-animate="fadeInDown">
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="widget">
+                                <p class="widget-title" style="font-size: 1.2rem; font-style: italic; font-weight: 700; padding-bottom: 0px; padding-right: 10px;"
+                                    data-animate-delay="800" data-animate="fadeInDown">
+                                    <i class="footer-icon fa fa-arrow-circle-right"></i>我們有話要說</p>
+                                <p data-animate-delay="1100" data-animate="fadeInDown">
+                                    <span>
+                                        品牌做網路曝光已經是最基本、最重要的課題，我們願意傾聽您的需求，為您量身規劃最佳的方案，預算不是最大的問題，歡迎與我們一起討論做法，與您一起成長是我們期望，放心把這一塊交給我們吧！
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="row text-center">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="widget">
+                                        <p class="widget-title" style="font-size: 1.2rem; font-style: italic; font-weight: 700; padding-bottom: 0px; padding-right: 10px;"
+                                            data-animate-delay="800" data-animate="fadeInDown">
+                                            <i class="footer-icon fa fa-arrow-circle-right"></i>功能選單</p>
+                                        <ul class="list-unstyled" style="display: inline-block;margin-right: 0 25px;">
+                                            <li><a href="#">關於我們</a></li>
+                                            <li><a href="#">服務項目</a></li>
+                                            <li><a href="#">客戶案例</a></li>
+                                        </ul>
+                                        <ul class="list-unstyled" style="display: inline-block;">
+                                            <li><a href="#">最新消息</a></li>
+                                            <li><a href="#">常見問題</a></li>
+                                            <li><a href="#">聯繫我們</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="widget">
+                                        <p class="widget-title" style="font-size: 1.2rem; font-style: italic; font-weight: 700; padding-bottom: 0px; padding-right: 10px;"
+                                            data-animate-delay="800" data-animate="fadeInDown">
+                                            <i class="footer-icon fa fa-arrow-circle-right"></i>快速連結</p>
+                                        <ul class="list">
+                                            <li><a href="#">優惠價格方案</a></li>
+                                            <li><a href="#">網站建置設計</a></li>
+                                            <li><a href="#">網站行銷策劃SEO</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
+            <!-- <div class="footer-content">
+                <div class="container">
+                    <div class="footer-content-img col-md-12">
+                        <img src="images/index/EOD-w.png" alt="" data-animate-delay="500" data-animate="fadeInDown">
+                        <p style="font-size: 1.2rem; font-style: italic; font-weight: 700; padding-bottom: 7px; padding-right: 10px;"
+                            data-animate-delay="800" data-animate="fadeInDown">
+                            <i class="footer-icon fa fa-arrow-circle-right"></i>老大的話</p>
+                        <p data-animate-delay="1100" data-animate="fadeInDown">
+                            <span>
+                                東風夜放花千樹。更吹落、星如雨。寶馬雕車香滿路。鳳簫聲動，玉壺光轉，一夜魚龍舞。蛾兒雪柳黃金縷。笑語盈盈暗香去。眾里尋他千百度。驀然回首，那人卻在，燈火闌珊處。
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div> -->
             <div class="copyright-content">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="copyright-text text-center">
+                            <div class="copyright-text text-center" data-animate-delay="100" data-animate="fadeInDown">
                                 <p>版權所有 &copy; 2020
-                                    <a href="#" target="_blank">EOD_Digita 恆洋數位有限公司</a> </p>
+                                    <a href="#" target="_blank">EOD_Digita 恆洋數位有限公司</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -510,13 +821,14 @@
             href="https://www.facebook.com/pages/category/Internet-Marketing-Service/%E6%81%86%E6%B4%8B%E6%95%B8%E4%BD%8D%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8-101007134646521/"
             alt="恆洋Facebook" title="恆洋Facebook" target="_blank_" data-animate-delay="100" data-animate="fadeInRight">
             <i class="fab fa-facebook-f"></i></a>
-        <a class="tool-social tool-ph" href="tel:+886-4-2299-2488" alt="" title="打給我們"
-            data-animate-delay="100" data-animate="fadeInRight">
+        <a class="tool-social tool-ph" href="tel:+886-4-2299-2488" alt="" title="打給我們" data-animate-delay="100"
+            data-animate="fadeInRight">
             <i class="fas fa-phone"></i>
-            <a class="tool-social tool-ct" href="contact.html" alt="" title="線上填寫需求" target="_blank_"
-                data-animate-delay="100" data-animate="fadeInRight">
-                <i class="fas fa-edit"></i>
-            </a>
+        </a>
+        <a class="tool-social tool-ct" href="contact.html" alt="" title="線上填寫需求" target="_blank_"
+            data-animate-delay="100" data-animate="fadeInRight">
+            <i class="fas fa-edit"></i>
+        </a>
     </div>
 
 
@@ -526,148 +838,10 @@
     <!--Template functions-->
     <script src="js/functions.js"></script>
 
-    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/settings.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/navigation.css">
-
-    <script type="text/javascript" src="plugins/slider-revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="plugins/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
-
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript"
-        src="plugins/slider-revolution/js/extensions/revolution.extension.video.min.js"></script>
-    <script>
-        // I know that the code could be better.
-        // If you have some tips or improvement, please let me know.
-
-        $('.img-parallax').each(function () {
-            var img = $(this);
-            var imgParent = $(this).parent();
-            function parallaxImg() {
-                var speed = img.data('speed');
-                var imgY = imgParent.offset().top;
-                var winY = $(this).scrollTop();
-                var winH = $(this).height();
-                var parentH = imgParent.innerHeight();
-
-
-                // The next pixel to show on screen      
-                var winBottom = winY + winH;
-
-                // If block is shown on screen
-                if (winBottom > imgY && winY < imgY + parentH) {
-                    // Number of pixels shown after block appear
-                    var imgBottom = ((winBottom - imgY) * speed);
-                    // Max number of pixels until block disappear
-                    var imgTop = winH + parentH;
-                    // Porcentage between start showing until disappearing
-                    var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 70));
-                }
-                img.css({
-                    top: imgPercent + '%',
-                    transform: 'translate(-50%, -' + imgPercent + '%)'
-                });
-            }
-            $(document).on({
-                scroll: function () {
-                    parallaxImg();
-                }, ready: function () {
-                    parallaxImg();
-                }
-            });
-        });
-    </script>
-
-    <script>
-        jQuery('#rev_slider_1').show().revolution({
-
-            parallax: {
-                type: 'mouse+scroll',
-                origo: 'slidercenter',
-                speed: 400,
-                levels: [5, 10, 15, 20, 25, 30, 35, 40,
-                    45, 46, 47, 48, 49, 50, 51, 55],
-                disable_onmobile: 'on'
-            },
-
-        });
-    </script>
     <!-- Partical js base file -->
     <script src="plugins/particles/particles.js" type="text/javascript"></script>
     <!--Particles stars-->
     <script src="plugins/particles/particles-stars.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-        var tpj = jQuery;
-        var revapi21;
-        tpj(document).ready(function () {
-            if (tpj("#rev_slider_21_1").revolution == undefined) {
-                revslider_showDoubleJqueryError("#rev_slider_21_1");
-            } else {
-                revapi21 = tpj("#rev_slider_21_1").show().revolution({
-                    sliderType: "standard",
-                    jsFileLocation: "plugins/slider-revolution/js/",
-                    sliderLayout: "fullscreen",
-                    dottedOverlay: "none",
-                    delay: 9000,
-                    navigation: {
-                        onHoverStop: "off",
-                    },
-                    responsiveLevels: [1240, 1024, 778, 480],
-                    visibilityLevels: [1240, 1024, 778, 480],
-                    gridwidth: [1240, 1024, 778, 480],
-                    gridheight: [868, 768, 960, 720],
-                    lazyType: "none",
-                    parallax: {
-                        type: "mouse",
-                        origo: "slidercenter",
-                        speed: 700,
-                        levels: [2, 6, 10, 20, 25, 30, 35, 40, 45, 50, 47, 48, 49, 50, 51, 55],
-                        type: "mouse",
-                        disable_onmobile: "on"
-                    },
-                    shadow: 0,
-                    spinner: "spinner0",
-                    stopLoop: "off",
-                    stopAfterLoops: -1,
-                    stopAtSlide: -1,
-                    shuffle: "off",
-                    autoHeight: "off",
-                    fullScreenAutoWidth: "off",
-                    fullScreenAlignForce: "off",
-                    fullScreenOffsetContainer: "",
-                    fullScreenOffset: "",
-                    disableProgressBar: "on",
-                    hideThumbsOnMobile: "off",
-                    hideSliderAtLimit: 0,
-                    hideCaptionAtLimit: 0,
-                    hideAllCaptionAtLilmit: 0,
-                    debugMode: false,
-                    fallbacks: {
-                        simplifyAll: "off",
-                        nextSlideOnWindowFocus: "off",
-                        disableFocusListener: false,
-                    }
-                });
-            }
-        }); /*ready*/
-    </script>
 
     <script>
         $(".tool-btn").click(function () {
@@ -692,7 +866,225 @@
         }
     </script>
 
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript"
+        src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"
+        src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript"
+        src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript"
+        src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+
+    <script>
+        $('.img-parallax').each(function () {
+            var img = $(this);
+            var imgParent = $(this).parent();
+            function parallaxImg() {
+                var speed = img.data('speed');
+                var imgY = imgParent.offset().top;
+                var winY = $(this).scrollTop();
+                var winH = $(this).height();
+                var parentH = imgParent.innerHeight();
+
+                // The next pixel to show on screen
+                var winBottom = winY + winH;
+                // If block is shown on screen
+                if (winBottom > imgY && winY < imgY + parentH) {
+                    // Number of pixels shown after block appear
+                    var imgBottom = ((winBottom - imgY) * speed);
+                    // Max number of pixels until block disappear
+                    var imgTop = winH + parentH;
+                    // Porcentage between start showing until disappearing
+                    var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 70));
+                }
+                img.css({
+                    top: imgPercent + '%',
+                    transform: 'translate(-50%, -' + imgPercent + '%)'
+                });
+            }
+            $(document).on({
+                scroll: function () {
+                    parallaxImg();
+                }, ready: function () {
+                    parallaxImg();
+                }
+            });
+        });
+    </script>
+
+    <!-- INDEX-SERVICE -->
+    <script type="text/javascript">
+        var tpj = jQuery;
+
+        var revapi1049;
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_1049_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_1049_1");
+            } else {
+                revapi1049 = tpj("#rev_slider_1049_1").show().revolution({
+                    sliderType: "hero",
+                    jsFileLocation: "revolution/js/",
+                    sliderLayout: "fullwidth",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1400, 1240, 778, 480],
+                    gridheight: [768, 768, 960, 720],
+                    lazyType: "none",
+                    parallax: {
+                        type: "mouse+scroll",
+                        origo: "slidercenter",
+                        speed: 2000,
+                        levels: [1, 2, 3, 20, 25, 30, 35, 40, 45, 50, 46, 47, 48, 49, 50, 55],
+                        type: "mouse+scroll",
+                        disable_onmobile: "on"
+                    },
+                    shadow: 0,
+                    spinner: "spinner2",
+                    autoHeight: "off",
+                    touchenabled: "on",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        });	/*ready*/
+    </script>
+
+    <script type="text/javascript">
+        var tpj = jQuery;
+        var revapi467;
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_467_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_467_1");
+            } else {
+                revapi467 = tpj("#rev_slider_467_1").show().revolution({
+                    sliderType: "carousel",
+                    jsFileLocation: "plugins/slider-revolution/js/",
+                    sliderLayout: "fullwidth",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        arrows: {
+                            style: "hebe",
+                            enable: true,
+                            hide_onmobile: true,
+                            hide_under: 600,
+                            hide_onleave: true,
+                            hide_delay: 200,
+                            hide_delay_mobile: 1200,
+                            tmp: '<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div>    <div class="tp-arr-img-over"></div>	<span class="tp-arr-titleholder">{{title}}</span> </div>',
+                            left: {
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 30,
+                                v_offset: 0
+                            },
+                            right: {
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 30,
+                                v_offset: 0
+                            }
+                        },
+                        thumbnails: {
+                            style: "hades",
+                            enable: false,
+                            width: 18,
+                            height: 18,
+                            min_width: 18,
+                            wrapper_padding: 0,
+                            wrapper_color: "transparent",
+                            wrapper_opacity: "1",
+
+                            visibleAmount: 5,
+                            hide_onmobile: true,
+                            hide_under: 800,
+                            hide_onleave: false,
+                            direction: "horizontal",
+                            span: false,
+                            position: "inner",
+                            space: 18,
+                            h_align: "center",
+                            v_align: "bottom",
+                            h_offset: 0,
+                            v_offset: 120
+                        }
+                    },
+                    carousel: {
+                        horizontal_align: "center",
+                        vertical_align: "center",
+                        fadeout: "off",
+                        maxVisibleItems: 3,
+                        infinity: "on",
+                        space: 0,
+                        stretch: "on"
+                    },
+                    viewPort: {
+                        enable: true,
+                        outof: "pause",
+                        visible_area: "100%",
+                        presize: false
+                    },
+                    responsiveLevels: [1920, 1024, 778, 480],
+                    visibilityLevels: [1920, 1024, 778, 480],
+                    gridwidth: [1920, 1024, 778, 480],
+                    gridheight: [950, 600, 500, 400],
+                    lazyType: "none",
+                    parallax: {
+                        type: "mouse",
+                        origo: "slidercenter",
+                        speed: 2000,
+                        levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50, 46, 47, 48, 49, 50, 55],
+                        type: "mouse",
+                    },
+                    shadow: 5,
+                    spinner: "off",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    hideThumbsOnMobile: "on",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        }); /*ready*/
+    </script>
 
 </body>
 

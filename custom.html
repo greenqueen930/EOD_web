@@ -43,7 +43,7 @@
                                     data-animate="bounceIn">
 
                             </span>
-                            <img src="images/index/header_logo.png" class="logo-fixed">
+                            <img src="images/index/logo.png" class="logo-fixed">
                         </a>
                     </div>
                     <!--End: Logo-->
@@ -77,23 +77,24 @@
                             <nav>
                                 <ul>
                                     <li><a href="about.html">關於我們</a></li>
-                                    <li class="dropdown"><a href="service-1.html">服務項目</a>
+                                    <li class="dropdown-list"><a href="service-1.html">服務項目</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown"><a href="service-1.html">形象網站設計</a></li>
-                                            <li class="dropdown"><a href="#">電商平台建置</a></li>
-                                            <li class="dropdown"><a href="#">網路行銷策劃</a></li>
-                                            <li class="dropdown"><a href="#">主題網站客製</a></li>
-                                            <li class="dropdown"><a href="#">系統設計開發</a></li>
-                                            <li class="dropdown"><a href="#">品牌設計規劃</a></li>
+                                            <li class="dropdown"><a href="service-2.html">優惠方案價格</a></li>
+                                            <li class="dropdown"><a href="service-3.html">網站設計建置</a></li>
+                                            <li class="dropdown"><a href="service-4.html">多媒體行銷設計</a></li>
+                                            <li class="dropdown"><a href="service-5.html">網路行銷策劃(SEO)</a></li>
+                                            <li class="dropdown"><a href="service-6.html">客製系統開發</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="custom.html">客戶案例</a></li>
-                                    <li class="dropdown"><a href="news.html">最新消息</a>
+                                    <li class="dropdown-list"><a href="news.html">最新消息</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown"><a href="news.html">好文報報</a></li>
                                             <li class="dropdown"><a href="#">活動花絮</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="qna.html">常見問題</a></li>
                                     <li><a href="contact.html">聯繫我們</a></li>
                                 </ul>
                             </nav>
@@ -105,13 +106,23 @@
         </header>
         <!-- end: Header -->
 
-        <section id="page-title" style="background-image: url('images/index/1920x1280.png'); background-size: cover; background-repeat: no-repeat;">
+        <section id="page-title" class="bg"
+            style="background-image: url('images/index/1920x1280.png'); background-size: cover; background-repeat: no-repeat;">
             <div class="container">
                 <div class="page-title">
-                    <div class="heading-text text-light text-center">
-                        <h5 class="text-uppercase">EOD Digita</h5>
+                    <div class="heading-text text-center banner">
+                        <div class="about-title-img">
+                            <img src="images/logo/EOD DIGITA.png" alt="">
+                        </div>
                         <h1>我們的夥伴</h1>
-                        <span>一起航向偉大的航道吧！</span>
+                        <span class="text-light">一起航向偉大的航道吧！</span>
+
+                        <div class="breadcrumb text-light">
+                            <ul>
+                                <li><a href="#">首頁</a> </li>
+                                <li><a href="custom.html">客戶案例</a> </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,17 +130,8 @@
         </section>
 
         <!-- Custom -->
-        <section id="section">
+        <section id="section" class="p-t-50">
             <div class="container">
-                <div class="page-title" style="position: relative;">
-                    <div class="breadcrumb">
-                        <ul>
-                            <li><a href="#">首頁</a> </li>
-                            <li><a href="custom.html">客戶案例</a> </li>
-                        </ul>
-                    </div>
-                </div>
-          
                 <div class="grid-filter gf-creative center" data-layout="#portfolio">
                     <ul>
                         <li class="active"><a href="#" data-category="*">全部</a></li>
@@ -141,41 +143,48 @@
                 <!-- Portfolio -->
                 <div id="portfolio" class="grid-layout portfolio-3-columns mt-5" data-margin="20">
                     <!-- portfolio item -->
-                    <div class="portfolio-item light-bg no-overlay img-zoom ct-photography ct-marketing ct-media">
-                        <div class="portfolio-item-wrap">
+                    <div
+                        class="portfolio-item custom product light-bg no-overlay img-zoom ct-photography ct-marketing ct-media">
+                        <div class="portfolio-item-wrap product-image">
                             <div class="portfolio-image">
-                                <a href="custom2.html"><img class="custom-item" src="images/custom/nsy.jpg" alt=""></a>
+                                <a href="custom2.html"><img class="custom-item" src="images/custom/jgpt.png" alt=""></a>
                             </div>
-                            <div class="portfolio-description">
-                                <a href="custom2.html">
-                                    <h3>新三亞預拌混凝土廠</h3>
-                                    <span>說明欄位</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end: portfolio item -->
-                    <!-- portfolio item -->
-                    <div class="portfolio-item light-bg no-overlay img-zoom ct-photography ct-marketing ct-media">
-                        <div class="portfolio-item-wrap">
-                            <div class="portfolio-image">
-                                <a href="#"><img class="custom-item" src="images/custom/JGprinting.png" alt=""></a>
-                            </div>
-                            <div class="portfolio-description">
-                                <a href="javascript:;">
-                                    <h3>鉅冠印刷</h3>
-                                    <span>說明欄位</span>
-                                </a>
+                            <div class="product-overlay">
+                                <a href="custom2.html">鉅冠印刷有限公司</a>
                             </div>
                         </div>
                     </div>
                     <!-- end: portfolio item -->
                     <!-- portfolio item -->
                     <div
-                        class="portfolio-item light-bg no-overlay img-zoom ct-photography ct-media ct-branding ct-Media">
+                        class="portfolio-item custom product light-bg no-overlay img-zoom ct-photography ct-marketing ct-media">
+                        <div class="portfolio-item-wrap product-image">
+                            <div class="portfolio-image">
+                                <a href="custom2.html"><img class="custom-item" src="images/custom/jgpt.png" alt=""></a>
+                            </div>
+                            <div class="product-overlay">
+                                <a href="custom2.html">鉅冠印刷有限公司</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: portfolio item -->
+                    <!-- portfolio item -->
+                    <div
+                        class="portfolio-item custom product light-bg no-overlay img-zoom ct-photography ct-marketing ct-media">
+                        <div class="portfolio-item-wrap product-image">
+                            <div class="portfolio-image">
+                                <a href="custom2.html"><img class="custom-item" src="images/custom/jgpt.png" alt=""></a>
+                            </div>
+                            <div class="product-overlay">
+                                <a href="custom2.html">鉅冠印刷有限公司</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div
+                        class="portfolio-item custom light-bg no-overlay img-zoom ct-photography ct-media ct-branding ct-Media">
                         <div class="portfolio-item-wrap">
                             <div class="portfolio-image">
-                                <a href="#"><img class="custom-item" src="images/custom/YS-AIR.jpg" alt=""></a>
+                                <a href="#"><img class="custom-item" src="images/custom/jgpt.png" alt=""></a>
                             </div>
                             <div class="portfolio-description">
                                 <a href="javascript:;">
@@ -184,7 +193,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- end: portfolio item -->
                 </div>
                 <!-- end: Portfolio -->
@@ -196,7 +205,8 @@
         <!-- Footer -->
         <footer id="footer">
 
-            <div class="shape-divider" data-style="12" data-position="top" data-flip-vertical="true" data-height="120"></div>
+            <div class="shape-divider" data-style="12" data-position="top" data-flip-vertical="true" data-height="120">
+            </div>
 
             <div class="footer-content">
                 <div class="container">

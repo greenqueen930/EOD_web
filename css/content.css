@@ -6,7 +6,7 @@
     - Can be combined with popular css frameworks    
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800'); /* default font */
-@import url("//../ionicons/css/ionicons.min.css"); /* Icon support */
+@import url("/css/ionicons.min.css"); /* Icon support */
 
 
 /**********************************

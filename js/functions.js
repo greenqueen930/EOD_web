@@ -1,11 +1,3 @@
-//----------------------------------------------------/
-//
-//      POLO - HTML5 Template
-//      Author: INSPIRO - Ardian Berisha
-//      Version: v5.4
-//      Update: December 15 2019
-//
-//----------------------------------------------------/
 //INSPIRO Global var
 var INSPIRO = {},
     $ = jQuery.noConflict();
@@ -1210,7 +1202,7 @@ var INSPIRO = {},
                     //Plugin Options
                     elem.options = {
                         animation: elem.attr("data-animate") || "fadeIn",
-                        delay: elem.attr("data-animate-delay") || 200,
+                        delay: elem.attr("data-animate-delay") || wait,
                         direction: ~elem.attr("data-animate").indexOf("Out") ? "back" : "forward",
                         offsetX: elem.attr("data-animate-offsetX") || 0,
                         offsetY: elem.attr("data-animate-offsetY") || -100
@@ -1257,8 +1249,8 @@ var INSPIRO = {},
                 $parallax.each(function () {
                     var $elem = $(this),
                         elemImageSrc = $elem.attr("data-bg-parallax"),
-                        elemImageVelocity = $elem.attr("data-velocity") || "-.140";
-                    $elem.prepend('<div class="parallax-container" data-lazy-background="' + elemImageSrc + '"  data-velocity="' + elemImageVelocity + '" style="background: url(' + elemImageSrc + '); backgroud-size:cover;"></div>');
+                        elemImageVelocity = $elem.attr("data-velocity") || "-.100";
+                    $elem.prepend('<div class="parallax-container" data-lazy-background="' + elemImageSrc + '"  data-velocity="' + elemImageVelocity + '" style="background: url(' + elemImageSrc + '); backgroud-size:cover; background-positon:center top;"></div>');
                     $(".parallax-container").lazy({
                         attribute: "data-lazy-background",
                         afterLoad: function (element) {

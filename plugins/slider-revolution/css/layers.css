@@ -1254,7 +1254,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(255,255,255,1.00);
 	font-family:"Roboto Slab";
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:300;
 	line-height:24px;
@@ -1455,7 +1455,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(153,153,153,1.00);
 	font-family:Raleway;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:400;
 	line-height:20px;
@@ -1489,7 +1489,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(255,255,255,1.00);
 	font-family:Raleway;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:500;
 	letter-spacing:2px;
@@ -1537,7 +1537,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(255,255,255,0.35);
 	font-family:Raleway;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:400;
 	line-height:20px;
@@ -1796,7 +1796,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(168,216,238,1.00);
 	font-family:Roboto;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:900;
 	line-height:20px;
@@ -2037,7 +2037,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(255,255,255,1.00);
 	font-family:Raleway;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:600;
 	letter-spacing:1px;
@@ -2067,7 +2067,7 @@ website:   	http://www.themepunch.com
 	border-width:2px;
 	color:rgba(255,255,255,1.00);
 	font-family:Raleway;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:600;
 	line-height:15px;
@@ -2156,7 +2156,7 @@ website:   	http://www.themepunch.com
 	border-width:1px;
 	color:rgba(255,255,255,1.00);
 	font-family:Raleway;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:600;
 	letter-spacing:1px;
@@ -2186,7 +2186,7 @@ website:   	http://www.themepunch.com
 	border-width:2px;
 	color:rgba(255,255,255,1.00);
 	font-family:Roboto;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:900;
 	line-height:15px;
@@ -2341,7 +2341,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(185,186,187,1.00);
 	font-family:roboto;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:400;
 	line-height:20px;
@@ -2418,7 +2418,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(255,255,255,1.00);
 	font-family:Roboto;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:500;
 	line-height:22px;
@@ -2436,7 +2436,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(136,153,166,1.00);
 	font-family:Roboto;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:500;
 	line-height:22px;
@@ -2454,7 +2454,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(135,153,165,1.00);
 	font-family:Roboto;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:500;
 	line-height:15px;
@@ -2483,7 +2483,7 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(136,153,166,1.00);
 	font-family:Roboto;
-	font-size:15px;
+	font-size:1rem;
 	font-style:normal;
 	font-weight:500;
 	line-height:22px;
@@ -2514,8 +2514,8 @@ website:   	http://www.themepunch.com
 .revtp-searchform input[type="email"],
 .revtp-form input[type="text"],
 .revtp-form input[type="email"]{ 	
-	font-family: "Arial", sans-serif;
-    font-size: 15px;
+	font-family: 'Raleway', sans-serif, 'Microsoft JhengHei', 'Apple LiGothic';
+    font-size: 1rem;
     color: #000;
     background-color: #fff;
     line-height: 46px;
@@ -2555,7 +2555,7 @@ website:   	http://www.themepunch.com
 .tp-caption.BigBold-SubTitle,
 .BigBold-SubTitle {
     color: rgba(255, 255, 255, 0.50);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 24px;
     font-weight: 500;
     font-style: normal;
@@ -3025,7 +3025,7 @@ website:   	http://www.themepunch.com
 .tp-caption.Newspaper-Subtitle,
 .Newspaper-Subtitle {
     color: rgba(168, 216, 238, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 20px;
     font-weight: 900;
     font-style: normal;
@@ -3093,7 +3093,7 @@ website:   	http://www.themepunch.com
     line-height: 46px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
     padding: 0 20px;
     border: 0;
@@ -3306,7 +3306,7 @@ website:   	http://www.themepunch.com
     .tp-caption.Concept-Notice,
     .Concept-Notice {
         color: rgba(255, 255, 255, 1.00);
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 15px;
         font-weight: 400;
         font-style: normal;
@@ -3566,7 +3566,7 @@ website:   	http://www.themepunch.com
     .tp-caption.Woo-ProductInfo,
     .Woo-ProductInfo {
         color: rgba(0, 0, 0, 1.00);
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 15px;
         font-weight: 500;
         font-style: normal;
@@ -3594,7 +3594,7 @@ website:   	http://www.themepunch.com
     .tp-caption.Woo-AddToCart,
     .Woo-AddToCart {
         color: rgba(0, 0, 0, 1.00);
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 15px;
         font-weight: 500;
         font-style: normal;
@@ -3677,7 +3677,7 @@ website:   	http://www.themepunch.com
     .tp-caption.Woo-ProductInfo,
     .Woo-ProductInfo {
         color: rgba(0, 0, 0, 1.00);
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 15px;
         font-weight: 500;
         font-style: normal;
@@ -3705,7 +3705,7 @@ website:   	http://www.themepunch.com
     .tp-caption.Woo-AddToCart,
     .Woo-AddToCart {
         color: rgba(0, 0, 0, 1.00);
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 15px;
         font-weight: 500;
         font-style: normal;
@@ -3937,7 +3937,7 @@ website:   	http://www.themepunch.com
 .tp-caption.Dining-BtnLight,
 .Dining-BtnLight {
     color: rgba(255, 255, 255, 0.50);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 15px;
     font-weight: 700;
     font-style: normal;
@@ -4307,7 +4307,7 @@ tp-caption.Team-Thumb,
 .tp-caption.SleekLanding-BottomText,
 .SleekLanding-BottomText {
     color: rgba(255, 255, 255, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
     font-style: normal;
@@ -4361,7 +4361,7 @@ tp-caption.Team-Thumb,
 .tp-caption.PostSlider-Category,
 .PostSlider-Category {
     color: rgba(0, 0, 0, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 15px;
     font-weight: 300;
     font-style: normal;
@@ -4396,7 +4396,7 @@ tp-caption.Team-Thumb,
 .tp-caption.PostSlider-Content,
 .PostSlider-Content {
     color: rgba(119, 119, 119, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 23px;
     font-weight: 400;
     font-style: normal;
@@ -4413,7 +4413,7 @@ tp-caption.Team-Thumb,
 .tp-caption.PostSlider-Button,
 .PostSlider-Button {
     color: rgba(0, 0, 0, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 40px;
     font-weight: 500;
     font-style: normal;
@@ -4482,7 +4482,7 @@ tp-caption.Team-Thumb,
 .tp-caption.LandingPage-Button,
 .LandingPage-Button {
     color: rgba(0, 0, 0, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 54px;
     font-weight: 500;
     font-style: normal;
@@ -4642,7 +4642,7 @@ tp-caption.Team-Thumb,
 
 #mc_embed_signup input#mce-EMAIL {
     font-family: "Lato", sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     color: #000;
     background-color: #fff;
     line-height: 46px;
@@ -4692,7 +4692,7 @@ tp-caption.Team-Thumb,
 .tp-caption.Agency-SmallTitle,
 .Agency-SmallTitle {
     color: rgba(255, 255, 255, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 22px;
     font-weight: 400;
     font-style: normal;
@@ -4711,7 +4711,7 @@ tp-caption.Team-Thumb,
 .tp-caption.Agency-SmallContent,
 .Agency-SmallContent {
     color: rgba(255, 255, 255, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 24px;
     font-weight: 400;
     font-style: normal;
@@ -4870,7 +4870,7 @@ tp-caption.Team-Thumb,
 .tp-caption.Agency-ArrowTooltip,
 .Agency-ArrowTooltip {
     color: rgba(51, 51, 51, 1.00);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 20px;
     font-weight: 400;
     font-style: normal;
@@ -5590,7 +5590,7 @@ tp-caption.Team-Thumb,
     .tp-caption.FullSiteBlock-FooterLink,
     .FullSiteBlock-FooterLink {
         color: rgba(85, 85, 85, 1.00);
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 20px;
         font-weight: 300;
         font-style: normal;

@@ -4,9 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="EOD Template">
+    <meta name="EOD Template" content="EOD Website">
     <!-- Document title -->
-    <title> 電商平台建置 | EOD Digita | 恆洋數位有限公司 </title>
+    <title> 優惠方案價格 | EOD Digita | 恆洋數位有限公司 </title>
     <link rel="shortcut icon" type="image/x-icon" href="images/logo/favicon.ico" />
 
     <!-- Stylesheets & Fonts -->
@@ -15,6 +15,14 @@
     <link href="css/content.css" rel="stylesheet">
     <link href="css/custom.css?200317" rel="stylesheet">
     <link href="plugins/animate/animate.min.css" rel="stylesheet">
+
+    <link href="plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/navigation.css">
+
 </head>
 
 <body>
@@ -43,7 +51,7 @@
                                     data-animate="bounceIn">
 
                             </span>
-                            <img src="images/index/header_logo.png" class="logo-fixed">
+                            <img src="images/index/logo.png" class="logo-fixed">
                         </a>
                     </div>
                     <!--End: Logo-->
@@ -77,23 +85,24 @@
                             <nav>
                                 <ul>
                                     <li><a href="about.html">關於我們</a></li>
-                                    <li class="dropdown"><a href="service-1.html">服務項目</a>
+                                    <li class="dropdown-list"><a href="service-1.html">服務項目</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown"><a href="service-1.html">形象網站設計</a></li>
-                                            <li class="dropdown"><a href="#">電商平台建置</a></li>
-                                            <li class="dropdown"><a href="#">網路行銷策劃</a></li>
-                                            <li class="dropdown"><a href="#">主題網站客製</a></li>
-                                            <li class="dropdown"><a href="#">系統設計開發</a></li>
-                                            <li class="dropdown"><a href="#">品牌設計規劃</a></li>
+                                            <li class="dropdown"><a href="service-2.html">優惠方案價格</a></li>
+                                            <li class="dropdown"><a href="service-3.html">網站設計建置</a></li>
+                                            <li class="dropdown"><a href="service-4.html">多媒體行銷設計</a></li>
+                                            <li class="dropdown"><a href="service-5.html">網路行銷策劃(SEO)</a></li>
+                                            <li class="dropdown"><a href="service-6.html">客製系統開發</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="custom.html">客戶案例</a></li>
-                                    <li class="dropdown"><a href="news.html">最新消息</a>
+                                    <li class="dropdown-list"><a href="news.html">最新消息</a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown"><a href="news.html">好文報報</a></li>
                                             <li class="dropdown"><a href="#">活動花絮</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="qna.html">常見問題</a></li>
                                     <li><a href="contact.html">聯繫我們</a></li>
                                 </ul>
                             </nav>
@@ -104,50 +113,317 @@
             </div>
         </header>
         <!-- end: Header -->
-
-        <section id="page-title" style="background-image: url('images/index/1920x1280.png'); background-size: cover; background-repeat: no-repeat;">
+        <!-- 
+        <section id="page-title" class="bg"
+            style="background-image: url('images/index/1920x1280.png'); background-size: cover; background-repeat: no-repeat;">
             <div class="container">
                 <div class="page-title">
                     <div class="heading-text text-light text-center">
-                        <h5 class="text-uppercase">EOD Digita</h5>
-                        <h1>請聽我娓娓道來</h1>
-                        <span>恆洋的好 恆洋的用心 你我有目共睹</span>
+                         <div class="about-title-img">
+                        <img src="images/logo/EOD DIGITA.png" alt="">
+                    </div>
+                        <h1 data-animate-delay="100" data-animate="zoomIn">來看看價格是多少</h1>
+                        <div data-animate-delay="500" data-animate="fadeInUp"><span>恆洋的好 恆洋的用心 你我有目共睹</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-divider" data-style="1" data-height="220"></div>
+        </section> -->
+
+
+        <section id="page-title" class="bg"
+            style="background-image: url('images/index/1920x1280.png'); background-size: cover; background-repeat: no-repeat;">
+            <div class="container">
+                <div class="page-title">
+                    <div class="heading-text text-center banner">
+                        <div class="about-title-img">
+                            <img src="images/logo/EOD DIGITA.png" alt="">
+                        </div>
+
+                        <h2 data-animate-delay="100" data-animate="zoomIn">用我們的專業 改善你的品牌網站</h2>
+
+                        <div class="breadcrumb text-light">
+                            <ul>
+                                <li><a href="#">首頁</a> </li>
+                                <li><a href="service-2.html">優惠方案價格</a> </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="shape-divider" data-style="1" data-height="220"></div>
         </section>
 
-        <!-- content -->
-        <div class="call-to-action p-t-100 p-b-100  mb-0">
+
+        <div class="call-to-action p-b-0 mb-0">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 team-member-title mb-3">
-                        <h1>
-                            <img src="images/logo/favicon.png" alt=""> 電商平台建置
+                <div class="row" data-animate-delay="100" data-animate="fadeInUp">
+                    <div class="col-lg-12 team-member-title service mb-3">
+                        <h1>優惠<span style="color: #0076C6;">價格</span><span style="color: #ffc107;">方案</span><svg
+                                xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512">
+                                <title>ionicons-v5-l</title>
+                                <line x1="368" y1="368" x2="144" y2="144"
+                                    style="fill:none;stroke:#1f1f1f;stroke-linecap:round;stroke-linejoin:round;stroke-width:20px" />
+                                <line x1="368" y1="144" x2="144" y2="368"
+                                    style="fill:none;stroke:#1f1f1f;stroke-linecap:round;stroke-linejoin:round;stroke-width:20px" />
+                            </svg>
                         </h1>
+                        <h4>您的需求跟預算想好了嗎？</h4>
                     </div>
-                    <div class="col-lg-2">
+                </div>
+                <div class="heading-text heading-line text-center price service" data-animate-delay="100"
+                    data-animate="fadeInUp">
+                    <!-- <h2>用我們的專業 豐富你的網站</h2> -->
+                    <button onclick="window.open('contact.html')" class="btn btn-outline btn-dark" type="submit"
+                        id="form-submit">馬上了解</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="call-to-action custom">
+            <div class="container">
+                <!-- <div class="page-title" style="position: relative;">
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a> </li>
+                            <li><a href="service-1.html">來看看價格是多少</a> </li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <!-- <div class="col-lg-10 team-member-title mb-3" data-animate-delay="100" data-animate="fadeInUp">
+                        <h1>優惠方案價格</h1>
+                    </div>
+                    <div class="col-lg-2" data-animate-delay="100" data-animate="fadeInUp">
                         <button onclick="window.open('contact.html')" class="btn btn-outline btn-dark" type="submit"
                             id="form-submit">馬上了解</button>
-                    </div>
+                    </div> -->
                     <div class="col-lg-12">
-                        <div class="team-member">
-                            <div class="team-image">
-                                <img src="images/index/1920x1080.png">
-                            </div>
-                            <div class="team-desc">
-                                <h3>您好，我是副標題</h3>
-                                <p>
-                                    響應式的網頁設計，可依據不同載具(桌機、筆電、平板、手機)做瀏覽時，能自動調整網頁版型，讓客戶不管使用任何載具時，都能輕鬆便利的瀏覽網頁內容及點選相關連結。
-                                </p>
+                        <div class="deco-front" data-animate-delay="1200" data-animate="rotateInUpLeft">
+                            <img class="sale-img" src="images/price/sale 2.png" alt="">
+                        </div>
+                        <div class="deco-back" data-animate-delay="500" data-animate="fadeInLeft">
+                            <img class="price-img" src="images/price/sale 1.png">
+                        </div>
+                        <div class="team-member pt-5">
+                            <!-- <div data-animate-delay="500" data-animate="fadeInUp">
+                                <div class="heading-text heading-line text-center price pb-5">
+                                    <h2>用我們的專業 降低你的成本</h2>
+                                </div>
+                            </div> -->
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 col-12"></div>
+                                <div class="col-lg-8 col-md-12 col-12">
+                                    <div class="pricing-table" data-animate-delay="500" data-animate="fadeInUp">
+                                        <div class="plan featured row">
+                                            <div class="plan-header cp col-lg-6">
+                                                <h4>小資方案</h4>
+                                                <p class="text-muted" style="color: #000!important;">專案優惠價格</p>
+                                                <div class="plan-price"><sup>$</sup>8,000<span>/起</span> </div>
+                                                <div class="plan-button m-2 p-3">
+                                                    <!-- info -->
+                                                    <a data-fancybox data-src="#oneModal" data-modal="false"
+                                                        href="javascript:;" class="btn btn-light">詳細內容</a>
+                                                    <div class="modal-style" style="display: none;max-width:600px;"
+                                                        id="oneModal">
+                                                        <h4>小資方案 | 屬於你的小確幸</h4>
+                                                        <form action="">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>適用對象</td>
+                                                                    <td>適用於新創事業，以介紹品牌、服務項目說明為主的小資客戶。</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>版型設計</td>
+                                                                    <td>既有版型模組化調整</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>設計風格</td>
+                                                                    <td>客製化調整</td>
+                                                                </tr>
 
-                                <p>
-                                    這裡是假文內容，這裡是假文內容，這裡是假文內容，這裡是假文內容，這裡是假文內容，這裡是假文內容，這裡是假文內容，這裡是假文內容，這裡是假文內容，這裡是假文內容，這裡是假文內容。<br>
-                                    RWD版型已是基本服務，而非趨勢。開始執行客戶專案前，將先提供國外知名收費版型庫多元響應式樣版，減少客戶端的校稿時間成本。無版權問題，且版型均為標準框架設計。
-                                </p>
+                                                                <tr>
+                                                                    <td>功能程式</td>
+                                                                    <td class="">
+                                                                        <ul class="list-unstyled p-0">
+                                                                            <li>1.系統管理</li>
+                                                                            <li>2.頁面內容管理或部落格管理(多選單分類)</li>
+                                                                            <li>3.廣告管理(首、內頁banner視覺圖管理)</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>版型設計</td>
+                                                                    <td>既有版型模組化調整</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>主機代管</td>
+                                                                    <td>$5,000/年 主機資料庫2G 每月流量50G</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2"
+                                                                        class="text-center font-weight-bold">
+                                                                        <span
+                                                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                                        含首年空間(含SSL)</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><span
+                                                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                                        專案優惠</td>
+                                                                    <td>
+                                                                        <ul class="list-unstyled">
+                                                                            <li>首頁視覺圖收費圖庫圖x1張</li>
+                                                                            <li>內頁視覺圖 - 收費圖庫圖x1張</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>說明頁面美編設計</td>
+                                                                    <td>依需求設計提供</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="border-bottom-0">加購項目</td>
+                                                                    <td class="border-bottom-0">
+                                                                        <ul class="list-unstyled">
+                                                                            <li>1. 代辦或設定專屬獨立網址</li>
+                                                                            <li>2. 企業LOGO設計或重置</li>
+                                                                            <li>3. 首頁banner視覺圖設計</li>
+                                                                            <li>4. 說明內頁美編設計</li>
+                                                                            <li>5. 多功能模組功能</li>
+                                                                            <li>6. 客製化功能</li>
+                                                                            <li>7. 線上金、物流串接</li>
+                                                                            <li>8. 多國語系</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </form>
+                                                        <p class="text-center"><a data-fancybox-close
+                                                                class="btn">OK!稍微理解了</a></p>
+                                                    </div>
+                                                    <!-- info end-->
+
+                                                    <a class="btn" href="#">立即諮詢</a>
+                                                    <!-- <a data-fancybox data-src="#oneModal" data-modal="false"
+                                                        href="javascript:;" class="btn btn-light">詳細方案內容</a>
+                                                    <div class="plan-button m-2 p-3">
+                                                        <a href="#" class="btn">立即諮詢</a>
+                                                    </div>
+                                                    <div class="modal-style" style="display: none;max-width:600px;"
+                                                        id="oneModal">
+                                                        <h4>小資方案 | 屬於你的小確幸</h4>
+                                                        <form action="">
+                                                            <table>
+                                                                <tr>
+                                                                    <td>適用對象</td>
+                                                                    <td>適用於新創事業，以介紹品牌、服務項目說明為主的小資客戶。</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>版型設計</td>
+                                                                    <td>既有版型模組化調整</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>設計風格</td>
+                                                                    <td>客製化調整</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>功能程式</td>
+                                                                    <td class="">
+                                                                        <ul class="list-unstyled p-0">
+                                                                            <li>1.系統管理</li>
+                                                                            <li>2.頁面內容管理或部落格管理(多選單分類)</li>
+                                                                            <li>3.廣告管理(首、內頁banner視覺圖管理)</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>版型設計</td>
+                                                                    <td>既有版型模組化調整</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>主機代管</td>
+                                                                    <td>$5,000/年 主機資料庫2G 每月流量50G</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2"
+                                                                        class="text-center font-weight-bold">
+                                                                        <span
+                                                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                                        含首年空間(含SSL)</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><span
+                                                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                                        專案優惠</td>
+                                                                    <td>
+                                                                        <ul class="list-unstyled">
+                                                                            <li>首頁視覺圖收費圖庫圖x1張</li>
+                                                                            <li>內頁視覺圖 - 收費圖庫圖x1張</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>說明頁面美編設計</td>
+                                                                    <td>依需求設計提供</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="border-bottom-0">加購項目</td>
+                                                                    <td class="border-bottom-0">
+                                                                        <ul class="list-unstyled">
+                                                                            <li>1. 代辦或設定專屬獨立網址</li>
+                                                                            <li>2. 企業LOGO設計或重置</li>
+                                                                            <li>3. 首頁banner視覺圖設計</li>
+                                                                            <li>4. 說明內頁美編設計</li>
+                                                                            <li>5. 多功能模組功能</li>
+                                                                            <li>6. 客製化功能</li>
+                                                                            <li>7. 線上金、物流串接</li>
+                                                                            <li>8. 多國語系</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </form>
+                                                        <p class="text-center"><a data-fancybox-close
+                                                                class="btn">OK!稍微理解了</a></p>
+                                                    </div> -->
+                                                    <!-- info end-->
+                                                </div>
+                                            </div>
+                                            <div class="plan-list col-lg-6">
+                                                <ul>
+                                                    <li>版型模組化調整</li>
+                                                    <li>風格客製化調整</li>
+                                                    <li>功能程式模組化</li>
+                                                    <li><span
+                                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                        含首年空間(含SSL)</li>
+                                                    <li>全站不限頁數</li>
+                                                    <li>主機代管 $5,000/年</li>
+                                                    <li>不含首頁視覺圖合成</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                             </div>
+
+                            <hr class="space">
+
+                            <div class="row">
+                                <div class="col-lg-4"></div>
+                                <div class="col-lg-8 col-sm-12">
+                                    <h3 class="price-title" data-animate-delay="500" data-animate="fadeInUp">
+                                        如果您期待網站能擁有更多的功能、更多元的設計<br>您可以考慮以下更划算的方案</h3>
+                                    <div class="price-title-img text-right" data-animate-delay="500"
+                                        data-animate="rotateInUpRight"></div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -155,10 +431,705 @@
         </div>
         <!--end: content -->
 
+        <section class="pb-0">
+            <div class="container-fluid">
+                <div class="row pricing-table" data-animate-delay="500" data-animate="fadeInUp">
+
+                    <div class="col">
+                        <div class="plan">
+                            <div class="plan-header">
+                                <h4>經濟企業版方案</h4>
+                                <p class="text-muted" style="color: #000!important;">專案優惠價格</p>
+
+                                <div class="plan-price"><sup>$</sup>35,000<span>/起</span> </div>
+                                <!-- info -->
+                                <a data-fancybox data-src="#twoModal" data-modal="false" href="javascript:;"
+                                    class="btn btn-light">詳細內容</a>
+                                <div class="modal-style" style="display: none;max-width:600px;" id="twoModal">
+                                    <h4>經濟企業版方案 | 經濟最實際</h4>
+                                    <form action="">
+                                        <table>
+                                            <tr>
+                                                <td>適用對象</td>
+                                                <td>適用行銷預算不高，且對網站版型設計無特別要求的客戶。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>版型設計</td>
+                                                <td>模組化調整</td>
+                                            </tr>
+                                            <tr>
+                                                <td>設計風格</td>
+                                                <td>客製化調整</td>
+                                            </tr>
+                                            <tr>
+                                                <td>功能程式</td>
+                                                <td class="">
+                                                    <ul class="list-unstyled p-0">
+                                                        <li>1.系統管理</li>
+                                                        <li>2.廣告管理(首、內頁banner視覺圖管理)</li>
+                                                        <li>3.公司簡介模組</li>
+                                                        <li>4.最新消息模組</li>
+                                                        <li>5.產品介紹模組</li>
+                                                        <li>6.聯絡我們模組</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>主機代管</td>
+                                                <td>$5,000/年 主機資料庫2G 每月流量50G</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-center font-weight-bold"><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>含首年空間(含SSL)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                    專案優惠</td>
+                                                <td>
+                                                    <ul class="list-unstyled">
+                                                        <li>首頁視覺圖合成設計x1張</li>
+                                                        <li>內頁視覺圖 - 收費圖庫圖</li>
+                                                        <li>協助產品資料上架x20筆</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0">加購項目</td>
+                                                <td class="border-bottom-0">
+                                                    <ul class="list-unstyled">
+                                                        <li>1. 代辦或設定專屬獨立網址</li>
+                                                        <li>2. 企業LOGO設計或重置</li>
+                                                        <li>3. 首頁banner視覺圖設計</li>
+                                                        <li>4. 說明內頁美編設計</li>
+                                                        <li>5. 多功能模組功能</li>
+                                                        <li>6. 客製化功能</li>
+                                                        <li>7. 線上金、物流串接</li>
+                                                        <li>8. 多國語系</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    <p class="text-center"><a data-fancybox-close class="btn">OK!稍微理解了</a></p>
+                                </div>
+                                <!-- info end-->
+
+                                <a class="btn" href="#">立即諮詢</a>
+                            </div>
+                            <div class="plan-list">
+                                <ul>
+                                    <li>版型模組化調整</li>
+                                    <li>風格客製化調整</li>
+                                    <li>功能程式模組化</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        含首年空間(含SSL)</li>
+                                    <li>全站不限頁數</li>
+                                    <li>主機代管$5,000/年</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        1張首頁視覺圖</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        20筆資料上架</li>
+                                    <!-- <li>全站不限頁數</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plan">
+                            <div class="plan-header">
+                                <h4>經濟購物版方案</h4>
+                                <p class="text-muted" style="color: #000!important;">專案優惠價格</p>
+
+                                <div class="plan-price"><sup>$</sup>55,000<span>/起</span> </div>
+                                <!-- info -->
+                                <a data-fancybox data-src="#threeModal" data-modal="false" href="javascript:;"
+                                    class="btn btn-light">詳細內容</a>
+                                <div class="modal-style" style="display: none;max-width:600px;" id="threeModal">
+                                    <h4>經濟購物版方案 | 經濟又便利</h4>
+                                    <form action="">
+                                        <table>
+                                            <tr>
+                                                <td>適用對象</td>
+                                                <td>適用行銷預算不高，且尚不需線上付款服務的客戶。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>版型設計</td>
+                                                <td>模組化調整</td>
+                                            </tr>
+                                            <tr>
+                                                <td>設計風格</td>
+                                                <td>客製化設計</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>功能程式</td>
+                                                <td class="">
+                                                    <ul class="list-unstyled p-0">
+                                                        <li>1.系統管理</li>
+                                                        <li>2.廣告管理(首、內頁banner視覺圖管理)</li>
+                                                        <li>3.社群連結管理</li>
+                                                        <li>4.分析追蹤碼外掛功能</li>
+                                                        <li>3.品牌介紹模組</li>
+                                                        <li>4.活動消息模組</li>
+                                                        <li>5.商品介紹模組</li>
+                                                        <li>6.會員管理模組</li>
+                                                        <li>7.購物車模組</li>
+                                                        <li>8.常見問題模組</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>主機代管</td>
+                                                <td>$8,000/年 主機資料庫2G 每月流量50G</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-center font-weight-bold"><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>含首年空間(含SSL)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                    專案優惠</td>
+                                                <td>
+                                                    <ul class="list-unstyled">
+                                                        <li>首頁視覺圖合成設計x1張</li>
+                                                        <li>內頁視覺圖 - 收費圖庫圖</li>
+                                                        <li>協助產品資料上架x20筆</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0">加購項目</td>
+                                                <td class="border-bottom-0">
+                                                    <ul class="list-unstyled">
+                                                        <li>1. 代辦或設定專屬獨立網址</li>
+                                                        <li>2. 企業LOGO設計或重置</li>
+                                                        <li>3. 首頁banner視覺圖設計</li>
+                                                        <li>4. 說明內頁美編設計</li>
+                                                        <li>5. 多功能模組功能</li>
+                                                        <li>6. 客製化功能</li>
+                                                        <li>7. 線上金、物流串接</li>
+                                                        <li>8. 多國語系</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    <p class="text-center"><a data-fancybox-close class="btn">OK!稍微理解了</a></p>
+                                </div>
+                                <!-- info end-->
+                                <a class="btn" href="#">立即諮詢</a>
+                            </div>
+                            <div class="plan-list">
+                                <ul>
+                                    <li>版型模組化調整</li>
+                                    <li>風格客製化設計</li>
+                                    <li>功能程式模組化</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        含首年空間(含SSL)</li>
+                                    <li>全站不限頁數</li>
+                                    <li>主機代管$8,000/年</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        1張首頁視覺圖</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        20筆資料上架</li>
+                                    <!-- <li>全站不限頁數</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plan featured">
+                            <div class="plan-header">
+                                <h4><i class="fas fa-crown" style="color: #FDDC39;"></i> 標準企業版方案</h4>
+                                <p class="text-muted" style="color: #000!important;">專案優惠價格</p>
+
+                                <div class="plan-price"><sup>$</sup>60,000<span>/起</span> </div>
+                                <!-- info -->
+                                <a data-fancybox data-src="#fourModal" data-modal="false" href="javascript:;"
+                                    class="btn btn-light">詳細內容</a>
+                                <div class="modal-style" style="display: none;max-width:600px;" id="fourModal">
+                                    <h4>這就是標準 | 優惠方案內容</h4>
+                                    <form action="">
+                                        <table>
+                                            <tr>
+                                                <td>適用對象</td>
+                                                <td>適用行銷有一定預算，且對網站設計有一定想法的客戶。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>版型設計</td>
+                                                <td>客製化調整(挑選版型母版做客製化調整)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>設計風格</td>
+                                                <td>客製化設計</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>功能程式</td>
+                                                <td class="">
+                                                    <ul class="list-unstyled p-0">
+                                                        <li>1.系統管理</li>
+                                                        <li>2.廣告管理(首、內頁banner視覺圖管理)</li>
+                                                        <li>3.公司簡介模組</li>
+                                                        <li>4.最新消息模組</li>
+                                                        <li>5.產品介紹模組</li>
+                                                        <li>6.聯絡我們模組</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>主機代管</td>
+                                                <td>$8,000/年 主機資料庫5G 每月流量100G</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-center font-weight-bold"><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                    含首年空間(含SSL)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                    專案優惠</td>
+                                                <td>
+                                                    <ul class="list-unstyled">
+                                                        <li>首頁視覺圖合成設計x1張</li>
+                                                        <li>內頁視覺圖 - 收費圖庫圖</li>
+                                                        <li>協助產品資料上架x50筆</li>
+                                                        <li>說明頁面美編設計x3頁</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0">加購項目</td>
+                                                <td class="border-bottom-0">
+                                                    <ul class="list-unstyled">
+                                                        <li>1. 代辦或設定專屬獨立網址</li>
+                                                        <li>2. 企業LOGO設計或重置</li>
+                                                        <li>3. 首頁banner視覺圖設計</li>
+                                                        <li>4. 說明內頁美編設計</li>
+                                                        <li>5. 多功能模組功能</li>
+                                                        <li>6. 客製化功能</li>
+                                                        <li>7. 線上金、物流串接</li>
+                                                        <li>8. 多國語系</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    <p class="text-center"><a data-fancybox-close class="btn">OK!稍微理解了</a></p>
+                                </div>
+                                <!-- info end-->
+                                <a class="btn" href="#">立即諮詢</a>
+                            </div>
+                            <div class="plan-list">
+                                <ul>
+                                    <li>版型客製化調整</li>
+                                    <li>風格客製化設計</li>
+                                    <li>功能程式模組化</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        含首年空間(含SSL)</li>
+                                    <li>全站不限頁數</li>
+                                    <li>主機代管$8,000/年</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        1張首頁視覺圖</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        3頁說明頁面美編</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        50筆資料上架</li>
+                                    <!-- <li>全站不限頁數</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plan">
+                            <div class="plan-header">
+                                <h4>標準購物版方案</h4>
+                                <p class="text-muted" style="color: #000!important;">專案優惠價格</p>
+
+                                <div class="plan-price"><sup>$</sup>75,000<span>/起</span> </div>
+                                <!-- info -->
+                                <a data-fancybox data-src="#fiveModal" data-modal="false" href="javascript:;"
+                                    class="btn btn-light">詳細內容</a>
+                                <div class="modal-style" style="display: none;max-width:600px;" id="fiveModal">
+                                    <h4>這是購物標準 | 優惠方案內容</h4>
+                                    <form action="">
+                                        <table>
+                                            <tr>
+                                                <td>適用對象</td>
+                                                <td>適用行銷有一定預算，且對網站設計線上金、物流服務有需求的客戶。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>版型設計</td>
+                                                <td>客製化調整</td>
+                                            </tr>
+                                            <tr>
+                                                <td>設計風格</td>
+                                                <td>客製化設計</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>功能程式</td>
+                                                <td class="">
+                                                    <ul class="list-unstyled p-0">
+                                                        <li>1.系統管理</li>
+                                                        <li>2.廣告管理(首、內頁banner視覺圖管理)</li>
+                                                        <li>3.社群連結管理</li>
+                                                        <li>4.分析追蹤碼外掛功能</li>
+                                                        <li>3.品牌介紹模組</li>
+                                                        <li>4.活動消息模組</li>
+                                                        <li>5.商品介紹模組</li>
+                                                        <li>6.會員管理模組</li>
+                                                        <li>7.購物車模組</li>
+                                                        <li>8.常見問題模組</li>
+                                                        <li>9.串接第三方線上刷卡、店到店取貨付款</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>主機代管</td>
+                                                <td>$8,000/年 主機資料庫5G 每月流量100G</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-center font-weight-bold"><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                    含首年空間(含SSL)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                                    專案優惠</td>
+                                                <td>
+                                                    <ul class="list-unstyled">
+                                                        <li>首頁視覺圖合成設計x3張</li>
+                                                        <li>內頁視覺圖 - 收費圖庫圖</li>
+                                                        <li>協助產品資料上架x50筆</li>
+                                                        <li>說明頁面美編設計x3頁</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0">加購項目</td>
+                                                <td class="border-bottom-0">
+                                                    <ul class="list-unstyled">
+                                                        <li>1. 代辦或設定專屬獨立網址</li>
+                                                        <li>2. 企業LOGO設計或重置</li>
+                                                        <li>3. 首頁banner視覺圖設計</li>
+                                                        <li>4. 說明內頁美編設計</li>
+                                                        <li>5. 多功能模組功能</li>
+                                                        <li>6. 客製化功能</li>
+                                                        <li>7. 線上金、物流串接</li>
+                                                        <li>8. 多國語系</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    <p class="text-center"><a data-fancybox-close class="btn">OK!稍微理解了</a></p>
+                                </div>
+                                <!-- info end-->
+                                <a class="btn" href="#">立即諮詢</a>
+                            </div>
+                            <div class="plan-list">
+                                <ul>
+                                    <li>版型客製化調整</li>
+                                    <li>風格客製化設計</li>
+                                    <li>功能程式模組化</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        含首年空間(含SSL)</li>
+
+                                    <li>全站不限頁數</li>
+                                    <li>主機代管$8,000/年</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        3張首頁視覺圖</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        3頁說明頁面美編</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        50筆資料上架</li>
+                                    <!-- <li>全站不限頁數</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ************* VIP ************* -->
+                    <div class="col">
+                        <div class="plan">
+                            <div class="plan-header">
+                                <h4><i class="fas fa-crown" style="color: #2EABDE;"></i> VIP客製化方案</h4>
+                                <p class="text-muted" style="color: #000!important;">專案優惠價格</p>
+
+                                <div class="plan-price" style="font-size: 3rem;"></sup>專案評估<span></span></div>
+                                <!-- info -->
+                                <a data-fancybox data-src="#sixModal" data-modal="false" href="javascript:;"
+                                    class="btn btn-light">詳細內容</a>
+                                <div class="modal-style" style="display: none;max-width:600px;" id="sixModal">
+                                    <h4>VIP客製化 | 優惠方案內容</h4>
+                                    <form action="">
+                                        <table>
+                                            <tr>
+                                                <td>適用對象</td>
+                                                <td>適用行銷有一定預算，且有規劃人員，針對網站系統的版型設計、功能等有一定想法跟規劃的客戶。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>版型設計</td>
+                                                <td>依照客戶功能需求，客製化規劃設計版型。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>設計風格</td>
+                                                <td>依客戶產業及行銷對象，客製化設計。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>功能程式</td>
+                                                <td>依客戶需求，客製化調整現有標準版功能模組或客製化開發功能。</td>
+                                            </tr>
+                                            <tr>
+                                                <td>主機代管</td>
+                                                <td>$12,000/年 主機資料庫10G 每月流量200G</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-center font-weight-bold"><span
+                                                        style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>含首年空間(含SSL)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>首頁視覺圖合成設計</td>
+                                                <td>依需求設計提供</td>
+                                            </tr>
+                                            <tr>
+                                                <td>內頁視覺圖</td>
+                                                <td>依需求設計提供</td>
+                                            </tr>
+                                            <tr>
+                                                <td>產品資料上架</td>
+                                                <td>依需求提供</td>
+                                            </tr>
+                                            <tr>
+                                                <td>說明頁面美編設計</td>
+                                                <td>依需求設計提供</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0">加購項目</td>
+                                                <td class="border-bottom-0">
+                                                    <ul class="list-unstyled">
+                                                        <li>1. 代辦或設定專屬獨立網址</li>
+                                                        <li>2. 企業LOGO設計或重置</li>
+                                                        <li>3. 首頁banner視覺圖設計</li>
+                                                        <li>4. 說明內頁美編設計</li>
+                                                        <li>5. 多功能模組功能</li>
+                                                        <li>6. 客製化功能</li>
+                                                        <li>7. 線上金、物流串接</li>
+                                                        <li>8. 多國語系</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                    <p class="text-center"><a data-fancybox-close class="btn">OK!稍微理解了</a></p>
+                                </div>
+                                <!-- info end-->
+                                <a class="btn" href="#">立即諮詢</a>
+                            </div>
+                            <div class="plan-list">
+                                <ul>
+                                    <li>版型客製化設計</li>
+                                    <li>風格客製化設計</li>
+                                    <li>功能程式客製化</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        含首年空間(含SSL)</li>
+                                    <li>全站不限頁數</li>
+                                    <li>主機代管$12,000/年</li>
+                                    <li>內頁視覺圖</li>
+                                    <li>首頁視覺圖依需求設計</li>
+                                    <li>說明頁面依需求設計</li>
+                                    <li><span
+                                            style="color: #fff; background-color: tomato; border-radius: 50%; padding: 1px 5px;">贈</span>
+                                        全站資料上架</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-t-200 p-b-200" data-bg-parallax="images/index/1920x1080.png">
+            <div class="shape-divider" data-style="6" data-height="220" data-position="top" data-flip-vertical="true">
+            </div>
+
+            <div class="container" data-animate-delay="500" data-animate="zoomIn">
+                <div class="modal-style price-slogan p-t-100 mb-0">
+                    <h3>加購項目</h3>
+                </div>
+                <div class="price-add p-b-100 row">
+
+                    <div class="m-5"></div>
+                    <ul class="grid grid-4-columns">
+                        <li>
+                            <a href="javascript:;">代辦或設定專屬獨立網址</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">企業LOGO設計或重置</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">首頁banner視覺圖設計</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">說明內頁美編設計</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">多功能模組功能</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">客製化功能</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">線上金、物流串接</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">多國語系</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shape-divider" data-style="6" data-height="220"></div>
+        </section>
+
+        <section id="section4" class="page-content customs-padding p-t-50 p-b-80">
+            <div class="container">
+                <div data-animate-delay="100" data-animate="fadeInLeft">
+                    <div class="heading-text heading-line price text-center">
+                        <h2>多功能模組排列</h2>
+                        <span class="lead">多元模組選擇讓你的網站變化更豐富
+                        </span>
+
+                    </div>
+                    <div class="row modal-item">
+
+                        <div class="col-lg-6 text-center">
+                            <form class="modal-item-txt price" action="">
+                                <table width="100%">
+                                    <tr>
+                                        <th colspan="3">
+                                            <h3>多功能模組<span style="color: #FFA901;">企業版</span></h3>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>公司簡介模組</td>
+                                        <td>最新消息模組</td>
+                                        <td>產品介紹模組</td>
+                                    </tr>
+                                    <tr>
+                                        <td>聯絡我們模組</td>
+                                        <td>詢問車模組</td>
+                                        <td>常見問題模組</td>
+                                    </tr>
+                                    <tr>
+                                        <td>檔案下載模組</td>
+                                        <td>電子型錄模組</td>
+                                        <td>會員專區管理</td>
+                                    </tr>
+                                    <tr>
+                                        <td>服務據點模組</td>
+                                        <td>投資人專區模組</td>
+                                        <td>其他擴充功能</td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 text-center">
+                            <form class="modal-item-txt price" action="">
+                                <table width="100%">
+                                    <tr>
+                                        <th colspan="3">
+                                            <h3>多功能模組<span style="color: #FFA901;">購物站版</span></h3>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>品牌介紹模組</td>
+                                        <td>活動消息模組</td>
+                                        <td>商品介紹模組</td>
+                                    </tr>
+                                    <tr>
+                                        <td>聯絡我們模組</td>
+                                        <td>購物車模組</td>
+                                        <td>常見問題模組</td>
+                                    </tr>
+                                    <tr>
+                                        <td>檔案下載模組</td>
+                                        <td>線上型錄模組</td>
+                                        <td>會員專區管理</td>
+                                    </tr>
+                                    <tr>
+                                        <td>門市據點模組</td>
+                                        <td>紅利點數功能</td>
+                                        <td>折價卷功能</td>
+                                    </tr>
+                                    <tr>
+                                        <td>電子報功能 </td>
+                                        <td>
+                                            <div class="p-dropdown price">
+                                                <a href="javascript:;">其他擴充功能</a>
+                                                <ul class="p-dropdown-content text-center">
+                                                    <li><a href="javascript:;">會員社群登入</a></li>
+                                                    <li><a href="javascript:;">線上金流串接</a></li>
+                                                    <li><a href="javascript:;">產品資料匯入</a></li>
+                                                    <li><a href="javascript:;">會員資料匯入</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                        <div class="pageBox"></div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- prev/next -->
+        <!-- <div class="post-navigation">
+            <a href="#" class="post-prev">
+                <div class="post-prev-title"><span>Prev 上一項</span>形象網站設計</div>
+            </a>
+            <a href="#" class="post-next">
+                <div class="post-next-title"><span>Next 下一項</span>網站設計建置</div>
+            </a>
+        </div> -->
+
         <!-- Footer -->
         <footer id="footer">
 
-            <div class="shape-divider" data-style="12" data-position="top" data-flip-vertical="true" data-height="120"></div>
+            <div class="shape-divider" data-style="12" data-position="top" data-flip-vertical="true" data-height="120">
+            </div>
 
             <div class="footer-content">
                 <div class="container">
@@ -211,15 +1182,17 @@
     </div>
 
     <!--Plugins-->
+    <!-- popups 200619 -->
+    <!-- <script src="plugins/popper/popper.min.js"></script> -->
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
+
     <!--Template functions-->
     <script src="js/functions.js"></script>
 
-    <!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/settings.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/navigation.css">
+    <!-- Fancybox -->
+    <script src="plugins/fancybox/jquery.fancybox.js"></script>
+
 
     <script type="text/javascript" src="plugins/slider-revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="plugins/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
@@ -334,10 +1307,6 @@
 
         });
     </script>
-    <!-- Partical js base file -->
-    <script src="plugins/particles/particles.js" type="text/javascript"></script>
-    <!--Particles stars-->
-    <script src="plugins/particles/particles-stars.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         var tpj = jQuery;
@@ -413,12 +1382,6 @@
             }
         }
     </script>
-
-    <!--Google Maps files-->
-    <script type='text/javascript'
-        src='//maps.googleapis.com/maps/api/js?key=AIzaSyAZIus-_huNW25Jl7RPmHgoGZjD5udgBMI'></script>
-    <script type="text/javascript" src="plugins/gmap3/gmap3.min.js"></script>
-    <script type="text/javascript" src="plugins/gmap3/map-styles.js"></script>
 </body>
 
 </html>
